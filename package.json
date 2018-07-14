@@ -1,11 +1,17 @@
 {
   "name": "danielvivar.com",
-  "version": "0.1.0",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --modern",
+    "lint": "vue-cli-service lint",
+    "build:all": "npm run build && npm run build:lambda",
+    "build:lambda": "netlify-lambda build $npm_package_lambda_src",
+    "serve:lambda": "netlify-lambda serve $npm_package_lambda_src"
+  },
+  "lambda": {
+    "src": "lambda/src"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
@@ -17,6 +23,7 @@
     "@vue/cli-plugin-pwa": "^3.0.0-rc.4",
     "@vue/cli-service": "^3.0.0-rc.4",
     "@vue/eslint-config-prettier": "^3.0.0-rc.4",
+    "netlify-lambda": "^0.4.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
@@ -24,6 +31,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "not ie <= 11"
   ]
 }
