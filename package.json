@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --modern",
+    "build": "vue-cli-service build --modern && npm run build:lambda",
     "lint": "vue-cli-service lint",
-    "build:all": "npm run build && npm run build:lambda",
     "build:lambda": "netlify-lambda build $npm_package_lambda_src",
     "serve:lambda": "netlify-lambda serve $npm_package_lambda_src"
   },
