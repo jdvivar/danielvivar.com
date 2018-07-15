@@ -47,6 +47,7 @@
       <span>javascript</span>
       <span>es6</span>
       <span>angularjs</span>
+      <span>pwa</span>
       <span>bootstrap</span>
       <span>css</span>
       <span>sass/scss</span>
@@ -120,11 +121,14 @@
               In Zava (www.zavamed.com) I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow, re-brand (from DrEd to Zava), move office and many other big events, as well as being part and even leading in some of the things we do.
             </p>
             <p>
-              Some of the technologies/skills that I've learnt or developed further while at Zava:
+              Some of the technologies/tasks/skills that I've learnt or developed further while at Zava:
             </p>
             <ul>
               <li>
                 Developing and maintaining several apps in AngularJS 1.5+ and VueJS and mastering javascript on the way.
+              </li>
+              <li>
+                Developing from scratch a PHP file-based CMS (Kirby) and maintaining older db-based CMS (Content Management System)
               </li>
               <li>
                 Mastering styling with SASS/SCSS
@@ -145,13 +149,13 @@
                 Agile methodologies: Scrum, Kanban.
               </li>
               <li>
-                Usign InVision to design high detailed and visually attractive user experiences or just wireframing
+                Using InVision to design high detailed and visually attractive user experiences or just wireframing
               </li>
               <li>
                 Went from task runner Gulp and package manager Bower to only Yarn to then everything done with npm scripts and even bash scripts again.
               </li>
               <li>
-                Serverless and cloud function technologies with AWS Lambda, Apache OpenWhisk with IBM Cloud Functions
+                Serverless and cloud functions with AWS Lambda
               </li>
             </ul>
           </div>
@@ -307,7 +311,7 @@
             Degree's Final Project
           </div>
           <div class="description">
-            During an Erasums scholarship I developed Secutrak, a native Android app with special tracking features that could be used in a wide range of applications.
+            During an Erasmus scholarship I developed Secutrak, a native Android app with special tracking features that could be used in a wide range of applications.
           </div>
         </li>
       </ul>
@@ -332,7 +336,10 @@
     <section id="about">
       <h1>about this site</h1>
       <p>
-        I'll explain why I did this site like this
+        This site is a PWA made with Vue CLI 3 (so VueJS + Webpack), hosted in Bitbucket and deployed with Netlify. It can just be one HTML5 page plus some vanilla JS and CSS in a normal server, but automating both the development workflow with the webpack based Vue CLI and the deployment plus lots of other perks from Netlify's free tier is just a breeze and very educational. Netlify has snippet injection, so Google Analytics is added during deployment that way, and my e-mail address is in an AWS Lambda cloud function, also served by Netlify. It all costs zero, nada, gratis. The only unnecessary luxury is the domain, for which I pay around £8/year.
+      </p>
+      <p>
+        <a href="https://www.danielvivar.com/2015">Here</a> you can find my previous personal site, done in 2015, with other goals, interests and definitely simpler.
       </p>
     </section>
 
