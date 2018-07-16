@@ -13,10 +13,12 @@
     "src": "lambda/src"
   },
   "dependencies": {
+    "npm": "^6.2.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "@vue/cli-plugin-babel": "^3.0.0-rc.4",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.4",
     "@vue/cli-plugin-pwa": "^3.0.0-rc.4",

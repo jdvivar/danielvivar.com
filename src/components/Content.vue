@@ -348,15 +348,18 @@
 </template>
 
 <script>
+import LambdaFunctions from "@/services/LambdaFunctions";
+
 export default {
   name: "Content",
-  props: {
-    msg: String
+  methods: {
+    getEmail: LambdaFunctions.getEmail()
   }
 };
+
+LambdaFunctions.getEmail().then(data => console.log(data));
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 </style>
