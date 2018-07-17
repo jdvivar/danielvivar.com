@@ -191,12 +191,14 @@
             </p>
             <ul>
               <li>
-                A completely responsive layout for the whole app:
-                <a>http://www.danielvivar.com/typeless/topbar.html</a>
+                <a href="http://www.danielvivar.com/typeless/topbar.html" target="_blank">
+                  A completely responsive layout for the whole app
+                </a>
               </li>
               <li>
-                A design from scratch of an iOS app for iPhone:
-                <a>http://invis.io/G62N9KKQ3</a>
+                <a href="http://invis.io/G62N9KKQ3" target="_blank">
+                  A design from scratch of an iOS app for iPhone
+                </a>
               </li>
             </ul>
           </div>
@@ -321,8 +323,11 @@
       <h1>how you can get in touch with me</h1>
       <ul>
         <li id="email">
-          <button onclick="getEmail()">
-            Click here to reveal my e-mail address
+          <a :href="`mailto:${email}`" v-if="email">
+            {{ email }}
+          </a>
+          <button v-on:click="getEmail()" v-else>
+            Reveal my e-mail address
           </button>
         </li>
         <li>
@@ -339,7 +344,7 @@
         This site is a PWA made with Vue CLI 3 (so VueJS + Webpack), hosted in Bitbucket and deployed with Netlify. It can just be one HTML5 page plus some vanilla JS and CSS in a normal server, but automating both the development workflow with the webpack based Vue CLI and the deployment plus lots of other perks from Netlify's free tier is just a breeze and very educational. Netlify has snippet injection, so Google Analytics is added during deployment that way, and my e-mail address is in an AWS Lambda cloud function, also served by Netlify. It all costs zero, nada, gratis. The only unnecessary luxury is the domain, for which I pay around £8/year.
       </p>
       <p>
-        <a href="https://www.danielvivar.com/2015">Here</a> you can find my previous personal site, done in 2015, with other goals, interests and definitely simpler.
+        <a href="https://www.danielvivar.com/2015" target="_blank">Here</a> you can find my previous personal site, done in 2015, with other goals, interests and definitely simpler.
       </p>
     </section>
 
@@ -352,12 +357,19 @@ import LambdaFunctions from "@/services/LambdaFunctions";
 
 export default {
   name: "Content",
+  data() {
+    return {
+      email: '',
+    }
+  },
   methods: {
-    getEmail: LambdaFunctions.getEmail()
-  }
+    async getEmail() {
+      const response = await LambdaFunctions.getEmail();
+      this.email = response.data;
+    },
+  },
 };
 
-LambdaFunctions.getEmail().then(data => console.log(data));
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
