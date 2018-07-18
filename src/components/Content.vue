@@ -12,7 +12,7 @@
       </select>
     </div>
     <nav>
-      <ul>
+      <ul v-scroll-spy-active v-scroll-spy-link>
         <li><a href="#who">who I am</a></li>
         <li><a href="#future">what I'm looking for</a></li>
         <li><a href="#outstanding">what I'm good at</a></li>
@@ -24,7 +24,7 @@
       </ul>
     </nav>
 
-    <main>
+    <main v-scroll-spy>
 
       <section id="who">
         <h1>who I am</h1>
@@ -49,6 +49,21 @@
           </p>
           <p>
             I also value an open-minded culture, flexibility, a healthy environment, a focused team and companies where technology is the heart.
+          </p>
+        </div>
+      </section>
+
+      <section id="outstanding">
+        <h1>what I'm good at</h1>
+        <div>
+          <p>
+            I'm good at abstract thinking: explaining and designing how things work and talking to non-technical people. That means I can easily speak with senior architects, product managers, ux researchers or a CTO and I'll be able to have meaningful relations with each one of them.
+          </p>
+          <p>
+            Having a good synthesis capacity and abstract thinking also helps when designing the architecture of apps and systems and when solving difficult problems and defects.
+          </p>
+          <p>
+            I'm very good at learning new stuff, so when picking up tasks I'll always go for the more challenging ones. That means I also value teams that tend to do pair programming or encourage cross-team work.
           </p>
         </div>
       </section>
@@ -85,21 +100,6 @@
         <span>cloud functions</span>
         <span>responsive design</span>
         <span>progressive enhancement</span>
-      </section>
-
-      <section id="outstanding">
-        <h1>what I'm good at</h1>
-        <div>
-          <p>
-            I'm good at abstract thinking: explaining and designing how things work and talking to non-technical people. That means I can easily speak with senior architects, product managers, ux researchers or a CTO and I'll be able to have meaningful relations with each one of them.
-          </p>
-          <p>
-             Having a good synthesis capacity and abstract thinking also helps when designing the architecture of apps and systems and when solving difficult problems and defects.
-          </p>
-          <p>
-            I'm very good at learning new stuff, so when picking up tasks I'll always go for the more challenging ones. That means I also value teams that tend to do pair programming or encourage cross-team work.
-          </p>
-        </div>
       </section>
 
       <section id="experience">
