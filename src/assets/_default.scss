@@ -1,5 +1,28 @@
+$grid-gap: 40px;
+$grid-column: 240px;
+
 .default {
-  a {
-    color: green;
+
+  font-family: Helvetica, Arial, sans-serif;
+
+  &#wrapper {
+    display: grid;
+    grid-template-columns: auto repeat(3, $grid-column) auto;
+    grid-template-rows: $grid-column;
+    grid-gap: $grid-gap;
   }
+
+  #theme-selector {
+    position: fixed;
+  }
+
+  nav {
+    grid-area: 2 / 2 / auto / 3;
+    text-align: right;
+  }
+
+  main {
+    grid-area: 2 / 3 / auto / 5;
+  }
+
 }

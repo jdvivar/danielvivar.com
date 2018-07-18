@@ -1,13 +1,13 @@
 <template>
-  <div :class="style">
-    <div>
-      <label for="style-select">Select a theme:</label>
+  <div id="wrapper" :class="style">
+    <div id="theme-selector">
+      <label for="style-select">Select a theme</label>
       <select v-model="style">
         <option value="default" selected>
-          default
+          Default
         </option>
-        <option v-for="option in styleOptions" v-bind:value="option">
-          {{ option }}
+        <option v-for="option in styleOptions" v-bind:value="option.value">
+          {{ option.text }}
         </option>
       </select>
     </div>
@@ -373,7 +373,7 @@ export default {
       email: '',
       style: 'default',
       styleOptions: [
-        'modern',
+        { text: 'No style', value: 'no_style' },
       ]
     }
   },
