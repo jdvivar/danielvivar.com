@@ -1,26 +1,28 @@
 <template>
   <div id="wrapper" :class="style.value">
-    <div id="style-selector">
-      <label for="style-select">Select a style</label>
-      <select v-model="style.value" id="style-select">
-        <option :value="style.default.value" selected>
-          {{ style.default.text }}
-        </option>
-        <option v-for="option in style.options" v-bind:value="option.value" :key="option.value">
-          {{ option.text }}
-        </option>
-      </select>
-    </div>
-    <div id="accent-selector">
-      <label for="accent-select">Select an accent</label>
-      <select v-model="accent.value" id="accent-select">
-        <option :value="accent.default.value" selected>
-          {{ accent.default.text }}
-        </option>
-        <option v-for="option in accent.options" v-bind:value="option.value" :key="option.value">
-          {{ option.text }}
-        </option>
-      </select>
+    <div id="selectors">
+      <div id="style-selector">
+        <label for="style-select">style</label>
+        <select v-model="style.value" id="style-select">
+          <option :value="style.default.value" selected>
+            {{ style.default.text }}
+          </option>
+          <option v-for="option in style.options" v-bind:value="option.value" :key="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+      </div>
+      <div id="accent-selector">
+        <label for="accent-select">accent</label>
+        <select v-model="accent.value" id="accent-select">
+          <option :value="accent.default.value" selected>
+            {{ accent.default.text }}
+          </option>
+          <option v-for="option in accent.options" v-bind:value="option.value" :key="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+      </div>
     </div>
     <nav>
       <ul v-scroll-spy-active v-scroll-spy-link>
@@ -396,12 +398,20 @@ export default {
       style: {
         value: "default",
         default: { text: "Default", value: "default" },
-        options: [{ text: "No style", value: "no_style" }]
+        options: [
+          { text: "No style", value: "no_style" },
+        ]
       },
       accent: {
         value: "red",
         default: { text: "Red", value: "red" },
-        options: [{ text: "Blue", value: "blue" }]
+        options: [
+          { text: "Blue", value: "blue" },
+          { text: "Green", value: "green" },
+          { text: "Gold", value: "gold" },
+          { text: "Pink", value: "pink" },
+          { text: "Sky Blue", value: "skyblue" },
+        ]
       }
     };
   },
