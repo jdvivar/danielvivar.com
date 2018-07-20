@@ -1,10 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
-import Scrollspy from 'vue2-scrollspy';
+import Scrollspy, { Easing } from "vue2-scrollspy";
 
 // Initialise scrollspy
-Vue.use(Scrollspy);
+Vue.use(Scrollspy, { easing: Easing.Cubic.InOut });
 
 Vue.config.productionTip = false;
 

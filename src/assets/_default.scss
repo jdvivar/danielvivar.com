@@ -1,28 +1,117 @@
-$grid-gap: 40px;
-$grid-column: 240px;
+// fonts imports
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700');
+
+$grid-gap    : 40px;
+$grid-column : 240px;
 
 .default {
 
-  font-family: Helvetica, Arial, sans-serif;
+  // Styles applicable to the whole content
+  font-family : 'Old Standard TT', sans-serif;
+  font-size   : 22px;
 
+  p {
+    margin: $grid-gap / 2 0;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  // specific to the wrapper
+  // (although it matches the content in this case)
   &#wrapper {
-    display: grid;
-    grid-template-columns: auto repeat(3, $grid-column) auto;
-    grid-template-rows: $grid-column;
-    grid-gap: $grid-gap;
+    display               : grid;
+    grid-gap              : $grid-gap;
+    grid-template-columns : auto repeat(3, $grid-column) auto;
+    grid-template-rows    : $grid-column;
   }
 
+  // theme selector
   #theme-selector {
-    position: fixed;
+    position : fixed;
   }
 
+  // navigation
   nav {
-    grid-area: 2 / 2 / auto / 3;
-    text-align: right;
+    font-family : 'Source Sans Pro', serif;
+    // font-size: 16px;
+    text-align : right;
+    grid-area  : 2 / 2 / auto / 3;
+
+    ul {
+      position   : sticky;
+      top        : $grid-column + $grid-gap;
+      list-style : none;
+      margin: 0;
+    }
+
+    li + li {
+      margin-top : $grid-gap / 2;
+    }
+
+    a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color .5s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .active a {
+      color: #aaa;
+      font-weight: 700;
+      // font-weight : bold;
+    }
   }
 
+  // Main content
   main {
-    grid-area: 2 / 3 / auto / 5;
-  }
+    grid-area : 2 / 3 / auto / 5;
 
+    section h1 {
+      font-family : 'Source Sans Pro', serif;
+      font-weight: 700;
+      // font-style: italic;
+      font-size: 30px;
+      color: red;
+      margin: 0 0 $grid-gap / 2;
+      // text-transform: capitalize;
+    }
+
+    section + section {
+      padding-top : $grid-column / 2;
+    }
+
+    #tools {
+
+      & + section {
+        clear: both;
+      }
+
+      line-height: 1.5;
+
+      span {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
+        background-color: rgba(black, 0.05);
+        padding: 10px;
+        margin: -3px;
+        border-radius: 50px;
+        float: left;
+        transition: background-color 0.5s;
+        cursor: default;
+
+        &:hover {
+          background-color: rgba(red, 0.7);
+          color: white;
+        }
+      }
+    }
+  }
 }

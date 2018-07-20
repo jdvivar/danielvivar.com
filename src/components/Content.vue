@@ -71,35 +71,37 @@
       <section id="tools">
         <h1>which technologies or tools I use</h1>
         <span>javascript</span>
-        <span>es6</span>
-        <span>angularjs</span>
-        <span>pwa</span>
-        <span>bootstrap</span>
-        <span>css</span>
-        <span>sass/scss</span>
         <span>vuejs</span>
-        <span>tdd</span>
-        <span>bdd</span>
-        <span>soap</span>
-        <span>cro</span>
+        <span>es6</span>
+        <span>pwa</span>
         <span>npm</span>
         <span>node</span>
+        <span>sass/scss</span>
+        <span>tdd</span>
+        <span>angularjs</span>
+        <span>bootstrap</span>
+        <span>css</span>
+        <span>bdd</span>
+        <span>cro</span>
+        <span>cms</span>
+        <span>headless cms</span>
         <span>cd/ci</span>
         <span>git</span>
         <span>jquery</span>
+        <span>qa engineering</span>
         <span>a/b testing</span>
         <span>e2e testing</span>
-        <span>qa engineering</span>
         <span>api testing</span>
-        <span>agile</span>
-        <span>scrum</span>
-        <span>kanban</span>
         <span>prototyping</span>
         <span>wireframing</span>
         <span>serverless</span>
-        <span>cloud functions</span>
-        <span>responsive design</span>
-        <span>progressive enhancement</span>
+        <span>cloud&nbsp;functions</span>
+        <span>responsive&nbsp;design</span>
+        <span>progressive&nbsp;enhancement</span>
+        <span>soap</span>
+        <span>agile</span>
+        <span>scrum</span>
+        <span>kanban</span>
       </section>
 
       <section id="experience">
@@ -331,7 +333,7 @@
       </section>
 
       <section id="contact">
-        <h1>how you can get in touch with me</h1>
+        <h1>how you can get in touch</h1>
         <ul>
           <li id="email">
             <a :href="`mailto:${email}`" v-if="email">
@@ -352,7 +354,16 @@
       <section id="about">
         <h1>about this site</h1>
         <p>
-          This site is a PWA made with Vue CLI 3 (so VueJS + Webpack), hosted in Bitbucket and deployed with Netlify. It can just be one HTML5 page plus some vanilla JS and CSS in a normal server, but automating both the development workflow with the webpack based Vue CLI and the deployment plus lots of other perks from Netlify's free tier is just a breeze and very educational. Netlify has snippet injection, so Google Analytics is added during deployment that way, and my e-mail address is in an AWS Lambda cloud function, also served by Netlify. It all costs zero, nada, gratis. The only unnecessary luxury is the domain, for which I pay around £8/year.
+          This site is a PWA made with Vue CLI 3 (so VueJS + Webpack), hosted in Bitbucket/GitHub and deployed with Netlify.
+        </p>
+        <p>
+          It could have just been one HTML5 page plus some vanilla JS and CSS in a normal server, but automating both the development workflow with the webpack based Vue CLI and the deployment plus lots of other perks from Netlify's free tier is just a breeze and very educational.
+        </p>
+        <p>
+          Netlify has snippet injection, so Google Analytics is added during deployment that way, and my e-mail address is in an AWS Lambda cloud function, also served by Netlify. It all costs zero, nada, gratis. The only unnecessary luxury is the domain, for which I pay around £8 per year.
+        </p>
+        <p>
+          I'm also trying to demonstrate that content <em>&mdash;what&mdash;</em> and style <em>&mdash;how&mdash;</em> are two logically detached layers of web design.
         </p>
         <p>
           <a href="https://www.danielvivar.com/2015" target="_blank">Here</a> you can find my previous personal site, done in 2015, with other goals, interests and definitely simpler.
