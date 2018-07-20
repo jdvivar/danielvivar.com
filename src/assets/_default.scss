@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700');
 
-$grid-gap    : 40px;
-$grid-column : 240px;
-
 .default {
+
+  $grid-gap    : 40px;
+  $grid-column : 240px;
+
+  --accent:red;
 
   // Styles applicable to the whole content
   font-family : 'Old Standard TT', sans-serif;
@@ -13,6 +15,20 @@ $grid-column : 240px;
 
   p {
     margin: $grid-gap / 2 0;
+  }
+
+  b {
+    font-weight: 700;
+  }
+
+  u {
+    text-decoration: none;
+    border-bottom-width: 1px solid var(--accent);
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
+    line-height: 0.85;
+    display: inline-block;
+    text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
   }
 
   .clearfix::after {
@@ -30,10 +46,14 @@ $grid-column : 240px;
     grid-template-rows    : $grid-column;
   }
 
-  // theme selector
-  #theme-selector {
-    position : fixed;
-  }
+  // theme selectors
+  // #style-selector {
+  //   position : fixed;
+  // }
+  //
+  // #accent-selector {
+  //   position : fixed;
+  // }
 
   // navigation
   nav {
@@ -79,7 +99,7 @@ $grid-column : 240px;
       font-weight: 700;
       // font-style: italic;
       font-size: 30px;
-      color: red;
+      color: var(--accent);
       margin: 0 0 $grid-gap / 2;
       // text-transform: capitalize;
     }
@@ -108,7 +128,7 @@ $grid-column : 240px;
         cursor: default;
 
         &:hover {
-          background-color: rgba(red, 0.7);
+          background-color: rgba(var(--accent), 0.7);
           color: white;
         }
       }

@@ -1,12 +1,23 @@
 <template>
-  <div id="wrapper" :class="style">
-    <div id="theme-selector">
-      <label for="style-select">Select a theme</label>
-      <select v-model="style">
-        <option value="default" selected>
-          Default
+  <div id="wrapper" :class="style.value">
+    <div id="style-selector">
+      <label for="style-select">Select a style</label>
+      <select v-model="style.value" id="style-select">
+        <option :value="style.default.value" selected>
+          {{ style.default.text }}
         </option>
-        <option v-for="option in styleOptions" v-bind:value="option.value">
+        <option v-for="option in style.options" v-bind:value="option.value" :key="option.value">
+          {{ option.text }}
+        </option>
+      </select>
+    </div>
+    <div id="accent-selector">
+      <label for="accent-select">Select an accent</label>
+      <select v-model="accent.value" id="accent-select">
+        <option :value="accent.default.value" selected>
+          {{ accent.default.text }}
+        </option>
+        <option v-for="option in accent.options" v-bind:value="option.value" :key="option.value">
           {{ option.text }}
         </option>
       </select>
@@ -30,10 +41,10 @@
         <h1>who I am</h1>
         <div>
           <p>
-            Hi, my name is Daniel Vivar and I'm a front-end web engineer and designer based in London since 2014.
+            Hi, my name is <b>Daniel Vivar</b> and I'm a front-end web engineer and designer based in London since 2014.
           </p>
           <p>
-            Originally a graphic designer and a computers engineering student, I then decided to focus my career into front-end web engineering.
+            Originally a graphic designer and a computers engineering student, I then decided to focus my career into <u>front-end web engineering</u>.
           </p>
         </div>
       </section>
@@ -42,13 +53,13 @@
         <h1>what I'm looking for</h1>
         <div>
           <p>
-            I love to learn new things all the time so my future company should be a place where learning and sharing knowledge is actively encouraged.
+            I love to learn new things all the time so my future company should be a place where <u>learning</u> and sharing knowledge <u>is actively encouraged</u>.
           </p>
           <p>
-            I feel specially motivated in projects where I could create delightful user experiences for great apps.
+            I feel specially motivated in projects where I could create <u>delightful user experiences</u> for great apps.
           </p>
           <p>
-            I also value an open-minded culture, flexibility, a healthy environment, a focused team and companies where technology is the heart.
+            I also value an <u>open-minded culture</u>, flexibility, a healthy environment, a focused team and companies where technology is the heart.
           </p>
         </div>
       </section>
@@ -57,13 +68,13 @@
         <h1>what I'm good at</h1>
         <div>
           <p>
-            I'm good at abstract thinking: explaining and designing how things work and talking to non-technical people. That means I can easily speak with senior architects, product managers, ux researchers or a CTO and I'll be able to have meaningful relations with each one of them.
+            I'm good at <u>abstract thinking</u>: explaining and designing how things work and talking to non-technical people. That means I can easily speak with senior architects, product managers, ux researchers or a CTO and I'll be able to have meaningful relations with each one of them.
           </p>
           <p>
-            Having a good synthesis capacity and abstract thinking also helps when designing the architecture of apps and systems and when solving difficult problems and defects.
+            That, and a good synthesis capacity also helps when <u>designing the architecture</u> of apps and systems and when solving difficult problems and defects.
           </p>
           <p>
-            I'm very good at learning new stuff, so when picking up tasks I'll always go for the more challenging ones. That means I also value teams that tend to do pair programming or encourage cross-team work.
+            I feel motivated by learning new stuff, so when picking up tasks I'll always go for the more <u>challenging</u> ones. That means I also value teams that tend to do pair programming or encourage cross-team work.
           </p>
         </div>
       </section>
@@ -381,24 +392,34 @@ export default {
   name: "Content",
   data() {
     return {
-      email: '',
-      style: 'default',
-      styleOptions: [
-        { text: 'No style', value: 'no_style' },
-      ]
-    }
+      email: "",
+      style: {
+        value: "default",
+        default: { text: "Default", value: "default" },
+        options: [{ text: "No style", value: "no_style" }]
+      },
+      accent: {
+        value: "red",
+        default: { text: "Red", value: "red" },
+        options: [{ text: "Blue", value: "blue" }]
+      }
+    };
   },
   methods: {
     async getEmail() {
       const response = await LambdaFunctions.getEmail();
       this.email = response.data;
-    },
+    }
   },
+  watch: {
+    "accent.value": accent => {
+      document.getElementById("wrapper").style.setProperty("--accent", accent);
+    }
+  }
 };
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "@/assets/all.scss";
+@import "@/assets/all.scss";
 </style>
