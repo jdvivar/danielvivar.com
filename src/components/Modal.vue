@@ -5,9 +5,10 @@
         <div class="modal-container">
 
           <font-awesome-icon
-              :icon="['fal', 'times']"
-              @click="$emit('close')"
-              class="modal-close" />
+            :icon="['fal', 'times']"
+            class="modal-close"
+            @click="$emit('close')" />
+
 
           <div class="modal-header">
             <slot name="term"/>

@@ -812,6 +812,9 @@ export default {
     "selectors.accent.value": accent => {
       const wrapper = document.getElementById("wrapper");
       wrapper.style.setProperty("--accent", accent);
+    },
+    "showModal": (showModal) => {
+      console.log('showModal: ', showModal);
     }
   },
   methods: {
