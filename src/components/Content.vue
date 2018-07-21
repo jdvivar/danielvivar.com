@@ -472,11 +472,9 @@
             Definition of vuejs
           </div>
         </Modal>
-        <div
-          class="help"
-          style="clear:both">
-          <font-awesome-icon :icon="['fal', 'angle-up']" />
-          click in each tag to reveal its definition
+        <div class="help">
+          <font-awesome-icon :icon="['fal', 'angle-up']"/>
+          click a tag to reveal its definition
         </div>
       </section>
 

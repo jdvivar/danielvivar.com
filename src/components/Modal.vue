@@ -4,11 +4,10 @@
       <div class="modal-wrapper">
         <div class="modal-container">
 
-          <button 
-            class="modal-default-button" 
-            @click="$emit('close')">
-            OK
-          </button>
+          <font-awesome-icon
+              :icon="['fal', 'times']"
+              @click="$emit('close')"
+              class="modal-close" />
 
           <div class="modal-header">
             <slot name="term"/>
@@ -25,8 +24,18 @@
 </template>
 
 <script>
+// Icons
+import { library as Icons } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faTimes } from "@fortawesome/pro-light-svg-icons";
+
+Icons.add(faTimes);
+
 export default {
-  name: "Modal"
+  name: "Modal",
+  components: {
+    FontAwesomeIcon
+  }
 };
 </script>
 

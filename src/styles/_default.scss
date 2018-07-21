@@ -1,11 +1,12 @@
 // fonts imports
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700');
 
 .default {
 
   $grid-gap    : 40px;
   $grid-column : 240px;
+  $muted       : #ccc;
 
   --accent:red;
 
@@ -20,6 +21,10 @@
 
   b {
     font-weight: 700;
+  }
+
+  .svg-inline--fa {
+    color: var(--accent);
   }
 
   u {
@@ -80,7 +85,7 @@
     }
 
     a {
-      color: #ccc;
+      color: $muted;
       text-decoration: none;
       transition: color .5s;
 
@@ -116,17 +121,20 @@
 
     #tools {
 
+      line-height: 1.5;
       & + section {
         clear: both;
       }
 
-      line-height: 1.5;
+      &:hover .help {
+        animation: fadeInDown .5s linear 0s forwards;
+      }
 
       span {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 200;
         background-color: rgba(black, 0.05);
-        padding: 10px;
+        padding: 10px 20px;
         margin: -3px;
         border-radius: 50px;
         float: left;
@@ -138,6 +146,29 @@
           color: white;
           box-shadow: 0px 0px 0px 5px rgba(black, 0.1);
         }
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -25%, 0);
+        }
+
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .help {
+        clear:both;
+        color: $muted;
+        font-family: 'Sorce Sans Pro', sans-serif;
+        font-weight: 200;
+        padding-top: $grid-gap;
+        text-transform: uppercase;
+        font-size: 16px;
+        opacity: 0;
       }
     }
   }
@@ -163,30 +194,30 @@
   .modal-container {
     width: 450px;
     margin: 0px auto;
-    padding: 20px 30px;
+    padding: $grid-gap;
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0 8px 16px rgba(black, .33);
     transition: all .3s ease;
   }
 
-  .modal-header h3 {
-    margin-top: 0;
+  .modal-header {
+    margin-bottom: $grid-gap;
   }
 
   .modal-body {
-    margin: 20px 0;
+    // margin: 20px 0;
   }
 
-  .modal-default-button {
+  .modal-close {
     float: right;
   }
 
   /*
-   * The following styles are auto-applied to elements with
-   * transition="modal" when their visibility is toggled
-   * by Vue.js.
-   */
+  * The following styles are auto-applied to elements with
+  * transition="modal" when their visibility is toggled
+  * by Vue.js.
+  */
 
   .modal-enter {
     opacity: 0;
