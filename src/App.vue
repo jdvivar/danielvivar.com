@@ -8,7 +8,7 @@
 import Content from "@/components/Content.vue";
 
 export default {
-  name: "app",
+  name: "App",
   components: {
     Content
   }

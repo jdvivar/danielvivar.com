@@ -4,16 +4,18 @@
       <div class="modal-wrapper">
         <div class="modal-container">
 
-          <button class="modal-default-button" @click="$emit('close')">
+          <button 
+            class="modal-default-button" 
+            @click="$emit('close')">
             OK
           </button>
 
           <div class="modal-header">
-            <slot name="term"></slot>
+            <slot name="term"/>
           </div>
 
           <div class="modal-body">
-            <slot name="definition"></slot>
+            <slot name="definition"/>
           </div>
 
         </div>

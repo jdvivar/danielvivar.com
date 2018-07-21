@@ -1,6 +1,11 @@
+// Vue
 import Vue from "vue";
 import App from "./App.vue";
+
+// PWA
 import "./registerServiceWorker";
+
+// Scrollspy
 import Scrollspy, { Easing } from "vue2-scrollspy";
 
 // Initialise scrollspy

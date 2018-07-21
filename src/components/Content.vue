@@ -1,31 +1,36 @@
 <template>
-  <div id="wrapper" :class="style.value">
+  <div
+    id="wrapper"
+    :class="selectors.style.value">
+
     <div id="selectors">
-      <div id="style-selector">
-        <label for="style-select">style</label>
-        <select v-model="style.value" id="style-select">
-          <option :value="style.default.value" selected>
-            {{ style.default.text }}
+      <div
+        v-for="(selector, key) in selectors"
+        :id="`${key}-selector`"
+        :key="key">
+        <label :for="`${key}-select`">{{ key }}</label>
+        <select
+          v-model="selector.value"
+          :id="`${key}-select`">
+          <option
+            :value="selector.default.value"
+            selected>
+            {{ selector.default.text }}
           </option>
-          <option v-for="option in style.options" v-bind:value="option.value" :key="option.value">
-            {{ option.text }}
-          </option>
-        </select>
-      </div>
-      <div id="accent-selector">
-        <label for="accent-select">accent</label>
-        <select v-model="accent.value" id="accent-select">
-          <option :value="accent.default.value" selected>
-            {{ accent.default.text }}
-          </option>
-          <option v-for="option in accent.options" v-bind:value="option.value" :key="option.value">
+          <option
+            v-for="option in selector.options"
+            :value="option.value"
+            :key="option.value">
             {{ option.text }}
           </option>
         </select>
       </div>
     </div>
+
     <nav>
-      <ul v-scroll-spy-active v-scroll-spy-link>
+      <ul
+        v-scroll-spy-active
+        v-scroll-spy-link>
         <li><a href="#who">who I am</a></li>
         <li><a href="#future">what I'm looking for</a></li>
         <li><a href="#outstanding">what I'm good at</a></li>
@@ -81,11 +86,15 @@
         </div>
       </section>
 
-      <section id="tools" @click="showModal = $event.target.innerHTML">
+      <section
+        id="tools"
+        @click="showModal = $event.target.innerHTML">
         <h1>which technologies or tools I use</h1>
 
         <span>javascript</span>
-        <Modal v-if="showModal === 'javascript'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'javascript'"
+          @close="showModal = false">
           <div slot="term">
             JavaScript
           </div>
@@ -95,7 +104,9 @@
         </Modal>
 
         <span>vuejs</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             Vue.js
           </div>
@@ -105,7 +116,9 @@
         </Modal>
 
         <span>es6</span>
-        <Modal v-if="showModal === 'es6'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'es6'"
+          @close="showModal = false">
           <div slot="term">
             ECMAScript 6
           </div>
@@ -115,7 +128,9 @@
         </Modal>
 
         <span>babel</span>
-        <Modal v-if="showModal === 'babel'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'babel'"
+          @close="showModal = false">
           <div slot="term">
             Babel
           </div>
@@ -125,7 +140,9 @@
         </Modal>
 
         <span>pwa</span>
-        <Modal v-if="showModal === 'pwa'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'pwa'"
+          @close="showModal = false">
           <div slot="term">
             Progressive Web Application
           </div>
@@ -135,7 +152,9 @@
         </Modal>
 
         <span>node</span>
-        <Modal v-if="showModal === 'node'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'node'"
+          @close="showModal = false">
           <div slot="term">
             Node.js
           </div>
@@ -145,7 +164,9 @@
         </Modal>
 
         <span>npm</span>
-        <Modal v-if="showModal === 'npm'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'npm'"
+          @close="showModal = false">
           <div slot="term">
             Node.js package manager
           </div>
@@ -155,7 +176,9 @@
         </Modal>
 
         <span>css</span>
-        <Modal v-if="showModal === 'css'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'css'"
+          @close="showModal = false">
           <div slot="term">
             Cascading Style Sheets
           </div>
@@ -165,7 +188,9 @@
         </Modal>
 
         <span>sass/scss</span>
-        <Modal v-if="showModal === 'sass/scss'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'sass/scss'"
+          @close="showModal = false">
           <div slot="term">
             Syntactically awesome style sheets / Sassy CSS
           </div>
@@ -175,7 +200,9 @@
         </Modal>
 
         <span>tdd</span>
-        <Modal v-if="showModal === 'tdd'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'tdd'"
+          @close="showModal = false">
           <div slot="term">
             Test-Driven Development
           </div>
@@ -185,7 +212,9 @@
         </Modal>
 
         <span>bdd</span>
-        <Modal v-if="showModal === 'bdd'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'bdd'"
+          @close="showModal = false">
           <div slot="term">
             Behaviour-Driven Development
           </div>
@@ -195,7 +224,9 @@
         </Modal>
 
         <span>angularjs</span>
-        <Modal v-if="showModal === 'angularjs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'angularjs'"
+          @close="showModal = false">
           <div slot="term">
             AngularJS
           </div>
@@ -205,7 +236,9 @@
         </Modal>
 
         <span>bootstrap</span>
-        <Modal v-if="showModal === 'bootstrap'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'bootstrap'"
+          @close="showModal = false">
           <div slot="term">
             Bootstrap
           </div>
@@ -215,7 +248,21 @@
         </Modal>
 
         <span>cro</span>
-        <Modal v-if="showModal === 'cro'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'cro'"
+          @close="showModal = false">
+          <div slot="term">
+            Conversion Rate Optimisation
+          </div>
+          <div slot="definition">
+            It's a set of methodologies that improve the conversion of visitors of a website to customers. It eventually lead to better decission making. Collecting data, forming hypothesis and create statistical models are some of the basic pillars of CRO.
+          </div>
+        </Modal>
+
+        <span>a/b testing</span>
+        <Modal
+          v-if="showModal === 'a/b testing'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -224,9 +271,10 @@
           </div>
         </Modal>
 
-
         <span>cms</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -236,7 +284,9 @@
         </Modal>
 
         <span>headless cms</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -244,8 +294,11 @@
             Definition of vuejs
           </div>
         </Modal>
+
         <span>cd/ci</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -254,7 +307,9 @@
           </div>
         </Modal>
         <span>git</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -263,7 +318,9 @@
           </div>
         </Modal>
         <span>jquery</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -272,16 +329,9 @@
           </div>
         </Modal>
         <span>qa engineering</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
-          <div slot="term">
-            vuejs
-          </div>
-          <div slot="definition">
-            Definition of vuejs
-          </div>
-        </Modal>
-        <span>a/b testing</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -290,7 +340,9 @@
           </div>
         </Modal>
         <span>e2e testing</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -299,7 +351,9 @@
           </div>
         </Modal>
         <span>api testing</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -308,7 +362,9 @@
           </div>
         </Modal>
         <span>prototyping</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -317,7 +373,9 @@
           </div>
         </Modal>
         <span>wireframing</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -326,7 +384,9 @@
           </div>
         </Modal>
         <span>serverless</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -335,7 +395,9 @@
           </div>
         </Modal>
         <span>cloud&nbsp;functions</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -344,7 +406,9 @@
           </div>
         </Modal>
         <span>responsive&nbsp;design</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -353,7 +417,9 @@
           </div>
         </Modal>
         <span>progressive&nbsp;enhancement</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -363,7 +429,9 @@
         </Modal>
 
         <span>soap</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -372,7 +440,9 @@
           </div>
         </Modal>
         <span>agile</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -381,7 +451,9 @@
           </div>
         </Modal>
         <span>scrum</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -390,7 +462,9 @@
           </div>
         </Modal>
         <span>kanban</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal
+          v-if="showModal === 'vuejs'"
+          @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -398,7 +472,10 @@
             Definition of vuejs
           </div>
         </Modal>
-        <div class="help" style="clear:both">
+        <div
+          class="help"
+          style="clear:both">
+          <font-awesome-icon :icon="['fal', 'angle-up']" />
           click in each tag to reveal its definition
         </div>
       </section>
@@ -503,12 +580,16 @@
               </p>
               <ul>
                 <li>
-                  <a href="http://www.danielvivar.com/typeless/topbar.html" target="_blank">
+                  <a
+                    href="http://www.danielvivar.com/typeless/topbar.html"
+                    target="_blank">
                     A completely responsive layout for the whole app
                   </a>
                 </li>
                 <li>
-                  <a href="http://invis.io/G62N9KKQ3" target="_blank">
+                  <a
+                    href="http://invis.io/G62N9KKQ3"
+                    target="_blank">
                     A design from scratch of an iOS app for iPhone
                   </a>
                 </li>
@@ -635,18 +716,26 @@
         <h1>how you can get in touch</h1>
         <ul>
           <li id="email">
-            <a :href="`mailto:${email}`" v-if="email">
+            <a
+              v-if="email"
+              :href="`mailto:${email}`">
               {{ email }}
             </a>
-            <button v-on:click="getEmail()" v-else>
+            <button
+              v-else
+              @click="getEmail()">
               Reveal my e-mail address
             </button>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jdvivar" target="_blank">Linkedin</a>
+            <a
+              href="https://www.linkedin.com/in/jdvivar"
+              target="_blank">Linkedin</a>
           </li>
           <li>
-            <a href="https://www.facebook.com/danielvivar" target="_blank">Facebook</a>
+            <a
+              href="https://www.facebook.com/danielvivar"
+              target="_blank">Facebook</a>
           </li>
         </ul>
       </section>
@@ -665,7 +754,9 @@
           I'm also trying to demonstrate that content <em>&mdash;what&mdash;</em> and style <em>&mdash;how&mdash;</em> are two logically detached layers of web design.
         </p>
         <p>
-          <a href="https://www.danielvivar.com/2015" target="_blank">Here</a> you can find my previous personal site, done in 2015, with other goals, interests and definitely simpler.
+          <a
+            href="https://www.danielvivar.com/2015"
+            target="_blank">Here</a> you can find my previous personal site, done in 2015, with other goals, interests and definitely simpler.
         </p>
       </section>
 
@@ -677,53 +768,63 @@
 import LambdaFunctions from "@/services/LambdaFunctions";
 import Modal from "@/components/Modal.vue";
 
+// Icons
+import { library as Icons } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faAngleUp } from "@fortawesome/pro-light-svg-icons";
+
+Icons.add(faAngleUp);
+
 export default {
   name: "Content",
   components: {
-    Modal
+    Modal,
+    FontAwesomeIcon
   },
   data() {
     return {
       email: "",
       showModal: false,
-      style: {
-        value: "default",
-        default: { text: "Default", value: "default" },
-        options: [
-          {
-            text: "No style",
-            value: "no_style"
-          }
-        ]
-      },
-      accent: {
-        value: "red",
-        default: { text: "Red", value: "red" },
-        options: [
-          { text: "Blue", value: "blue" },
-          { text: "Green", value: "green" },
-          { text: "Gold", value: "gold" },
-          { text: "Pink", value: "pink" },
-          { text: "Sky Blue", value: "skyblue" }
-        ]
+      selectors: {
+        style: {
+          value: "default",
+          default: { text: "Default", value: "default" },
+          options: [
+            {
+              text: "No style",
+              value: "no_style"
+            }
+          ]
+        },
+        accent: {
+          value: "red",
+          default: { text: "Red", value: "red" },
+          options: [
+            { text: "Blue", value: "blue" },
+            { text: "Green", value: "green" },
+            { text: "Gold", value: "gold" },
+            { text: "Pink", value: "pink" },
+            { text: "Sky Blue", value: "skyblue" }
+          ]
+        }
       }
     };
+  },
+  watch: {
+    "selectors.accent.value": accent => {
+      const wrapper = document.getElementById("wrapper");
+      wrapper.style.setProperty("--accent", accent);
+    }
   },
   methods: {
     async getEmail() {
       const response = await LambdaFunctions.getEmail();
       this.email = response.data;
     }
-  },
-  watch: {
-    "accent.value": accent => {
-      document.getElementById("wrapper").style.setProperty("--accent", accent);
-    }
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 @import "@/styles/all.scss";
 </style>
