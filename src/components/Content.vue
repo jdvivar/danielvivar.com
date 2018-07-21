@@ -90,7 +90,7 @@
             JavaScript
           </div>
           <div slot="definition">
-            Definition of javascript
+            It's the interpreted programming language used to communicate between browsers and websites. Together with HTML <em>&mdash;content&mdash;</em> and CSS <em>&mdash;style&mdash;</em>, they represent the main basic technologies for front-end web engineering.
           </div>
         </Modal>
 
@@ -100,7 +100,7 @@
             Vue.js
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a JavaScript framework focused on the V (view) of the standard MVC (model-view-controller) paradigm. It's a young contender in a very competetitive and lively market of the numerous JavaScript offspring frameworks designed to enhance it, but Vue.js is elegant, fast, light, declarative and everything in it just makes sense.
           </div>
         </Modal>
 
@@ -110,7 +110,17 @@
             ECMAScript 6
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's the standard language specification for JavaScript from 2015, also know as ES2015. As with anything wild open, JavaScript needs a body to standardise it, ECMA is in charge of it, laying an even field for players to build on. Amongst its numerous improvements, I personally like the introduction of promises, scoped constructs, classes, arrow functions and destructured assignments.
+          </div>
+        </Modal>
+
+        <span>babel</span>
+        <Modal v-if="showModal === 'babel'" @close="showModal = false">
+          <div slot="term">
+            Babel
+          </div>
+          <div slot="definition">
+            It's a JavaScript compiler. Because JavaScript is an interpreted language, browsers will directly try to execute the statements, but different browsers support different features and standards. Babel will let you write your code with all the latest standards and features, and will dinamically compile it to support every browser. It has become a standard tool in front-end web development.
           </div>
         </Modal>
 
@@ -120,7 +130,7 @@
             Progressive Web Application
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a website that, with the help of the browser, can behave partially or totally like a native application. Not to be confused with hybrid applications. There's a minimum set of features for a web app to be considered a PWA: served over HTTPS, responsive on every device, will load offline, page transitions are instant, works cross browser, loads fast on 3G and have metadata to be saved as a native app on a mobile device. This website is a PWA. If you save it in your device, it will be indistinguishable from a native app.
           </div>
         </Modal>
 
@@ -130,7 +140,7 @@
             Node.js
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a run-time environment that executes JavaScript code on its own, outside a browser. Seeing how powerful JavaScript was on browsers, Ryan Dahl had this idea: why not having a engine specifically designed for JavaScript and for any use, not just browsers? Nowadays Node.js is officially supported in all operating systems and is mainly used for web servers and other server side processing, meaning JavaScript developers can both work on the front-end and back-end of web applications, and even have a shared library of packages.
           </div>
         </Modal>
 
@@ -140,67 +150,72 @@
             Node.js package manager
           </div>
           <div slot="definition">
-            Definition of vuejs
+            NPM is the package manager for Node.js. It allows for the interchange and sharing of any JavaScript package between application codebases.
           </div>
         </Modal>
 
-        <span>scss</span>
-        <Modal v-if="showModal === 'scss'" @close="showModal = false">
+        <span>css</span>
+        <Modal v-if="showModal === 'css'" @close="showModal = false">
           <div slot="term">
-            Sassy CSS
+            Cascading Style Sheets
           </div>
           <div slot="definition">
-            Definition of vuejs
+            CSS is a style sheet language. It's used in websites to define the presentation of the HTML content. It's called cascading because the rules of style are defined and applied in a cascade fashion.
+          </div>
+        </Modal>
+
+        <span>sass/scss</span>
+        <Modal v-if="showModal === 'sass/scss'" @close="showModal = false">
+          <div slot="term">
+            Syntactically awesome style sheets / Sassy CSS
+          </div>
+          <div slot="definition">
+            SASS is a preprocessor scripting language that is compiled into CSS. Because of the purely declarative nature of CSS (on purpose for fast processing!), it lacks many features that would make its maintenance easier or writing faster, like variables or recursiveness. SCSS is an evolutioned syntax from the original SASS one that acts as a superset of CSS3, as opposed to SASS original syntax which just resembles CSS. This makes possible to preprocess all your style sheets together.
           </div>
         </Modal>
 
         <span>tdd</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal v-if="showModal === 'tdd'" @close="showModal = false">
           <div slot="term">
-            vuejs
+            Test-Driven Development
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a software development process based on a 3-step repetitive cycle: write a single test for a single feature for a piece of software, make it fail, then rewrite the piece until it passes, then start again. It inspires confidence, create generally simpler code and it's designed to meet requirements from the ground up.
           </div>
         </Modal>
-        <span>angularjs</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
-          <div slot="term">
-            vuejs
-          </div>
-          <div slot="definition">
-            Definition of vuejs
-          </div>
-        </Modal>
-        <span>bootstrap</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
-          <div slot="term">
-            vuejs
-          </div>
-          <div slot="definition">
-            Definition of vuejs
-          </div>
-        </Modal>
-        <span>css</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
-          <div slot="term">
-            vuejs
-          </div>
-          <div slot="definition">
-            Definition of vuejs
-          </div>
-        </Modal>
+
         <span>bdd</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal v-if="showModal === 'bdd'" @close="showModal = false">
           <div slot="term">
-            vuejs
+            Behaviour-Driven Development
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a software development process that allows the software to be tested against defined scenarios and behaviours. These can be written in natural language using simple DSLs (domain-specific languages). These tests are closely related with the actual specifications and requirements of a software project, serving as a common ground of understanding also for non-developer roles.
           </div>
         </Modal>
+
+        <span>angularjs</span>
+        <Modal v-if="showModal === 'angularjs'" @close="showModal = false">
+          <div slot="term">
+            AngularJS
+          </div>
+          <div slot="definition">
+            It's a JavaScript framework to develop web applications. It's the first iteration of the acclaimed Google-backed framework, not be confused with Angular, which is the second iteration and englobes what tipycally people refer to when they talk about Angular 2, 4 and above. Also, Angular is based on TypeScript, not JavaScript.
+          </div>
+        </Modal>
+
+        <span>bootstrap</span>
+        <Modal v-if="showModal === 'bootstrap'" @close="showModal = false">
+          <div slot="term">
+            Bootstrap
+          </div>
+          <div slot="definition">
+            It's a front-end library for designing web applications. Most components are just CSS templates, but includes many optional JavaScript extensions. Because it's only focused on the actual style and behaviour of elements, it's a great tool to rapidly develop basic website prototypes.
+          </div>
+        </Modal>
+
         <span>cro</span>
-        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+        <Modal v-if="showModal === 'cro'" @close="showModal = false">
           <div slot="term">
             vuejs
           </div>
@@ -208,6 +223,8 @@
             Definition of vuejs
           </div>
         </Modal>
+
+
         <span>cms</span>
         <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
           <div slot="term">
@@ -217,6 +234,7 @@
             Definition of vuejs
           </div>
         </Modal>
+
         <span>headless cms</span>
         <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
           <div slot="term">
@@ -419,7 +437,7 @@
               </p>
               <ul>
                 <li>
-                  Developing and maintaining several apps in AngularJS 1.5+ and VueJS and mastering javascript on the way.
+                  Developing and maintaining several apps in AngularJS 1.5+ and VueJS and mastering JavaScript on the way.
                 </li>
                 <li>
                   Developing from scratch a PHP file-based CMS (Kirby) and maintaining older db-based CMS (Content Management System)
