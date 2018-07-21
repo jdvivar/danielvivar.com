@@ -343,7 +343,7 @@
             Definition of vuejs
           </div>
         </Modal>
-        
+
         <span>soap</span>
         <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
           <div slot="term">
@@ -380,6 +380,9 @@
             Definition of vuejs
           </div>
         </Modal>
+        <div class="help" style="clear:both">
+          click in each tag to reveal its definition
+        </div>
       </section>
 
       <section id="experience">
