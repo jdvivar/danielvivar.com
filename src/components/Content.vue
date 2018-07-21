@@ -81,40 +81,305 @@
         </div>
       </section>
 
-      <section id="tools">
+      <section id="tools" @click="showModal = $event.target.innerHTML">
         <h1>which technologies or tools I use</h1>
+
         <span>javascript</span>
+        <Modal v-if="showModal === 'javascript'" @close="showModal = false">
+          <div slot="term">
+            JavaScript
+          </div>
+          <div slot="definition">
+            Definition of javascript
+          </div>
+        </Modal>
+
         <span>vuejs</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            Vue.js
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
+
         <span>es6</span>
+        <Modal v-if="showModal === 'es6'" @close="showModal = false">
+          <div slot="term">
+            ECMAScript 6
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
+
         <span>pwa</span>
-        <span>npm</span>
+        <Modal v-if="showModal === 'pwa'" @close="showModal = false">
+          <div slot="term">
+            Progressive Web Application
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
+
         <span>node</span>
-        <span>sass/scss</span>
+        <Modal v-if="showModal === 'node'" @close="showModal = false">
+          <div slot="term">
+            Node.js
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
+
+        <span>npm</span>
+        <Modal v-if="showModal === 'npm'" @close="showModal = false">
+          <div slot="term">
+            Node.js package manager
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
+
+        <span>scss</span>
+        <Modal v-if="showModal === 'scss'" @close="showModal = false">
+          <div slot="term">
+            Sassy CSS
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
+
         <span>tdd</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>angularjs</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>bootstrap</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>css</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>bdd</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>cro</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>cms</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>headless cms</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>cd/ci</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>git</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>jquery</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>qa engineering</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>a/b testing</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>e2e testing</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>api testing</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>prototyping</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>wireframing</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>serverless</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>cloud&nbsp;functions</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>responsive&nbsp;design</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>progressive&nbsp;enhancement</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
+        
         <span>soap</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>agile</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>scrum</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
         <span>kanban</span>
+        <Modal v-if="showModal === 'vuejs'" @close="showModal = false">
+          <div slot="term">
+            vuejs
+          </div>
+          <div slot="definition">
+            Definition of vuejs
+          </div>
+        </Modal>
       </section>
 
       <section id="experience">
@@ -389,17 +654,25 @@
 
 <script>
 import LambdaFunctions from "@/services/LambdaFunctions";
+import Modal from "@/components/Modal.vue";
 
 export default {
   name: "Content",
+  components: {
+    Modal
+  },
   data() {
     return {
       email: "",
+      showModal: false,
       style: {
         value: "default",
         default: { text: "Default", value: "default" },
         options: [
-          { text: "No style", value: "no_style" },
+          {
+            text: "No style",
+            value: "no_style"
+          }
         ]
       },
       accent: {
@@ -410,7 +683,7 @@ export default {
           { text: "Green", value: "green" },
           { text: "Gold", value: "gold" },
           { text: "Pink", value: "pink" },
-          { text: "Sky Blue", value: "skyblue" },
+          { text: "Sky Blue", value: "skyblue" }
         ]
       }
     };
@@ -430,6 +703,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-@import "@/assets/all.scss";
+<style lang="scss">
+@import "@/styles/all.scss";
 </style>
