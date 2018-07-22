@@ -99,7 +99,7 @@
             JavaScript
           </div>
           <div slot="definition">
-            It's the interpreted programming language used to communicate between browsers and websites. Together with HTML <em>&mdash;content&mdash;</em> and CSS <em>&mdash;style&mdash;</em>, they represent the main basic technologies for front-end web engineering.
+            It's the interpreted programming language that browsers and websites use to communicate between each other. Together with HTML <em>&mdash;content&mdash;</em> and CSS <em>&mdash;style&mdash;</em>, they represent the 3 pillar technologies in front-end web engineering.
           </div>
         </Modal>
 
@@ -111,7 +111,7 @@
             Vue.js
           </div>
           <div slot="definition">
-            It's a JavaScript framework focused on the V (view) of the standard MVC (model-view-controller) paradigm. It's a young contender in a very competetitive and lively market of the numerous JavaScript offspring frameworks designed to enhance it, but Vue.js is elegant, fast, light, declarative and everything in it just makes sense.
+            It's a JavaScript framework focused on the V (view) of the standard MVC (model-view-controller) paradigm. It's a young contender in a very competitive and lively market full of numerous JavaScript offspring frameworks designed to enhance it, but Vue.js is elegant, fast, light, declarative... and everything in it just makes sense. This website is made with Vue.js.
           </div>
         </Modal>
 
@@ -123,7 +123,7 @@
             ECMAScript 6
           </div>
           <div slot="definition">
-            It's the standard language specification for JavaScript from 2015, also know as ES2015. As with anything wild open, JavaScript needs a body to standardise it, ECMA is in charge of it, laying an even field for players to build on. Amongst its numerous improvements, I personally like the introduction of promises, scoped constructs, classes, arrow functions and destructured assignments.
+            It's the standard language specification for JavaScript from 2015, also known as ES2015. As with anything wild open, JavaScript needs a body to standardise it. So ECMA is in charge of that, laying an even field for players to build on. Amongst its numerous improvements, I personally like the introduction of promises, scoped constructs, classes, arrow functions and destructured assignments. This website is written in ES6 compliant code.
           </div>
         </Modal>
 
@@ -135,7 +135,7 @@
             Babel
           </div>
           <div slot="definition">
-            It's a JavaScript compiler. Because JavaScript is an interpreted language, browsers will directly try to execute the statements, but different browsers support different features and standards. Babel will let you write your code with all the latest standards and features, and will dinamically compile it to support every browser. It has become a standard tool in front-end web development.
+            It's a JavaScript compiler. JavaScript doesn't need to be compiled, because it's an interpreted language: browsers will directly try to execute the statements. But different browsers support different features and standards. Babel will let you write your code with all the latest standards and features, and will compile it to support every browser. It has become a standard tool in JavaScript development. This website was compiled by Babel.
           </div>
         </Modal>
 
@@ -147,7 +147,7 @@
             Progressive Web Application
           </div>
           <div slot="definition">
-            It's a website that, with the help of the browser, can behave partially or totally like a native application. Not to be confused with hybrid applications. There's a minimum set of features for a web app to be considered a PWA: served over HTTPS, responsive on every device, will load offline, page transitions are instant, works cross browser, loads fast on 3G and have metadata to be saved as a native app on a mobile device. This website is a PWA. If you save it in your device, it will be indistinguishable from a native app.
+            It's a website that, with the help of the browser, behaves partially or totally like a native application. Not to be confused with hybrid applications. There's a minimum set of features for a web app to be considered a PWA: served over HTTPS, responsive on every device, loads offline, transitions pages instantly, works cross-browser, loads fast on 3G and has available metadata to be saved as a native app on the user's device. This website is a PWA. If you save it in your device, it will be indistinguishable from a native app. Try it!
           </div>
         </Modal>
 
@@ -159,7 +159,7 @@
             Node.js
           </div>
           <div slot="definition">
-            It's a run-time environment that executes JavaScript code on its own, outside a browser. Seeing how powerful JavaScript was on browsers, Ryan Dahl had this idea: why not having a engine specifically designed for JavaScript and for any use, not just browsers? Nowadays Node.js is officially supported in all operating systems and is mainly used for web servers and other server side processing, meaning JavaScript developers can both work on the front-end and back-end of web applications, and even have a shared library of packages.
+            It's a run-time environment that executes JavaScript code on its own, outside a browser. Seeing how powerful JavaScript was, Ryan Dahl had this idea: why not having an engine specifically designed for JavaScript and any use, not just browsers? Nowadays Node.js is officially supported in all operating systems and is mainly used for web servers and other server-side processing, meaning JavaScript developers can work both on the front-end and back-end, and even have a shared library of packages.
           </div>
         </Modal>
 
@@ -168,7 +168,7 @@
           v-if="showModal === 'npm'"
           @close="showModal = false">
           <div slot="term">
-            Node.js package manager
+            Node.js Package Manager
           </div>
           <div slot="definition">
             NPM is the package manager for Node.js. It allows for the interchange and sharing of any JavaScript package between application codebases.
@@ -192,10 +192,10 @@
           v-if="showModal === 'sass/scss'"
           @close="showModal = false">
           <div slot="term">
-            Syntactically awesome style sheets / Sassy CSS
+            Syntactically Awesome Style Sheets / Sassy CSS
           </div>
           <div slot="definition">
-            SASS is a preprocessor scripting language that is compiled into CSS. Because of the purely declarative nature of CSS (on purpose for fast processing!), it lacks many features that would make its maintenance easier or writing faster, like variables or recursiveness. SCSS is an evolutioned syntax from the original SASS one that acts as a superset of CSS3, as opposed to SASS original syntax which just resembles CSS. This makes possible to preprocess all your style sheets together.
+            SASS is a preprocessor scripting language that is compiled into CSS. Because of the purely declarative nature of CSS (on purpose for fast processing!), it lacks many features that would make its maintenance easier or writing faster, like variables or recursion. SCSS is an evolved syntax from SASS which is defined as a superset of CSS (specifically CSS3). This feature of SCSS makes possible preprocessing all your style sheets together, both SCSS and CSS. This website style is written in SASS.
           </div>
         </Modal>
 
@@ -207,7 +207,7 @@
             Test-Driven Development
           </div>
           <div slot="definition">
-            It's a software development process based on a 3-step repetitive cycle: write a single test for a single feature for a piece of software, make it fail, then rewrite the piece until it passes, then start again. It inspires confidence, create generally simpler code and it's designed to meet requirements from the ground up.
+            It's a software development process based on a 3-step cycle: write a single test for a single feature for a piece of software, run the test so that it fails, then rewrite the piece until the test passes, and start again. It inspires confidence, create generally simpler code and it's designed to meet requirements from the ground up.
           </div>
         </Modal>
 
@@ -219,7 +219,7 @@
             Behaviour-Driven Development
           </div>
           <div slot="definition">
-            It's a software development process that allows the software to be tested against defined scenarios and behaviours. These can be written in natural language using simple DSLs (domain-specific languages). These tests are closely related with the actual specifications and requirements of a software project, serving as a common ground of understanding also for non-developer roles.
+            It's a software development process that allows the software to be tested against predefined scenarios and behaviours. These can be written in a natural language using simple DSLs (domain-specific languages). These tests are closely related with the actual specifications and requirements of a software project, serving as a common ground of understanding also for non-developer roles.
           </div>
         </Modal>
 
@@ -231,7 +231,7 @@
             AngularJS
           </div>
           <div slot="definition">
-            It's a JavaScript framework to develop web applications. It's the first iteration of the acclaimed Google-backed framework, not be confused with Angular, which is the second iteration and englobes what tipycally people refer to when they talk about Angular 2, 4 and above. Also, Angular is based on TypeScript, not JavaScript.
+            It's a JavaScript framework to develop web applications. It's the first iteration of the acclaimed Google-backed framework, not be confused with Angular, which is the second iteration and englobes what typically people refer to when they talk about Angular 2, 4 and above. Also, Angular is based on TypeScript instead, a superset of JavaScript.
           </div>
         </Modal>
 
@@ -243,7 +243,7 @@
             Bootstrap
           </div>
           <div slot="definition">
-            It's a front-end library for designing web applications. Most components are just CSS templates, but includes many optional JavaScript extensions. Because it's only focused on the actual style and behaviour of elements, it's a great tool to rapidly develop basic website prototypes.
+            It's a front-end library for designing web applications. Most components are just CSS templates but includes many optional JavaScript extensions. Because it's only focused on the actual style and behaviour of web elements, it's a great tool to rapidly showcase basic website prototypes.
           </div>
         </Modal>
 
@@ -255,7 +255,7 @@
             Conversion Rate Optimisation
           </div>
           <div slot="definition">
-            It's a set of methodologies that improve the conversion of visitors of a website to customers. It eventually lead to better decission making. Collecting data, forming hypothesis and create statistical models are some of the basic pillars of CRO.
+            It's a set of methodologies that improve the conversion of visitors of a website into customers. It eventually leads to better decision making. Collecting data, forming hypotheses and create statistical models are some of the exercises of CRO.
           </div>
         </Modal>
 
@@ -264,159 +264,168 @@
           v-if="showModal === 'a/b testing'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            A/B Testing
           </div>
           <div slot="definition">
-            Definition of vuejs
+            In CRO, it's an experiment run on a website with typically 2 variations of a feature, which are statistically tested against each other by randomly apply them to visitors and measure an outcome, typically the conversion of the visitor into a customer. It's a very useful way to test hypotheses.
           </div>
         </Modal>
 
         <span>cms</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'cms'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            CMS
           </div>
           <div slot="definition">
-            Definition of vuejs
+            In a digital web environment, a Content Management System is an application which allows content editors to manage websites without the need to know how to code them, just focusing specifically on the content itself.
           </div>
         </Modal>
 
         <span>headless cms</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'headless cms'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Headless CMS
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's the back-end part only of a CMS. The content is accessible via its own API and allows a greater customisation of a CMS application as a whole.
           </div>
         </Modal>
 
         <span>cd/ci</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'cd/ci'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            CD/CI
           </div>
           <div slot="definition">
-            Definition of vuejs
+            Continous deployment and integration are two software engineering processes in which deployment and integration testing processes are done automatically, typically by the same automated server. This allows faster development cycles in a continuous delivery environment, a term which is sometimes confused with and is closely related. This website has a continuous deployment implementation and therefore is deployed automatically when I edit the source code.
           </div>
         </Modal>
+
         <span>git</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'git'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            git
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a version control system. It tracks changes in computer files and coordinates work on them. It was written by Linus Torvalds, Linux inventor and main contributor. One of the main features of git is being able to use remote and local repositories. This allows repositories to exist in remote owned or cloud servers, and companies to offer services on top of them for software engineering teams, so that they can better coordinate development. Some of these are Github, Gitlab and Bitbucket. This site is handled by git repositories in Github and Bitbucket.
           </div>
         </Modal>
+
         <span>jquery</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'jquery'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            jQuery
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a library designed to simplify JavaScript development. It was the first library that made event management and DOM manipulation available in easy to use code. jQuery was used extensively and was the dominant technology in front-end web development before the boom of JavaScript frameworks (circa 2014). For this reason, AngularJS included a service as a subset of jQuery methods called jqLite. In my opinion, the ease of jQuery and adoption by beginners can lead to confusion about how JavaScript really works. Some of the actual uses of jQuery include writing small scripts (for instance in A/B testing experiments) or prototyping.
           </div>
         </Modal>
+
         <span>qa engineering</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'qa engineering'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Quality Assurance Engineering
           </div>
           <div slot="definition">
-            Definition of vuejs
+            In software engineering, it's a set of processes and methodologies to prevent that bugs and mistakes made in development code get to live production code.
           </div>
         </Modal>
+
         <span>e2e testing</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'e2e testing'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            End to end testing
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's testing designed to mimic whole user journeys since they get to our web application until they leave.
           </div>
         </Modal>
+
         <span>api testing</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'api testing'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            API Testing
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's testing designed to test API endpoints.
           </div>
         </Modal>
+
         <span>prototyping</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'prototyping'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Prototyping
           </div>
           <div slot="definition">
-            Definition of vuejs
+            In a front-end development flow, it's the step that goes just after the purely visual user interface design. It allows for the first time to see how an application works, in oppose to just seeing how it looks or reading it from a spec. Advance prototypes are stripped from back-ends and have a very limited set of features. Services like InVision allows a designer to showcase a prototype without the need to write a single line of code.
           </div>
         </Modal>
+
         <span>wireframing</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'wireframing'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Wireframing
           </div>
           <div slot="definition">
-            Definition of vuejs
+            In user interface design, a wireframe is a very early visual design of the interface, only portraying the shell and the elements that will enable the main features and functionalities, omitting visual details, colors and even content itself (lorem ipsums instead!).
           </div>
         </Modal>
+
         <span>serverless</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'serverless'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Serverless
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a model in which the computation is left to be done by cloud servers instead of local owned servers, that way the allocation of machine resources, server managemente and capacity planning is all done by the serverless provider instead. Amazon was the first company to provide serverless computing via AWS Lambda. It followed Google via Google Cloud Platform, Oracle via Oracle Cloud Platform (open source), IBM via Apache OpenWhisk (open source) and Microsoft via Microsoft Azure.
           </div>
         </Modal>
-        <span>cloud&nbsp;functions</span>
+
+        <span>cloud functions</span>
+        <Modal
+          v-if="showModal === 'cloud functions'"
+          @close="showModal = false">
+          <div slot="term">
+            Cloud Functions
+          </div>
+          <div slot="definition">
+            A cloud function is a function written to be executed by a cloud computing platform. The first cloud functions were written in JavaScript becase AWS Lambda only supported Node.js when it was released back in 2014. Nowadays there is a whole plethora of cloud platforms that support most runtimes and languages. This site is using a cloud function (via AWS Lambda in Netlify) to reveal my e-mail address.
+          </div>
+        </Modal>
+        <span>responsive web design</span>
         <Modal
           v-if="showModal === 'vuejs'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            RWD
           </div>
           <div slot="definition">
-            Definition of vuejs
+            Responsive Web Design is an approach to web design in which a website will adapt its form or function to the visitor's medium, whatever this might be. Typically we talk about mobile, tablet and desktop but we could also adapt a website specifically for a retina display, a TV or a printer. This site is designed in a responsive way, and will render correctly in mobile, tablets, desktops and will also render specifically for a print version.
           </div>
         </Modal>
-        <span>responsive&nbsp;design</span>
-        <Modal
-          v-if="showModal === 'vuejs'"
-          @close="showModal = false">
-          <div slot="term">
-            vuejs
-          </div>
-          <div slot="definition">
-            Definition of vuejs
-          </div>
-        </Modal>
-        <span>progressive&nbsp;enhancement</span>
+        <span>progressive enhancement</span>
         <Modal
           v-if="showModal === 'vuejs'"
           @close="showModal = false">
@@ -530,7 +539,7 @@
                   E2E frontend and API test automation, using Protractor, Jasmine, PhantomJS, WebdriverIO, Frisby.
                 </li>
                 <li>
-                  CI/CD (Continuous Integration/Deployment) with Jenkins, Docker, AWS, Github, Netlify.
+                  CD/CI (Continuous Deployment/Integration) with Jenkins, Docker, AWS, Github, Netlify.
                 </li>
                 <li>
                   Agile methodologies: Scrum, Kanban.
@@ -571,7 +580,7 @@
             </div>
             <div class="description">
               <p>
-                Typeless had this idea of being a contacts aggregator (https://www.producthunt.com/posts/typeless). The founders were based in London and a team of developers worked remotely from India. I helped both filling the gap between the 2 teams and getting a complex idea and a set of features intoto a simple and delightful user experience.
+                Typeless had this idea of being a contacts aggregator (https://www.producthunt.com/posts/typeless). The founders were based in London and a team of developers worked remotely from India. I helped both filling the gap between the 2 teams and getting a complex idea and a set of features into a simple and delightful user experience.
               </p>
               <p>
                 Part of my work here includes:
@@ -628,7 +637,7 @@
                   Design and development of mobile hybrid apps: using Apache Cordova, common web technologies and some specific light frameworks like jQueryMobile.
                 </li>
                 <li>
-                  Automated mobile application testing: using Calabash and Cucumber to create a tests written following a BDD approach (Behaviour-Driven Development) which at the time allowed us to both test hybrid and native mobile apps in all platforms.
+                  Automated mobile application testing: using Calabash and Cucumber to write tests following a BDD approach (Behaviour-Driven Development) which at the time allowed us to both test hybrid and native mobile apps in all platforms.
                 </li>
                 <li>
                   Rapid Prototyping: used Axure RP, Appery and Pencil.
@@ -666,7 +675,7 @@
             </div>
             <div class="description">
               <p>
-                While studying in college, I worked mostly as a graphic designer for this kitchen designer firm in Madrid. Designing corporate branding and managing online/offline marketing. I helped as well in the development and maintenance of several websites owned by the parent company. Also, I did office and business IT tasks, and organised training sessions for employees.
+                While studying in college, I worked mostly as a graphic designer for this kitchen designer firm in Madrid. Designing corporate branding and managing online/offline marketing. I helped as well in the development and maintenance of several websites owned by the parent company. Also, I did office and business IT tasks and organised training sessions for employees.
               </p>
             </div>
           </li>
