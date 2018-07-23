@@ -87,11 +87,10 @@
       </section>
 
       <section
-        id="tools"
-        @click="showModal = $event.target.innerHTML">
+        id="tools">
         <h1>which technologies or tools I use</h1>
 
-        <span>javascript</span>
+        <span @click="clickTerm">javascript</span>
         <Modal
           v-if="showModal === 'javascript'"
           @close="showModal = false">
@@ -99,11 +98,16 @@
             JavaScript
           </div>
           <div slot="definition">
-            It's the interpreted programming language that browsers and websites use to communicate between each other. Together with HTML <em>&mdash;content&mdash;</em> and CSS <em>&mdash;style&mdash;</em>, they represent the 3 pillar technologies in front-end web engineering.
+            <p>
+              It's the interpreted programming language that browsers and websites use to communicate between each other.
+            </p>
+            <p>
+              Together with HTML <em>&mdash;content&mdash;</em> and CSS <em>&mdash;style&mdash;</em>, they represent the 3 pillar technologies in front-end web engineering.
+            </p>
           </div>
         </Modal>
 
-        <span>vuejs</span>
+        <span @click="clickTerm">vuejs</span>
         <Modal
           v-if="showModal === 'vuejs'"
           @close="showModal = false">
@@ -111,11 +115,19 @@
             Vue.js
           </div>
           <div slot="definition">
-            It's a JavaScript framework focused on the V (view) of the standard MVC (model-view-controller) paradigm. It's a young contender in a very competitive and lively market full of numerous JavaScript offspring frameworks designed to enhance it, but Vue.js is elegant, fast, light, declarative... and everything in it just makes sense. This website is made with Vue.js.
+            <p>
+              It's a JavaScript framework focused on the V (view) of the standard MVC (model-view-controller) paradigm.
+            </p>
+            <p>
+              It's a young contender in a very competitive and lively market full of numerous JavaScript offspring frameworks designed to enhance it, but Vue.js is elegant, fast, light, declarative... and everything in it just makes sense.
+            </p>
+            <p>
+              This website is made with Vue.js.
+            </p>
           </div>
         </Modal>
 
-        <span>es6</span>
+        <span @click="clickTerm">es6</span>
         <Modal
           v-if="showModal === 'es6'"
           @close="showModal = false">
@@ -123,11 +135,22 @@
             ECMAScript 6
           </div>
           <div slot="definition">
-            It's the standard language specification for JavaScript from 2015, also known as ES2015. As with anything wild open, JavaScript needs a body to standardise it. So ECMA is in charge of that, laying an even field for players to build on. Amongst its numerous improvements, I personally like the introduction of promises, scoped constructs, classes, arrow functions and destructured assignments. This website is written in ES6 compliant code.
+            <p>
+                It's the standard language specification for JavaScript from 2015, also known as ES2015.
+            </p>
+            <p>
+               As with anything wild open, JavaScript needs a body to standardise it. So ECMA is in charge of that, laying an even field for players to build on.
+            </p>
+            <p>
+              Amongst its numerous improvements, I personally like the introduction of promises, scoped constructs, classes, arrow functions and destructured assignments.
+            </p>
+            <p>
+              This website is written in ES6 compliant code.
+            </p>
           </div>
         </Modal>
 
-        <span>babel</span>
+        <span @click="clickTerm">babel</span>
         <Modal
           v-if="showModal === 'babel'"
           @close="showModal = false">
@@ -135,11 +158,22 @@
             Babel
           </div>
           <div slot="definition">
-            It's a JavaScript compiler. JavaScript doesn't need to be compiled, because it's an interpreted language: browsers will directly try to execute the statements. But different browsers support different features and standards. Babel will let you write your code with all the latest standards and features, and will compile it to support every browser. It has become a standard tool in JavaScript development. This website was compiled by Babel.
+            <p>
+              It's a JavaScript compiler.
+            </p>
+            <p>
+              JavaScript doesn't need to be compiled as it's an interpreted language: browsers will directly try to execute the statements.
+            </p>
+            <p>
+              But different browsers support different features and standards. Babel will let you write your code with all the latest standards and features, and will compile it to support every browser. It has become a standard tool in JavaScript development.
+            </p>
+            <p>
+              This website was compiled with Babel.
+            </p>
           </div>
         </Modal>
 
-        <span>pwa</span>
+        <span @click="clickTerm">pwa</span>
         <Modal
           v-if="showModal === 'pwa'"
           @close="showModal = false">
@@ -147,11 +181,19 @@
             Progressive Web Application
           </div>
           <div slot="definition">
-            It's a website that, with the help of the browser, behaves partially or totally like a native application. Not to be confused with hybrid applications. There's a minimum set of features for a web app to be considered a PWA: served over HTTPS, responsive on every device, loads offline, transitions pages instantly, works cross-browser, loads fast on 3G and has available metadata to be saved as a native app on the user's device. This website is a PWA. If you save it in your device, it will be indistinguishable from a native app. Try it!
+            <p>
+              It's a website that, with the help of the browser, behaves partially or totally like a native application. Not to be confused with hybrid applications.
+            </p>
+            <p>
+              There's a minimum set of featured requirements for a web app to be considered a PWA: served over HTTPS, responsive on every device, loads offline, transitions pages instantly, works cross-browser, loads fast on 3G and has available metadata to be saved as a native app on the user's device.
+            </p>
+            <p>
+              This website is a PWA. If you save it in your device, it will be indistinguishable from a native app. Try it!
+            </p>
           </div>
         </Modal>
 
-        <span>node</span>
+        <span @click="clickTerm">node</span>
         <Modal
           v-if="showModal === 'node'"
           @close="showModal = false">
@@ -159,11 +201,19 @@
             Node.js
           </div>
           <div slot="definition">
-            It's a run-time environment that executes JavaScript code on its own, outside a browser. Seeing how powerful JavaScript was, Ryan Dahl had this idea: why not having an engine specifically designed for JavaScript and any use, not just browsers? Nowadays Node.js is officially supported in all operating systems and is mainly used for web servers and other server-side processing, meaning JavaScript developers can work both on the front-end and back-end, and even have a shared library of packages.
+            <p>
+              It's a run-time environment that executes JavaScript code on its own, outside a browser.
+            </p>
+            <p>
+               Seeing how powerful JavaScript was, Ryan Dahl had this idea: why not having an engine specifically designed for JavaScript and any use, not just browsers?
+            </p>
+            <p>
+              Nowadays Node.js is officially supported in all operating systems and is mainly used for web servers and other server-side processing, meaning JavaScript developers can work both on the front-end and back-end, and even have a shared library of packages.
+            </p>
           </div>
         </Modal>
 
-        <span>npm</span>
+        <span @click="clickTerm">npm</span>
         <Modal
           v-if="showModal === 'npm'"
           @close="showModal = false">
@@ -171,11 +221,16 @@
             Node.js Package Manager
           </div>
           <div slot="definition">
-            NPM is the package manager for Node.js. It allows for the interchange and sharing of any JavaScript package between application codebases.
+            <p>
+              NPM is the package manager for Node.js.
+            </p>
+            <p>
+              It allows for the interchange and sharing of any JavaScript package between application codebases.
+            </p>
           </div>
         </Modal>
 
-        <span>css</span>
+        <span @click="clickTerm">css</span>
         <Modal
           v-if="showModal === 'css'"
           @close="showModal = false">
@@ -183,11 +238,16 @@
             Cascading Style Sheets
           </div>
           <div slot="definition">
-            CSS is a style sheet language. It's used in websites to define the presentation of the HTML content. It's called cascading because the rules of style are defined and applied in a cascade fashion.
+            <p>
+              CSS is the style sheet language used in websites to define the presentation of HTML content.
+            </p>
+            <p>
+               It's called cascading because the style rules defined in the sheet are applied in a logical cascade fashion.
+            </p>
           </div>
         </Modal>
 
-        <span>sass/scss</span>
+        <span @click="clickTerm">sass/scss</span>
         <Modal
           v-if="showModal === 'sass/scss'"
           @close="showModal = false">
@@ -195,11 +255,22 @@
             Syntactically Awesome Style Sheets / Sassy CSS
           </div>
           <div slot="definition">
-            SASS is a preprocessor scripting language that is compiled into CSS. Because of the purely declarative nature of CSS (on purpose for fast processing!), it lacks many features that would make its maintenance easier or writing faster, like variables or recursion. SCSS is an evolved syntax from SASS which is defined as a superset of CSS (specifically CSS3). This feature of SCSS makes possible preprocessing all your style sheets together, both SCSS and CSS. This website style is written in SASS.
+            <p>
+              SASS is a preprocessed scripting language that compiles into CSS.
+            </p>
+            <p>
+              Because of the purely declarative nature of CSS <em>&mdash;&nbsp;on purpose for fast processing&nbsp;&mdash;</em> it lacks many features that would make its maintenance easier or writing faster, like variables or recursion.
+            </p>
+            <p>
+              SCSS is an evolved syntax from SASS which is defined as a superset of CSS (specifically CSS3). This feature of SCSS makes possible to preprocess all your style sheets together, both SCSS and CSS.
+            </p>
+            <p>
+              The different selectable styles of this website are written in SASS.
+            </p>
           </div>
         </Modal>
 
-        <span>tdd</span>
+        <span @click="clickTerm">tdd</span>
         <Modal
           v-if="showModal === 'tdd'"
           @close="showModal = false">
@@ -207,11 +278,32 @@
             Test-Driven Development
           </div>
           <div slot="definition">
-            It's a software development process based on a 3-step cycle: write a single test for a single feature for a piece of software, run the test so that it fails, then rewrite the piece until the test passes, and start again. It inspires confidence, create generally simpler code and it's designed to meet requirements from the ground up.
+            <p>
+              It's a software development process based on a 3-step cycle:
+            </p>
+            <p>
+              <ol>
+                <li>
+                  write a single test for a single feature for a piece of software;
+                </li>
+                <li>
+                  run the test so that it fails;
+                </li>
+                <li>
+                  then rewrite the piece until the test passes;
+                </li>
+                <li>
+                  ... and start again.
+                </li>
+              </ol>
+            </p>
+            <p>
+              It inspires confidence, create generally simpler code and it's designed to meet requirements from the ground up.
+            </p>
           </div>
         </Modal>
 
-        <span>bdd</span>
+        <span @click="clickTerm">bdd</span>
         <Modal
           v-if="showModal === 'bdd'"
           @close="showModal = false">
@@ -219,11 +311,19 @@
             Behaviour-Driven Development
           </div>
           <div slot="definition">
-            It's a software development process that allows the software to be tested against predefined scenarios and behaviours. These can be written in a natural language using simple DSLs (domain-specific languages). These tests are closely related with the actual specifications and requirements of a software project, serving as a common ground of understanding also for non-developer roles.
+            <p>
+              It's a software development process that allows the software to be tested against predefined scenarios and behaviours.
+            </p>
+            <p>
+              These can be written in a natural language using simple DSLs (domain-specific languages).
+            </p>
+            <p>
+              These tests are closely related with the actual specifications and requirements of a software project, serving as a common ground of understanding also for non-developer roles.
+            </p>
           </div>
         </Modal>
 
-        <span>angularjs</span>
+        <span @click="clickTerm">angularjs</span>
         <Modal
           v-if="showModal === 'angularjs'"
           @close="showModal = false">
@@ -235,7 +335,7 @@
           </div>
         </Modal>
 
-        <span>bootstrap</span>
+        <span @click="clickTerm">bootstrap</span>
         <Modal
           v-if="showModal === 'bootstrap'"
           @close="showModal = false">
@@ -247,7 +347,7 @@
           </div>
         </Modal>
 
-        <span>cro</span>
+        <span @click="clickTerm">cro</span>
         <Modal
           v-if="showModal === 'cro'"
           @close="showModal = false">
@@ -259,7 +359,7 @@
           </div>
         </Modal>
 
-        <span>a/b testing</span>
+        <span @click="clickTerm">a/b testing</span>
         <Modal
           v-if="showModal === 'a/b testing'"
           @close="showModal = false">
@@ -271,7 +371,7 @@
           </div>
         </Modal>
 
-        <span>cms</span>
+        <span @click="clickTerm">cms</span>
         <Modal
           v-if="showModal === 'cms'"
           @close="showModal = false">
@@ -283,7 +383,7 @@
           </div>
         </Modal>
 
-        <span>headless cms</span>
+        <span @click="clickTerm">headless cms</span>
         <Modal
           v-if="showModal === 'headless cms'"
           @close="showModal = false">
@@ -295,7 +395,7 @@
           </div>
         </Modal>
 
-        <span>cd/ci</span>
+        <span @click="clickTerm">cd/ci</span>
         <Modal
           v-if="showModal === 'cd/ci'"
           @close="showModal = false">
@@ -307,7 +407,7 @@
           </div>
         </Modal>
 
-        <span>git</span>
+        <span @click="clickTerm">git</span>
         <Modal
           v-if="showModal === 'git'"
           @close="showModal = false">
@@ -319,7 +419,7 @@
           </div>
         </Modal>
 
-        <span>jquery</span>
+        <span @click="clickTerm">jquery</span>
         <Modal
           v-if="showModal === 'jquery'"
           @close="showModal = false">
@@ -331,7 +431,7 @@
           </div>
         </Modal>
 
-        <span>qa engineering</span>
+        <span @click="clickTerm">qa engineering</span>
         <Modal
           v-if="showModal === 'qa engineering'"
           @close="showModal = false">
@@ -343,7 +443,7 @@
           </div>
         </Modal>
 
-        <span>e2e testing</span>
+        <span @click="clickTerm">e2e testing</span>
         <Modal
           v-if="showModal === 'e2e testing'"
           @close="showModal = false">
@@ -355,7 +455,7 @@
           </div>
         </Modal>
 
-        <span>api testing</span>
+        <span @click="clickTerm">api testing</span>
         <Modal
           v-if="showModal === 'api testing'"
           @close="showModal = false">
@@ -367,7 +467,7 @@
           </div>
         </Modal>
 
-        <span>prototyping</span>
+        <span @click="clickTerm">prototyping</span>
         <Modal
           v-if="showModal === 'prototyping'"
           @close="showModal = false">
@@ -379,7 +479,7 @@
           </div>
         </Modal>
 
-        <span>wireframing</span>
+        <span @click="clickTerm">wireframing</span>
         <Modal
           v-if="showModal === 'wireframing'"
           @close="showModal = false">
@@ -391,7 +491,7 @@
           </div>
         </Modal>
 
-        <span>serverless</span>
+        <span @click="clickTerm">serverless</span>
         <Modal
           v-if="showModal === 'serverless'"
           @close="showModal = false">
@@ -403,7 +503,7 @@
           </div>
         </Modal>
 
-        <span>cloud functions</span>
+        <span @click="clickTerm">cloud functions</span>
         <Modal
           v-if="showModal === 'cloud functions'"
           @close="showModal = false">
@@ -414,9 +514,10 @@
             A cloud function is a function written to be executed by a cloud computing platform. The first cloud functions were written in JavaScript becase AWS Lambda only supported Node.js when it was released back in 2014. Nowadays there is a whole plethora of cloud platforms that support most runtimes and languages. This site is using a cloud function (via AWS Lambda in Netlify) to reveal my e-mail address.
           </div>
         </Modal>
-        <span>responsive web design</span>
+
+        <span @click="clickTerm">responsive web design</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'responsive web design'"
           @close="showModal = false">
           <div slot="term">
             RWD
@@ -425,9 +526,10 @@
             Responsive Web Design is an approach to web design in which a website will adapt its form or function to the visitor's medium, whatever this might be. Typically we talk about mobile, tablet and desktop but we could also adapt a website specifically for a retina display, a TV or a printer. This site is designed in a responsive way, and will render correctly in mobile, tablets, desktops and will also render specifically for a print version.
           </div>
         </Modal>
-        <span>progressive enhancement</span>
+
+        <span @click="clickTerm">progressive enhancement</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'progressive enhancement'"
           @close="showModal = false">
           <div slot="term">
             vuejs
@@ -437,9 +539,9 @@
           </div>
         </Modal>
 
-        <span>soap</span>
+        <span @click="clickTerm">soap</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'soap'"
           @close="showModal = false">
           <div slot="term">
             vuejs
@@ -448,9 +550,10 @@
             Definition of vuejs
           </div>
         </Modal>
-        <span>agile</span>
+
+        <span @click="clickTerm">agile</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'agile'"
           @close="showModal = false">
           <div slot="term">
             vuejs
@@ -459,9 +562,10 @@
             Definition of vuejs
           </div>
         </Modal>
-        <span>scrum</span>
+
+        <span @click="clickTerm">scrum</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'scrum'"
           @close="showModal = false">
           <div slot="term">
             vuejs
@@ -470,9 +574,10 @@
             Definition of vuejs
           </div>
         </Modal>
-        <span>kanban</span>
+
+        <span @click="clickTerm">kanban</span>
         <Modal
-          v-if="showModal === 'vuejs'"
+          v-if="showModal === 'kanban'"
           @close="showModal = false">
           <div slot="term">
             vuejs
@@ -481,10 +586,12 @@
             Definition of vuejs
           </div>
         </Modal>
+
         <div class="help">
           <font-awesome-icon :icon="['fal', 'angle-up']"/>
           click a tag to reveal its definition
         </div>
+
       </section>
 
       <section id="experience">
@@ -830,6 +937,9 @@ export default {
     async getEmail() {
       const response = await LambdaFunctions.getEmail();
       this.email = response.data;
+    },
+    clickTerm(event) {
+      this.showModal = event.target.innerHTML;
     }
   }
 };

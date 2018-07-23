@@ -7,6 +7,7 @@
   $grid-gap    : 40px;
   $grid-column : 240px;
   $muted       : #ccc;
+  $transition  : .5s;
 
   --accent:red;
 
@@ -14,6 +15,7 @@
   font-family : 'Old Standard TT', sans-serif;
   font-size   : 22px;
   cursor: default;
+  line-height: 1.42;
 
   p {
     margin: $grid-gap / 2 0;
@@ -87,7 +89,7 @@
     a {
       color: $muted;
       text-decoration: none;
-      transition: color .5s;
+      transition: color $transition;
 
       &:hover {
         text-decoration: underline;
@@ -138,7 +140,7 @@
         margin: -3px;
         border-radius: 50px;
         float: left;
-        transition: all 0.5s;
+        transition: all $transition;
         cursor: pointer;
 
         &:hover {
@@ -183,7 +185,7 @@
     height: 100%;
     background-color: rgba(black, .5);
     display: table;
-    transition: opacity .3s ease;
+    transition: opacity $transition ease;
   }
 
   .modal-wrapper {
@@ -196,17 +198,40 @@
     margin: 0px auto;
     padding: $grid-gap;
     background-color: #fff;
-    border-radius: 2px;
+    border-radius: 4px;
+    border-bottom-color: var(--accent);
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
     box-shadow: 0 8px 16px rgba(black, .33);
-    transition: all .3s ease;
+    transition: all $transition ease;
+
+
+    .modal-close {
+      padding: 9px 13px;
+      transition: background-color $transition;
+      border-radius: 20px;
+      margin: -4px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: rgba(black, 0.03);
+        // box-shadow: 0px 0px 0px 5px rgba(black, 0.1);
+      }
+    }
   }
 
   .modal-header {
     margin-bottom: $grid-gap;
+    margin-right: $grid-gap;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
   }
 
   .modal-body {
-    // margin: 20px 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 200;
+    font-size: 22px;
   }
 
   .modal-close {
