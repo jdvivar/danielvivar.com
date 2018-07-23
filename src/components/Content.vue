@@ -822,8 +822,8 @@ export default {
       const wrapper = document.getElementById("wrapper");
       wrapper.style.setProperty("--accent", accent);
     },
-    "showModal": (showModal) => {
-      console.log('showModal: ', showModal);
+    showModal: showModal => {
+      console.log("showModal: ", showModal);
     }
   },
   methods: {
