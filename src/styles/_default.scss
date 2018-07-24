@@ -1,258 +1,31 @@
-// fonts imports
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700');
+// DEFAULT STYLE
+
+@import 'default/fonts';
 
 .default {
 
+  // variables
   $grid-gap    : 40px;
   $grid-column : 240px;
   $muted       : #ccc;
   $transition  : .5s;
-
-  --accent:red;
+  --accent     : red;
 
   // Styles applicable to the whole content
-  font-family : 'Old Standard TT', sans-serif;
-  font-size   : 22px;
-  cursor: default;
-  line-height: 1.42;
+  font-family           : 'Old Standard TT', sans-serif;
+  font-size             : 22px;
+  cursor                : default;
+  line-height           : 1.42;
+  display               : grid;
+  grid-gap              : $grid-gap;
+  grid-template-columns : auto repeat(3, $grid-column) auto;
+  grid-template-rows    : $grid-column;
 
-  p {
-    margin: $grid-gap / 2 0;
-  }
+  @import 'default/generic';
+  @import 'default/selectors';
+  @import 'default/navigation';
+  @import 'default/main';
+  @import 'default/tools';
+  @import 'default/modals';
 
-  b {
-    font-weight: 700;
-  }
-
-  .svg-inline--fa {
-    color: var(--accent);
-  }
-
-  u {
-    text-decoration: none;
-    border-bottom-width: 1px solid var(--accent);
-    border-bottom-style: solid;
-    border-bottom-color: var(--accent);
-    line-height: 0.85;
-    display: inline-block;
-    text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
-  }
-
-  // specific to the wrapper
-  // (although it matches the content in this case)
-  &#wrapper {
-    display               : grid;
-    grid-gap              : $grid-gap;
-    grid-template-columns : auto repeat(3, $grid-column) auto;
-    grid-template-rows    : $grid-column;
-  }
-
-  // selectors
-  #selectors {
-
-    font-family : 'Source Sans Pro', serif;
-    font-size: 16px;
-    position: fixed;
-    margin: $grid-gap;
-    bottom: 0;
-
-    select {
-      width: 80px;
-      margin-left: 10px;
-    }
-
-    label {
-      display: inline-block;
-      width: 50px;
-    }
-  }
-
-  // navigation
-  nav {
-    font-family : 'Source Sans Pro', serif;
-    // font-size: 16px;
-    text-align : right;
-    grid-area  : 2 / 2 / auto / 3;
-
-    ul {
-      position   : sticky;
-      top        : $grid-column + $grid-gap;
-      list-style : none;
-      margin: 0;
-    }
-
-    li + li {
-      margin-top : $grid-gap / 2;
-    }
-
-    a {
-      color: $muted;
-      text-decoration: none;
-      transition: color $transition;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    .active a {
-      color: #aaa;
-      font-weight: 700;
-      // font-weight : bold;
-    }
-  }
-
-  // Main content
-  main {
-    grid-area : 2 / 3 / auto / 5;
-
-    section h1 {
-      font-family : 'Source Sans Pro', serif;
-      font-weight: 700;
-      // font-style: italic;
-      font-size: 30px;
-      color: var(--accent);
-      margin: 0 0 $grid-gap / 2;
-      // text-transform: capitalize;
-    }
-
-    section + section {
-      padding-top : $grid-column / 2;
-    }
-
-    #tools {
-
-      line-height: 1.5;
-      & + section {
-        clear: both;
-      }
-
-      &:hover .help {
-        animation: fadeInDown .5s linear 0s forwards;
-      }
-
-      span {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
-        background-color: rgba(black, 0.05);
-        padding: 10px 20px;
-        margin: -3px;
-        border-radius: 50px;
-        float: left;
-        transition: all $transition;
-        cursor: pointer;
-
-        &:hover {
-          background-color: var(--accent);
-          color: white;
-          box-shadow: 0px 0px 0px 5px rgba(black, 0.1);
-        }
-      }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translate3d(0, -25%, 0);
-        }
-
-        to {
-          opacity: 1;
-          transform: translate3d(0, 0, 0);
-        }
-      }
-
-      .help {
-        clear:both;
-        color: $muted;
-        font-family: 'Sorce Sans Pro', sans-serif;
-        font-weight: 700;
-        padding-top: $grid-gap;
-        text-transform: uppercase;
-        font-size: 14px;
-        opacity: 0;
-      }
-    }
-  }
-
-  // Modals
-  .modal-mask {
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(black, .5);
-    display: table;
-    transition: opacity $transition ease;
-  }
-
-  .modal-wrapper {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .modal-container {
-    width: 450px;
-    margin: 0px auto;
-    padding: $grid-gap;
-    background-color: #fff;
-    border-radius: 4px;
-    border-bottom-color: var(--accent);
-    border-bottom-width: 10px;
-    border-bottom-style: solid;
-    box-shadow: 0 8px 16px rgba(black, .33);
-    transition: all $transition ease;
-
-
-    .modal-close {
-      padding: 9px 13px;
-      transition: background-color $transition;
-      border-radius: 20px;
-      cursor: pointer;
-
-      &:hover{
-        background-color: rgba(black, 0.03);
-        // box-shadow: 0px 0px 0px 5px rgba(black, 0.1);
-      }
-    }
-  }
-
-  .modal-header {
-    margin-bottom: $grid-gap;
-    margin-right: $grid-gap;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-  }
-
-  .modal-body {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 200;
-    font-size: 22px;
-  }
-
-  .modal-close {
-    float: right;
-  }
-
-  /*
-  * The following styles are auto-applied to elements with
-  * transition="modal" when their visibility is toggled
-  * by Vue.js.
-  */
-
-  .modal-enter {
-    opacity: 0;
-  }
-
-  .modal-leave-active {
-    opacity: 0;
-  }
-
-  .modal-enter .modal-container,
-  .modal-leave-active .modal-container {
-    transform: scale(1.1);
-  }
 }

@@ -1,0 +1,19 @@
+// selectors
+#selectors {
+
+  font-family : 'Source Sans Pro', serif;
+  font-size: 16px;
+  position: fixed;
+  margin: $grid-gap;
+  bottom: 0;
+
+  select {
+    width: 80px;
+    margin-left: 10px;
+  }
+
+  label {
+    display: inline-block;
+    width: 50px;
+  }
+}

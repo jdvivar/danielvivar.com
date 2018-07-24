@@ -1,0 +1,17 @@
+main {
+  grid-area : 2 / 3 / auto / 5;
+
+  section h1 {
+    font-family : 'Source Sans Pro', serif;
+    font-weight: 700;
+    // font-style: italic;
+    font-size: 30px;
+    color: var(--accent);
+    margin: 0 0 $grid-gap / 2;
+    // text-transform: capitalize;
+  }
+
+  section + section {
+    padding-top : $grid-column / 2;
+  }
+}
