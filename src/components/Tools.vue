@@ -3,7 +3,7 @@
     id="tools">
     <h1>which technologies or tools I use</h1>
 
-    <span id="abc123">javascript</span>
+    <span>javascript</span>
     <Modal
       v-if="showModal === 'javascript'"
       @close="showModal = false">
@@ -49,10 +49,10 @@
       </div>
       <div slot="definition">
         <p>
-            It's the standard language specification for JavaScript from 2015, also known as ES2015.
+          It's the standard language specification for JavaScript from 2015, also known as ES2015.
         </p>
         <p>
-           As with anything wild open, JavaScript needs a body to standardise it. So ECMA is in charge of that, laying an even field for players to build on.
+          As with anything wild open, JavaScript needs a body to standardise it. So ECMA is in charge of that, laying an even field for players to build on.
         </p>
         <p>
           Amongst its numerous improvements, I personally like the introduction of promises, scoped constructs, classes, arrow functions and destructured assignments.
@@ -118,7 +118,7 @@
           It's a run-time environment that executes JavaScript code on its own, outside a browser.
         </p>
         <p>
-           Seeing how powerful JavaScript was, Ryan Dahl had this idea: why not having an engine specifically designed for JavaScript and any use, not just browsers?
+          Seeing how powerful JavaScript was, Ryan Dahl had this idea: why not having an engine specifically designed for JavaScript and any use, not just browsers?
         </p>
         <p>
           Nowadays Node.js is officially supported in all operating systems and is mainly used for web servers and other server-side processing, meaning JavaScript developers can work both on the front-end and back-end, and even have a shared library of packages.
@@ -155,7 +155,7 @@
           CSS is the style sheet language used in websites to define the presentation of HTML content.
         </p>
         <p>
-           It's called cascading because the style rules defined in the sheet are applied in a logical cascade fashion.
+          It's called cascading because the style rules defined in the sheet are applied in a logical cascade fashion.
         </p>
       </div>
     </Modal>
@@ -266,7 +266,7 @@
         </p>
         <p>
           Most components are just CSS templates but includes many optional JavaScript extensions.
-        <p>
+        </p><p>
           Because it's only focused on the actual style and behaviour of web elements, it's a great tool to rapidly showcase basic website prototypes.
         </p>
       </div>
@@ -346,7 +346,7 @@
           CD and CI are two software engineering processes in which deployment and integration testing processes are done automatically, typically by the same automated server.
         </p>
         <p>
-           This allows faster development cycles in a continuous delivery environment, a term which is sometimes confused with and is closely related.
+          This allows faster development cycles in a continuous delivery environment, a term which is sometimes confused with and is closely related.
         </p>
         <p>
           This website has a continuous deployment implementation and therefore is deployed automatically when I edit the source code.
@@ -454,7 +454,7 @@
       </div>
       <div slot="definition">
         <p>
-            In a front-end development flow, it's the step that goes just after the purely visual user interface design.
+          In a front-end development flow, it's the step that goes just after the purely visual user interface design.
         </p>
         <p>
           It allows for the first time to see how an application <em>works</em>, in oppose to just seeing how it looks or reading it from a spec.
@@ -474,7 +474,7 @@
       </div>
       <div slot="definition">
         <p>
-          In user interface design, a wireframe is a very early visual design of the interface</p>
+          In user interface design, a wireframe is a very early visual design of the interface.
         </p>
         <p>
           Only portraying its shell and the elements that will enable the main features and functionalities, omitting visual details, colors and even content itself <em>&mdash;lorem ipsums rule here!</em>
@@ -534,7 +534,7 @@
           RWD is an approach to web design in which a website will adapt its form and/or function to the visitor's medium.
         </p>
         <p>
-           Commonly the targets are mobile, tablet and desktop devices but we could fine tune it to adatp to a adaot specifically for a TV, a retina display or a printer.
+          Commonly the targets are mobile, tablet and desktop devices but we could fine tune it to adatp to a adaot specifically for a TV, a retina display or a printer.
         </p>
         <p>
           This site is designed RWD in mind, and will render correctly in mobile, tablets, desktops and will also render specifically for a print version.
@@ -629,6 +629,7 @@
 
   </section>
 </template>
+
 <script>
 // Modal component
 import Modal from "@/components/Modal.vue";
@@ -647,17 +648,19 @@ export default {
   },
   data() {
     return {
-      showModal: false,
-    }
+      showModal: false
+    };
+  },
+  mounted() {
+    const tools = document.querySelectorAll("#tools > span");
+    tools.forEach(tool => {
+      tool.addEventListener("click", this.clickTerm);
+    });
   },
   methods: {
     clickTerm(event) {
       this.showModal = event.target.innerHTML;
     }
-  },
-  mounted() {
-    const tools = document.querySelectorAll('#tools > span');
-    tools.forEach( tool => { tool.addEventListener('click', this.clickTerm) });
   }
-}
+};
 </script>

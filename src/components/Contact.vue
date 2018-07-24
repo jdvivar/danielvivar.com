@@ -27,6 +27,7 @@
     </ul>
   </section>
 </template>
+
 <script>
 import LambdaFunctions from "@/services/LambdaFunctions";
 
@@ -35,13 +36,13 @@ export default {
   data() {
     return {
       email: ""
-    }
+    };
   },
   methods: {
     async getEmail() {
       const response = await LambdaFunctions.getEmail();
       this.email = response.data;
-    },
+    }
   }
-}
+};
 </script>

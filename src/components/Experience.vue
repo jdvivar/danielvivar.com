@@ -194,8 +194,9 @@
     </ul>
   </section>
 </template>
+
 <script>
 export default {
   name: "Experience"
-}
+};
 </script>

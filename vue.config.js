@@ -6,5 +6,7 @@ module.exports = {
         pathRewrite: { "^/.netlify/functions": "" }
       }
     }
-  }
+  },
+
+  lintOnSave: undefined
 };

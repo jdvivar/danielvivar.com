@@ -11,8 +11,9 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {
   name: "Who"
-}
+};
 </script>
