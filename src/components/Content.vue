@@ -90,7 +90,7 @@
         id="tools">
         <h1>which technologies or tools I use</h1>
 
-        <span @click="clickTerm">javascript</span>
+        <span id="abc123">javascript</span>
         <Modal
           v-if="showModal === 'javascript'"
           @close="showModal = false">
@@ -107,7 +107,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">vuejs</span>
+        <span>vuejs</span>
         <Modal
           v-if="showModal === 'vuejs'"
           @close="showModal = false">
@@ -127,7 +127,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">es6</span>
+        <span>es6</span>
         <Modal
           v-if="showModal === 'es6'"
           @close="showModal = false">
@@ -150,7 +150,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">babel</span>
+        <span>babel</span>
         <Modal
           v-if="showModal === 'babel'"
           @close="showModal = false">
@@ -173,7 +173,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">pwa</span>
+        <span>pwa</span>
         <Modal
           v-if="showModal === 'pwa'"
           @close="showModal = false">
@@ -193,7 +193,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">node</span>
+        <span>node</span>
         <Modal
           v-if="showModal === 'node'"
           @close="showModal = false">
@@ -213,7 +213,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">npm</span>
+        <span>npm</span>
         <Modal
           v-if="showModal === 'npm'"
           @close="showModal = false">
@@ -230,7 +230,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">css</span>
+        <span>css</span>
         <Modal
           v-if="showModal === 'css'"
           @close="showModal = false">
@@ -247,7 +247,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">sass/scss</span>
+        <span>sass/scss</span>
         <Modal
           v-if="showModal === 'sass/scss'"
           @close="showModal = false">
@@ -270,7 +270,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">tdd</span>
+        <span>tdd</span>
         <Modal
           v-if="showModal === 'tdd'"
           @close="showModal = false">
@@ -303,7 +303,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">bdd</span>
+        <span>bdd</span>
         <Modal
           v-if="showModal === 'bdd'"
           @close="showModal = false">
@@ -323,7 +323,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">angularjs</span>
+        <span>angularjs</span>
         <Modal
           v-if="showModal === 'angularjs'"
           @close="showModal = false">
@@ -340,7 +340,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">bootstrap</span>
+        <span>bootstrap</span>
         <Modal
           v-if="showModal === 'bootstrap'"
           @close="showModal = false">
@@ -359,7 +359,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">cro</span>
+        <span>cro</span>
         <Modal
           v-if="showModal === 'cro'"
           @close="showModal = false">
@@ -376,7 +376,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">a/b testing</span>
+        <span>a/b testing</span>
         <Modal
           v-if="showModal === 'a/b testing'"
           @close="showModal = false">
@@ -393,7 +393,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">cms</span>
+        <span>cms</span>
         <Modal
           v-if="showModal === 'cms'"
           @close="showModal = false">
@@ -407,7 +407,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">headless cms</span>
+        <span>headless cms</span>
         <Modal
           v-if="showModal === 'headless cms'"
           @close="showModal = false">
@@ -421,7 +421,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">cd/ci</span>
+        <span>cd/ci</span>
         <Modal
           v-if="showModal === 'cd/ci'"
           @close="showModal = false">
@@ -441,7 +441,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">git</span>
+        <span>git</span>
         <Modal
           v-if="showModal === 'git'"
           @close="showModal = false">
@@ -464,7 +464,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">jquery</span>
+        <span>jquery</span>
         <Modal
           v-if="showModal === 'jquery'"
           @close="showModal = false">
@@ -487,7 +487,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">qa engineering</span>
+        <span>qa engineering</span>
         <Modal
           v-if="showModal === 'qa engineering'"
           @close="showModal = false">
@@ -504,7 +504,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">e2e testing</span>
+        <span>e2e testing</span>
         <Modal
           v-if="showModal === 'e2e testing'"
           @close="showModal = false">
@@ -518,7 +518,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">api testing</span>
+        <span>api testing</span>
         <Modal
           v-if="showModal === 'api testing'"
           @close="showModal = false">
@@ -532,7 +532,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">prototyping</span>
+        <span>prototyping</span>
         <Modal
           v-if="showModal === 'prototyping'"
           @close="showModal = false">
@@ -552,7 +552,7 @@
           </div>
         </Modal>
 
-        <span @click="clickTerm">wireframing</span>
+        <span>wireframing</span>
         <Modal
           v-if="showModal === 'wireframing'"
           @close="showModal = false">
@@ -560,11 +560,16 @@
             Wireframing
           </div>
           <div slot="definition">
-            In user interface design, a wireframe is a very early visual design of the interface, only portraying the shell and the elements that will enable the main features and functionalities, omitting visual details, colors and even content itself (lorem ipsums instead!).
+            <p>
+              In user interface design, a wireframe is a very early visual design of the interface</p>
+            </p>
+            <p>
+              Only portraying its shell and the elements that will enable the main features and functionalities, omitting visual details, colors and even content itself <em>&mdash;lorem ipsums rule here!</em>
+            </p>
           </div>
         </Modal>
 
-        <span @click="clickTerm">serverless</span>
+        <span>serverless</span>
         <Modal
           v-if="showModal === 'serverless'"
           @close="showModal = false">
@@ -572,11 +577,19 @@
             Serverless
           </div>
           <div slot="definition">
-            It's a model in which the computation is left to be done by cloud servers instead of local owned servers, that way the allocation of machine resources, server managemente and capacity planning is all done by the serverless provider instead. Amazon was the first company to provide serverless computing via AWS Lambda. It followed Google via Google Cloud Platform, Oracle via Oracle Cloud Platform (open source), IBM via Apache OpenWhisk (open source) and Microsoft via Microsoft Azure.
+            <p>
+              It's a computation model in which the processing is done by cloud remote servers instead of local owned ones.
+            </p>
+            <p>
+              That way the allocation of machine resources, server managemente and capacity planning is all done by the serverless provider instead.
+            </p>
+            <p>
+              Amazon was the first company to provide serverless computing via AWS Lambda. It followed Google via Google Cloud Platform, Oracle via Oracle Cloud Platform (open source), IBM via Apache OpenWhisk (open source) and Microsoft via Microsoft Azure.
+            </p>
           </div>
         </Modal>
 
-        <span @click="clickTerm">cloud functions</span>
+        <span>cloud functions</span>
         <Modal
           v-if="showModal === 'cloud functions'"
           @close="showModal = false">
@@ -584,85 +597,121 @@
             Cloud Functions
           </div>
           <div slot="definition">
-            A cloud function is a function written to be executed by a cloud computing platform. The first cloud functions were written in JavaScript becase AWS Lambda only supported Node.js when it was released back in 2014. Nowadays there is a whole plethora of cloud platforms that support most runtimes and languages. This site is using a cloud function (via AWS Lambda in Netlify) to reveal my e-mail address.
+            <p>
+              A cloud function is a function written to be executed by a cloud computing platform.
+            </p>
+            <p>
+              The first cloud functions were written in JavaScript becase AWS Lambda only supported Node.js when it was released back in 2014. Nowadays there is a whole plethora of cloud platforms that support most runtimes and languages.
+            </p>
+            <p>
+              This site is using a cloud function (via AWS Lambda in Netlify) to reveal my e-mail address &mdash;protecting it from spam and robots.
+            </p>
           </div>
         </Modal>
 
-        <span @click="clickTerm">responsive web design</span>
+        <span>responsive web design</span>
         <Modal
           v-if="showModal === 'responsive web design'"
           @close="showModal = false">
           <div slot="term">
-            RWD
+            Responsive Web Design
           </div>
           <div slot="definition">
-            Responsive Web Design is an approach to web design in which a website will adapt its form or function to the visitor's medium, whatever this might be. Typically we talk about mobile, tablet and desktop but we could also adapt a website specifically for a retina display, a TV or a printer. This site is designed in a responsive way, and will render correctly in mobile, tablets, desktops and will also render specifically for a print version.
+            <p>
+              RWD is an approach to web design in which a website will adapt its form and/or function to the visitor's medium.
+            </p>
+            <p>
+               Commonly the targets are mobile, tablet and desktop devices but we could fine tune it to adatp to a adaot specifically for a TV, a retina display or a printer.
+            </p>
+            <p>
+              This site is designed RWD in mind, and will render correctly in mobile, tablets, desktops and will also render specifically for a print version.
+            </p>
           </div>
         </Modal>
 
-        <span @click="clickTerm">progressive enhancement</span>
+        <span>progressive enhancement</span>
         <Modal
           v-if="showModal === 'progressive enhancement'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Progressive Enhancement
           </div>
           <div slot="definition">
-            Definition of vuejs
+            <p>
+              It's an approach to web design that tries to make the most out of all the features available in every visitor's browser or device.
+            </p>
+            <p>
+              It means different visitors would enjoy different capabilites, as much as their browsers support, in opposition to offer everyone the same experience with a common denominator of features.
+            </p>
           </div>
         </Modal>
 
-        <span @click="clickTerm">soap</span>
+        <span>soap</span>
         <Modal
           v-if="showModal === 'soap'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Simple Object Access Protocol
           </div>
           <div slot="definition">
-            Definition of vuejs
+            It's a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks. (Wikipedia)
           </div>
         </Modal>
 
-        <span @click="clickTerm">agile</span>
+        <span>agile</span>
         <Modal
           v-if="showModal === 'agile'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            agile
           </div>
           <div slot="definition">
-            Definition of vuejs
+            <p>
+              Agile software development describes an approach to software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams and their customer(s)/end user(s).
+            </p>
+            <p>
+              It advocates adaptive planning, evolutionary development, early delivery, and continual improvement, and it encourages rapid and flexible response to change. (Wikipedia)
+            </p>
           </div>
         </Modal>
 
-        <span @click="clickTerm">scrum</span>
+        <span>scrum</span>
         <Modal
           v-if="showModal === 'scrum'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Scrum
           </div>
           <div slot="definition">
-            Definition of vuejs
+            <p>
+              Scrum is an agile framework for managing work with an emphasis on software development.
+            </p>
+            <p>
+              It is designed for teams of three to nine developers who break their work into actions that can be completed within timeboxed iterations, called sprints (30 days or less, most commonly two weeks) and track progress and re-plan in 15-minute stand-up meetings, called daily scrums. (Wikipedia)
+            </p>
           </div>
         </Modal>
 
-        <span @click="clickTerm">kanban</span>
+        <span>kanban</span>
         <Modal
           v-if="showModal === 'kanban'"
           @close="showModal = false">
           <div slot="term">
-            vuejs
+            Kanban
           </div>
           <div slot="definition">
-            Definition of vuejs
+            <p>
+              Kanban is a lean method to manage and improve work across human systems.
+            </p>
+            <p>
+              This approach aims to manage work by balancing the demands with available capacity, and improving the handling of system level bottlenecks. (Wikipedia)
+            </p>
           </div>
         </Modal>
 
         <div class="help">
           <font-awesome-icon :icon="['fal', 'angle-up']"/>
-          click a tag to reveal its definition
+          click on a tag to reveal its definition
         </div>
 
       </section>
@@ -1001,9 +1050,6 @@ export default {
     "selectors.accent.value": accent => {
       const wrapper = document.getElementById("wrapper");
       wrapper.style.setProperty("--accent", accent);
-    },
-    showModal: showModal => {
-      console.log("showModal: ", showModal);
     }
   },
   methods: {
@@ -1014,6 +1060,10 @@ export default {
     clickTerm(event) {
       this.showModal = event.target.innerHTML;
     }
+  },
+  mounted() {
+    const tools = document.querySelectorAll('#tools > span');
+    tools.forEach( tool => { tool.addEventListener('click', this.clickTerm) });
   }
 };
 </script>
