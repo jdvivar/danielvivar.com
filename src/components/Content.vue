@@ -331,7 +331,12 @@
             AngularJS
           </div>
           <div slot="definition">
-            It's a JavaScript framework to develop web applications. It's the first iteration of the acclaimed Google-backed framework, not be confused with Angular, which is the second iteration and englobes what typically people refer to when they talk about Angular 2, 4 and above. Also, Angular is based on TypeScript instead, a superset of JavaScript.
+            <p>
+              It's a JavaScript framework to develop web applications.
+            </p>
+            <p>
+              It's the first iteration of the acclaimed Google-backed framework, not be confused with Angular, which is the second iteration and englobes what typically people refer to when they talk about Angular 2, 4 and above. Also, Angular is based on TypeScript instead, a superset of JavaScript.
+            </p>
           </div>
         </Modal>
 
@@ -343,7 +348,14 @@
             Bootstrap
           </div>
           <div slot="definition">
-            It's a front-end library for designing web applications. Most components are just CSS templates but includes many optional JavaScript extensions. Because it's only focused on the actual style and behaviour of web elements, it's a great tool to rapidly showcase basic website prototypes.
+            <p>
+              It's a front-end library for designing web applications.
+            </p>
+            <p>
+              Most components are just CSS templates but includes many optional JavaScript extensions.
+            <p>
+              Because it's only focused on the actual style and behaviour of web elements, it's a great tool to rapidly showcase basic website prototypes.
+            </p>
           </div>
         </Modal>
 
@@ -355,7 +367,12 @@
             Conversion Rate Optimisation
           </div>
           <div slot="definition">
-            It's a set of methodologies that improve the conversion of visitors of a website into customers. It eventually leads to better decision making. Collecting data, forming hypotheses and create statistical models are some of the exercises of CRO.
+            <p>
+              It's a set of methodologies that improves the conversion of visitors on a website into customers.
+            </p>
+            <p>
+              It eventually leads to better decision making. Collecting data, forming hypotheses and create statistical models are some of the exercises of CRO.
+            </p>
           </div>
         </Modal>
 
@@ -367,7 +384,12 @@
             A/B Testing
           </div>
           <div slot="definition">
-            In CRO, it's an experiment run on a website with typically 2 variations of a feature, which are statistically tested against each other by randomly apply them to visitors and measure an outcome, typically the conversion of the visitor into a customer. It's a very useful way to test hypotheses.
+            <p>
+              In CRO, it's an experiment run on a website with typically 2 variations of a feature, which are statistically tested against each other by randomly apply them to visitors and measure an outcome, typically the conversion of the visitor into a customer.
+            </p>
+            <p>
+              It's a very useful way to test hypotheses.
+            </p>
           </div>
         </Modal>
 
@@ -379,7 +401,9 @@
             CMS
           </div>
           <div slot="definition">
-            In a digital web environment, a Content Management System is an application which allows content editors to manage websites without the need to know how to code them, just focusing specifically on the content itself.
+            <p>
+              In a digital web environment, a Content Management System is an application which allows content editors to manage websites without knowing how to code them, just focusing on the content instead.
+            </p>
           </div>
         </Modal>
 
@@ -391,7 +415,9 @@
             Headless CMS
           </div>
           <div slot="definition">
-            It's the back-end part only of a CMS. The content is accessible via its own API and allows a greater customisation of a CMS application as a whole.
+            <p>
+              It's the back-end part only of a CMS. The content is accessible via its own API and allows a greater customisation of a CMS application as a whole.
+            </p>
           </div>
         </Modal>
 
@@ -400,10 +426,18 @@
           v-if="showModal === 'cd/ci'"
           @close="showModal = false">
           <div slot="term">
-            CD/CI
+            Continuous Deployment / Continuous Integration
           </div>
           <div slot="definition">
-            Continous deployment and integration are two software engineering processes in which deployment and integration testing processes are done automatically, typically by the same automated server. This allows faster development cycles in a continuous delivery environment, a term which is sometimes confused with and is closely related. This website has a continuous deployment implementation and therefore is deployed automatically when I edit the source code.
+            <p>
+              CD and CI are two software engineering processes in which deployment and integration testing processes are done automatically, typically by the same automated server.
+            </p>
+            <p>
+               This allows faster development cycles in a continuous delivery environment, a term which is sometimes confused with and is closely related.
+            </p>
+            <p>
+              This website has a continuous deployment implementation and therefore is deployed automatically when I edit the source code.
+            </p>
           </div>
         </Modal>
 
@@ -415,7 +449,18 @@
             git
           </div>
           <div slot="definition">
-            It's a version control system. It tracks changes in computer files and coordinates work on them. It was written by Linus Torvalds, Linux inventor and main contributor. One of the main features of git is being able to use remote and local repositories. This allows repositories to exist in remote owned or cloud servers, and companies to offer services on top of them for software engineering teams, so that they can better coordinate development. Some of these are Github, Gitlab and Bitbucket. This site is handled by git repositories in Github and Bitbucket.
+            <p>
+              It's a version control system. It tracks changes in computer files and coordinates work on them. It was written by Linus Torvalds, Linux inventor and main contributor.
+            </p>
+            <p>
+              One of the main features of git is being able to use remote and local repositories.
+            </p>
+            <p>
+              This allows repositories to exist in remote owned or cloud servers, and companies to offer services on top of them for software engineering teams, so that they can better coordinate development. Some of these are Github, Gitlab and Bitbucket.
+            </p>
+            <p>
+              This site is handled by duplicated git repositories in Github and Bitbucket.
+            </p>
           </div>
         </Modal>
 
@@ -427,7 +472,18 @@
             jQuery
           </div>
           <div slot="definition">
-            It's a library designed to simplify JavaScript development. It was the first library that made event management and DOM manipulation available in easy to use code. jQuery was used extensively and was the dominant technology in front-end web development before the boom of JavaScript frameworks (circa 2014). For this reason, AngularJS included a service as a subset of jQuery methods called jqLite. In my opinion, the ease of jQuery and adoption by beginners can lead to confusion about how JavaScript really works. Some of the actual uses of jQuery include writing small scripts (for instance in A/B testing experiments) or prototyping.
+            <p>
+              It's a library designed to simplify JavaScript development.
+            </p>
+            <p>
+              It was one of the first libraries that made event management and DOM manipulation available in easy to use code.
+            </p>
+            <p>
+              jQuery was used extensively and was the dominant technology in front-end web development before the boom of JavaScript frameworks (circa 2014). For this reason, AngularJS included a service as a subset of jQuery methods called jqLite.
+            </p>
+            <p>
+              In my opinion, the ease of jQuery and adoption by beginners can lead to confusion about how JavaScript really works. Some of the actual uses of jQuery include writing small scripts (for instance in A/B testing experiments) or prototyping.
+            </p>
           </div>
         </Modal>
 
@@ -439,7 +495,12 @@
             Quality Assurance Engineering
           </div>
           <div slot="definition">
-            In software engineering, it's a set of processes and methodologies to prevent that bugs and mistakes made in development code get to live production code.
+            <p>
+              In software engineering, it's a set of processes and methodologies to prevent that bugs and mistakes made in development code get to live production code.
+            </p>
+            <p>
+              It can also make sure software applications work as they are required to.
+            </p>
           </div>
         </Modal>
 
@@ -451,7 +512,9 @@
             End to end testing
           </div>
           <div slot="definition">
-            It's testing designed to mimic whole user journeys since they get to our web application until they leave.
+            <p>
+              It's testing designed to mimic whole user journeys, definining a journey as all the actions that happen from the moment users get into our application until they leave.
+            </p>
           </div>
         </Modal>
 
@@ -463,7 +526,9 @@
             API Testing
           </div>
           <div slot="definition">
-            It's testing designed to test API endpoints.
+            <p>
+              It's testing designed to test API endpoints.
+            </p>
           </div>
         </Modal>
 
@@ -475,7 +540,15 @@
             Prototyping
           </div>
           <div slot="definition">
-            In a front-end development flow, it's the step that goes just after the purely visual user interface design. It allows for the first time to see how an application works, in oppose to just seeing how it looks or reading it from a spec. Advance prototypes are stripped from back-ends and have a very limited set of features. Services like InVision allows a designer to showcase a prototype without the need to write a single line of code.
+            <p>
+                In a front-end development flow, it's the step that goes just after the purely visual user interface design.
+            </p>
+            <p>
+              It allows for the first time to see how an application <em>works</em>, in oppose to just seeing how it looks or reading it from a spec.
+            </p>
+            <p>
+              Advance prototypes are stripped from back-ends and have a very limited set of features. Services like InVision <em>&mdash;my preferred tool for this job&mdash;</em> allows a designer to showcase a prototype without the need to write a single line of code.
+            </p>
           </div>
         </Modal>
 
