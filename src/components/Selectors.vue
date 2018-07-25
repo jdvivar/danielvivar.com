@@ -51,7 +51,8 @@ export default {
             { text: "Sky Blue", value: "skyblue" }
           ]
         }
-      }
+      },
+      scrollSpyOffset: [{ default: 160 }]
     };
   },
   watch: {
@@ -61,7 +62,8 @@ export default {
     },
     "selectors.style.value": function(style) {
       this.$parent.style = style;
+      this.$parent.scrollSpyOffset = this.scrollSpyOffset[style];
     }
-  },
-}
+  }
+};
 </script>

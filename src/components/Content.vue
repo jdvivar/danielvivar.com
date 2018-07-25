@@ -1,13 +1,20 @@
 <template>
   <div
     id="wrapper"
-    :class="this.style">
+    :class="style">
 
     <Selectors />
 
-    <Nav :sections="this.sections" />
+    <Nav :sections="sections" />
 
-    <main v-scroll-spy>
+    <!--
+
+      We need to add v-scroll-spy attribute at a later time
+      in order to scrollSpyOffset to take effect
+
+    -->
+    <!-- <main v-scroll-spy="`{ offset: ${scrollSpyOffset} }`"> -->
+    <main v-scroll-spy="{ offset: 160 }">
 
       <Who />
       <Future />
@@ -46,22 +53,23 @@ export default {
     Experience,
     Education,
     Contact,
-    About,
+    About
   },
   data() {
     return {
       sections: [],
+      scrollSpyOffset: 160,
       style: "default"
     };
   },
-  mounted: function () {
-    this.$nextTick(function () {
-      document.querySelectorAll('section').forEach(section => {
+  mounted: function() {
+    this.$nextTick(function() {
+      document.querySelectorAll("section").forEach(section => {
         const id = section.id;
-        const heading = section.querySelector('h1').innerText;
+        const heading = section.querySelector("h1").innerText;
         this.sections.push({ id: id, heading: heading });
       });
-    })
+    });
   }
 };
 </script>

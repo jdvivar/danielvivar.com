@@ -4,7 +4,7 @@
       v-scroll-spy-active
       v-scroll-spy-link>
       <li
-        v-for="section in this.sections"
+        v-for="section in sections"
         :key="section.id">
         <a :href="`#${section.id}`">{{ section.heading }}</a>
       </li>
@@ -15,6 +15,11 @@
 <script>
 export default {
   name: "Nav",
-  props: ["sections"]
-}
+  props: {
+    sections: {
+      type: Array,
+      default: () => []
+    }
+  }
+};
 </script>

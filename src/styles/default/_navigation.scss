@@ -1,8 +1,6 @@
 
-  // navigation
   nav {
     font-family : 'Source Sans Pro', serif;
-    // font-size: 16px;
     text-align : right;
     grid-area  : 2 / 2 / auto / 3;
 
@@ -13,6 +11,18 @@
       margin: 0;
     }
 
+    li {
+      cursor: pointer;
+      letter-spacing: .5px;
+
+      &.active,
+      &:hover {
+        color: #aaa;
+        font-weight: 700;
+        letter-spacing: 0px;
+      }
+    }
+
     li + li {
       margin-top : $grid-gap / 2;
     }
@@ -21,15 +31,6 @@
       color: $muted;
       text-decoration: none;
       transition: color $transition;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
 
-    .active a {
-      color: #aaa;
-      font-weight: 700;
-      // font-weight : bold;
-    }
   }
