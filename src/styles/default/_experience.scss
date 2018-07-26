@@ -1,0 +1,53 @@
+#experience {
+
+  font-size: 16px;
+  font-family: 'Open Source Sans', sans-serif;
+
+  $logo-size: 60px;
+
+  > ul {
+    list-style: none;
+  }
+
+  .experience-item {
+    position: relative;
+    margin-left: $logo-size + $grid-gap;
+    margin-top: $grid-gap;
+  }
+
+  .company {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    // color: lighten(black, 50%);
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: $grid-gap;
+  }
+
+
+  .tldr:before {
+    content: "TL;DR";
+    font-weight: 700;
+    // font-size: 20px;
+    // float: left;
+  }
+
+  .tldr {
+    margin-bottom: 2 * $grid-gap;
+  }
+
+  .company-logo {
+    position: absolute;
+    left: - $logo-size - $grid-gap;
+    top: 0;
+
+    img {
+      border-bottom: 1px solid;
+      border-color: var(--accent);
+      width: $logo-size;
+    }
+  }
+}
