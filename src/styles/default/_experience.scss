@@ -13,23 +13,31 @@
     position: relative;
     margin-left: $logo-size + $grid-gap;
     margin-top: $grid-gap;
+
+    &:not(:first-child) {
+      margin-top: $grid-gap * 2;
+    }
   }
 
   .company {
     padding-top: 5px;
     font-size: 20px;
     font-weight: 700;
-    // color: lighten(black, 50%);
   }
 
   .title {
     font-size: 18px;
     font-weight: 300;
-    // margin-bottom: $grid-gap;
+    margin-top: 3px;
   }
 
   .location {
-    margin: $grid-gap/2 0;
+    position: absolute;
+    right: 0;
+    top: $grid-gap;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 13px;
   }
 
   .from,
@@ -60,7 +68,7 @@
     &:after {
       content: "";
       width: 2px;
-      height: $grid-gap * 2;
+      height: $grid-gap * 5;
       background-color: $muted;
       display: inline-block;
       position: absolute;
@@ -70,7 +78,7 @@
   }
 
   .from {
-    top: $grid-gap * 6;
+    top: $grid-gap * 9;
     left: -$logo-size - $grid-gap;
 
     &:after {
@@ -93,16 +101,13 @@
     font-weight: 700;
     display: block;
     margin-bottom: $grid-gap/2;
-    // font-size: 20px;
-    // float: left;
   }
 
   .tldr {
-    margin-bottom: $grid-gap;
+    margin: $grid-gap 0;
     padding: $grid-gap/1.5 $grid-gap/2;
     background-color: lighten(black, 95%);
     border-radius: 3px;
-    // opacity: .05;
   }
 
   .description {
@@ -132,8 +137,6 @@
     top: 0;
 
     img {
-      // border-bottom: 1px solid;
-      // border-color: var(--accent);
       width: $logo-size;
     }
   }
