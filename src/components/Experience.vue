@@ -7,18 +7,19 @@
           Zava
         </div>
         <div class="company-logo">
-          <img src="/img/zava-logo.png" />
+          <img src="/img/zava-logo.png">
         </div>
         <div class="title">
           front-end web engineer
         </div>
-        <div class="from">
-          2015-10
-        </div>
         <div class="until">
           present
         </div>
+        <div class="from">
+          2015 Oct
+        </div>
         <div class="location">
+          <font-awesome-icon :icon="['fal', 'map-marked']"/>
           London
         </div>
         <div class="tldr">
@@ -26,7 +27,7 @@
         </div>
         <div class="description">
           <p>
-            In Zava (www.zavamed.com) I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow, re-brand (from DrEd to Zava), move office and many other big events, as well as being part and even leading in some of the things we do.
+            In <a href="https://www.zavamed.com/uk" target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow, re-brand (from DrEd to Zava), move office and many other big events, as well as being part and even leading in some of the things we do.
           </p>
           <p>
             Some of the technologies/tasks/skills that I've learnt or developed further while at Zava:
@@ -73,18 +74,19 @@
           Typeless
         </div>
         <div class="company-logo">
-          <img src="/img/zava-logo.png" />
+          <img src="/img/zava-logo.png">
         </div>
         <div class="title">
           lead ui/ux designer
         </div>
         <div class="from">
-          2014-09
+          2014 Sep
         </div>
         <div class="until">
-          2015-09
+          2015 Sep
         </div>
         <div class="location">
+          <font-awesome-icon :icon="['fal', 'map-marked']"/>
           London
         </div>
         <div class="tldr">
@@ -92,7 +94,10 @@
         </div>
         <div class="description">
           <p>
-            Typeless had this idea of being a contacts aggregator (https://www.producthunt.com/posts/typeless). The founders were based in London and a team of developers worked remotely from India. I helped both filling the gap between the 2 teams and getting a complex idea and a set of features into a simple and delightful user experience.
+            Typeless had this idea of being a contacts aggregator (<a href="https://www.producthunt.com/posts/typeless" target="_blank">Typeless at Product Hunt <font-awesome-icon :icon="['fal', 'external-link']"/></a>). The founders were based in London and a team of developers worked remotely from India.
+          </p>
+          <p>
+            I helped both filling the gap between the 2 teams and getting a complex idea and a set of features into a simple and intuitive user experience.
           </p>
           <p>
             Part of my work here includes:
@@ -103,6 +108,7 @@
                 href="http://www.danielvivar.com/typeless/topbar.html"
                 target="_blank">
                 A completely responsive layout for the whole app
+                <font-awesome-icon :icon="['fal', 'external-link']"/>
               </a>
             </li>
             <li>
@@ -110,6 +116,7 @@
                 href="http://invis.io/G62N9KKQ3"
                 target="_blank">
                 A design from scratch of an iOS app for iPhone
+                <font-awesome-icon :icon="['fal', 'external-link']"/>
               </a>
             </li>
           </ul>
@@ -120,18 +127,19 @@
           Atos
         </div>
         <div class="company-logo">
-          <img src="/img/zava-logo.png" />
+          <img src="/img/zava-logo.png">
         </div>
         <div class="title">
-          hybrid apps developer & researcher - internship
+          hybrid apps developer & researcher
         </div>
         <div class="from">
-          2013-10
+          2013 Oct
         </div>
         <div class="until">
-          2014-08
+          2014 Aug
         </div>
         <div class="location">
+          <font-awesome-icon :icon="['fal', 'map-marked']"/>
           Madrid
         </div>
         <div class="tldr">
@@ -168,26 +176,30 @@
           Grupo Coeco
         </div>
         <div class="company-logo">
-          <img src="/img/zava-logo.png" />
+          <img src="/img/zava-logo.png">
         </div>
         <div class="title">
-          graphic design
+          graphic designer
         </div>
         <div class="from">
-          2010-03
+          2010 Mar
         </div>
         <div class="until">
-          2013-03
+          2013 Mar
         </div>
         <div class="location">
+          <font-awesome-icon :icon="['fal', 'map-marked']"/>
           Madrid
         </div>
         <div class="tldr">
-          part-time graphic designer during 3 years for a non-technology company
+          Part-time graphic designer during 3 years for a non-technology company
         </div>
         <div class="description">
           <p>
-            While studying in college, I worked mostly as a graphic designer for this kitchen designer firm in Madrid. Designing corporate branding and managing online/offline marketing. I helped as well in the development and maintenance of several websites owned by the parent company. Also, I did office and business IT tasks and organised training sessions for employees.
+            While studying in college, I worked mostly as a graphic designer for this kitchen design brand firm and factory in Madrid. Creating corporate branding and managing online/offline marketing.
+          </p>
+          <p>
+            I helped as well in the development and maintenance of several websites owned by the parent company. Also, I did office and business IT tasks and organised training sessions for employees.
           </p>
         </div>
       </li>
@@ -196,7 +208,17 @@
 </template>
 
 <script>
+// Icons component
+import { library as Icons } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faMapMarked, faExternalLink } from "@fortawesome/pro-light-svg-icons";
+
+Icons.add(faMapMarked, faExternalLink);
+
 export default {
-  name: "Experience"
+  name: "Experience",
+  components: {
+    FontAwesomeIcon
+  }
 };
 </script>

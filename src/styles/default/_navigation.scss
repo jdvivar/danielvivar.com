@@ -17,9 +17,9 @@
 
       &.active,
       &:hover {
-        color: #aaa;
-        font-weight: 700;
-        letter-spacing: 0px;
+        a {
+          color: var(--accent);
+        }
       }
     }
 

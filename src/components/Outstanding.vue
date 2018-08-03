@@ -3,13 +3,13 @@
     <h1>what I'm good at</h1>
     <div>
       <p>
-        I'm good at <u>abstract thinking</u>: explaining and designing how things work and talking to non-technical people. That means I can easily speak with senior architects, product managers, ux researchers or a CTO and I'll be able to have meaningful relations with each one of them.
+        I'm good at <u>abstract thinking</u>: explaining and designing how things work and talking to non-technical people too: from senior architects to product managers, ux researchers or a CTO, and have meaningful conversations with each one of them.
       </p>
       <p>
-        That, and a good synthesis capacity also helps when <u>designing the architecture</u> of apps and systems and when solving difficult problems and defects.
+        A good synthesis capacity also helps when <u>designing the architecture</u> of apps and systems and when solving difficult problems.
       </p>
       <p>
-        I feel motivated by learning new stuff, so when picking up tasks I'll always go for the more <u>challenging</u> ones. That means I also value teams that tend to do pair programming or encourage cross-team work.
+        Because of the motivation to learn <em>new stuff</em>, when picking up tasks I'll always go for the more <u>challenging</u> ones. That means teams that tend to do pair programming or encourage cross-team work are important to me as well.
       </p>
     </div>
   </section>
