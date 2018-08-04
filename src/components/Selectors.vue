@@ -1,6 +1,6 @@
 <template>
-  <div 
-    id="selectors" 
+  <div
+    id="selectors"
     class="no-print">
     <div
       v-for="(selector, key) in selectors"
@@ -62,6 +62,7 @@ export default {
       const wrapper = document.getElementById("wrapper");
       wrapper.style.setProperty("--accent", accent);
     },
+    // Can't apply ES6 because we need to bind the Vue instance
     "selectors.style.value": function(style) {
       this.$parent.style = style;
       this.$parent.scrollSpyOffset = this.scrollSpyOffset[style];

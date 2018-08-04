@@ -27,8 +27,8 @@
         </div>
         <div class="description">
           <p>
-            In <a 
-              href="https://www.zavamed.com/uk" 
+            In <a
+              href="https://www.zavamed.com/uk"
               target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow, re-brand (from DrEd to Zava), move office and many other big events, as well as being part and even leading in some of the things we do.
           </p>
           <p>
@@ -36,37 +36,37 @@
           </p>
           <ul>
             <li>
-              Developing and maintaining several apps in AngularJS 1.5+ and VueJS and mastering JavaScript on the way.
+              Developing and maintaining several apps in AngularJS and Vue.js and mastering JavaScript on the way.
             </li>
             <li>
-              Developing from scratch a PHP file-based CMS (Kirby) and maintaining older db-based CMS (Content Management System)
+              Developing from scratch a PHP file-based CMS (Kirby) and maintaining older db-based one.
             </li>
             <li>
               Mastering styling with SASS/SCSS
             </li>
             <li>
-              CRO (Conversion Rate Optimisation) which requires several teams working together (Data, UX, Marketing and Engineering). Manage data with Looker and all events with Segment. Creating experiments for A/B testing and more advanced customisation with Optimizely.
+              Managing CRO which requires several teams working together (Data, UX, Marketing and Engineering). Manage data with Looker and all events with Segment. Creating experiments for A/B testing and more advanced customisation with Optimizely.
             </li>
             <li>
-              TDD (test-driven development) writing unit tests with Karma, Jasmine.
+              TDD writing unit tests with Karma, Jasmine.
             </li>
             <li>
               E2E frontend and API test automation, using Protractor, Jasmine, PhantomJS, WebdriverIO, Frisby.
             </li>
             <li>
-              CD/CI (Continuous Deployment/Integration) with Jenkins, Docker, AWS, Github, Netlify.
+              CD/CI with Jenkins, Docker, AWS, Github, Netlify.
             </li>
             <li>
               Agile methodologies: Scrum, Kanban.
             </li>
             <li>
-              Using InVision to design high detailed and visually attractive user experiences or just wireframing
+              Prototyping with InVision to create high detailed and visually attractive user experiences
             </li>
             <li>
               Went from task runner Gulp and package manager Bower to only Yarn to then everything done with npm scripts and even bash scripts again.
             </li>
             <li>
-              Serverless and cloud functions with AWS Lambda
+              Serverless architectures and cloud functions with AWS Lambda
             </li>
           </ul>
         </div>
@@ -96,8 +96,8 @@
         </div>
         <div class="description">
           <p>
-            Typeless had this idea of being a contacts aggregator (<a 
-              href="https://www.producthunt.com/posts/typeless" 
+            Typeless was a contacts aggregator (<a
+              href="https://www.producthunt.com/posts/typeless"
               target="_blank">Typeless at Product Hunt <font-awesome-icon :icon="['fal', 'external-link']"/></a>). The founders were based in London and a team of developers worked remotely from India.
           </p>
           <p>
@@ -111,7 +111,7 @@
               <a
                 href="http://www.danielvivar.com/typeless/topbar.html"
                 target="_blank">
-                A completely responsive layout for the whole app
+                A completely responsive layout for the web app
                 <font-awesome-icon :icon="['fal', 'external-link']"/>
               </a>
             </li>
@@ -161,16 +161,16 @@
               Design and development of mobile hybrid apps: using Apache Cordova, common web technologies and some specific light frameworks like jQueryMobile.
             </li>
             <li>
-              Automated mobile application testing: using Calabash and Cucumber to write tests following a BDD approach (Behaviour-Driven Development) which at the time allowed us to both test hybrid and native mobile apps in all platforms.
+              Automated mobile application testing: using Calabash and Cucumber to write tests following a BDD approach which at the time allowed us to both test hybrid and native mobile apps in all platforms.
             </li>
             <li>
-              Rapid Prototyping: used Axure RP, Appery and Pencil.
+              Rapid Prototyping in which I used Axure RP, Appery and Pencil.
             </li>
             <li>
               Web Services testing: i.e. SOAP Web Services using SoapUI.
             </li>
             <li>
-              Projects: the most important project was a prototype hybrid Android app for Correos (an important client, the equivalent of Royal Mail UK in Spain) to be used in dedicated tablets in post offices to let customers buy most of the services.
+              Projects: the most important project was a prototype hybrid Android app for Correos (an important client, the equivalent of Royal Mail UK in Spain) to be used in dedicated tablets in post offices to for customer self-service.
             </li>
           </ul>
         </div>
