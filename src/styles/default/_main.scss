@@ -10,7 +10,8 @@ main {
   }
 
   section + section {
-    padding-top : $grid-column / 2;
+    margin-top : $grid-column / 2;
+    margin-bottom: $grid-gap * 2;
   }
 
   .section-description {
