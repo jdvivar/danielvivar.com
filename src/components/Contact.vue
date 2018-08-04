@@ -2,11 +2,12 @@
   <section id="contact">
     <h1>how you can get in touch</h1>
     <ul>
-      <li id="email">
+      <li>
         <a
           v-if="email"
           :href="`mailto:${email}`">
-          {{ email }}
+          Send me a message at {{ email }}
+          <font-awesome-icon :icon="['fal', 'external-link']"/>
         </a>
         <button
           v-else
@@ -16,13 +17,26 @@
       </li>
       <li>
         <a
+          v-if="phoneNumber"
+          :href="`tel:${phoneNumber}`">
+          Call me at {{ phoneNumber }}
+          <font-awesome-icon :icon="['fal', 'external-link']"/>
+        </a>
+        <button
+          v-else
+          @click="getPhoneNumber()">
+          Reveal my phone number
+        </button>
+      </li>
+      <li>
+        <a
           href="https://www.linkedin.com/in/jdvivar"
-          target="_blank">Linkedin</a>
+          target="_blank">Visit my Linkedin profile <font-awesome-icon :icon="['fal', 'external-link']"/></a>
       </li>
       <li>
         <a
           href="https://www.facebook.com/danielvivar"
-          target="_blank">Facebook</a>
+          target="_blank">Visit my Facebook profile <font-awesome-icon :icon="['fal', 'external-link']"/></a>
       </li>
     </ul>
   </section>
@@ -31,17 +45,32 @@
 <script>
 import LambdaFunctions from "@/services/LambdaFunctions";
 
+// Icons component
+import { library as Icons } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faMapMarked, faExternalLink } from "@fortawesome/pro-light-svg-icons";
+
+Icons.add(faMapMarked, faExternalLink);
+
 export default {
   name: "Contact",
+  components: {
+    FontAwesomeIcon
+  },
   data() {
     return {
-      email: ""
+      email: "",
+      phoneNumber: ""
     };
   },
   methods: {
     async getEmail() {
       const response = await LambdaFunctions.getEmail();
       this.email = response.data;
+    },
+    async getPhoneNumber() {
+      const response = await LambdaFunctions.getPhoneNumber();
+      this.phoneNumber = response.data;
     }
   }
 };

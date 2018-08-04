@@ -184,6 +184,20 @@
       </div>
     </Modal>
 
+    <span>php</span>
+    <Modal
+      v-if="showModal === 'php'"
+      @close="showModal = false">
+      <div slot="term">
+        PHP: Hypertext Preprocessor
+      </div>
+      <div slot="definition">
+        <p>
+          PHP (recursive acronym) is a server-side scripting language designed for Web development, but also used as a general-purpose programming language. It was originally created by Rasmus Lerdorf in 1994. (Wikipedia)
+        </p>
+      </div>
+    </Modal>
+
     <span>tdd</span>
     <Modal
       v-if="showModal === 'tdd'"
