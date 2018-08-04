@@ -65,52 +65,50 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.open {
+  position: fixed;
+  margin: 20px;
+  padding: 3px;
+}
 
-  .open {
-    position: fixed;
-    margin: 20px;
-    padding: 3px;
+.notice {
+  background-color: white;
+  border: 1px solid #666;
+  border-radius: 3px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 20px;
+  max-width: 300px;
+  opacity: 0.8;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+
+  s {
+    color: #999;
   }
+}
 
-  .notice {
-    background-color: white;
-    border: 1px solid #666;
-    border-radius: 3px;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.6;
-    margin: 20px;
-    max-width: 300px;
-    opacity: 0.8;
-    padding: 20px;
-    position: fixed;
-    z-index: 1;
+.notice-title {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
 
-    s {
-      color: #999;
-    }
-  }
+.todos-title {
+  margin-bottom: 10px;
+}
 
-  .notice-title {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-  }
+ul li::before {
+  content: "-";
+  padding-right: 5px;
+}
 
-  .todos-title {
-    margin-bottom: 10px;
-  }
-
-  ul li::before {
-    content: "-";
-    padding-right: 5px;
-  }
-
-  button {
-    float: right;
-    padding: 2px;
-    text-transform: uppercase;
-  }
-
+button {
+  float: right;
+  padding: 2px;
+  text-transform: uppercase;
+}
 </style>
