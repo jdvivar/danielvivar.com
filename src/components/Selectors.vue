@@ -1,5 +1,7 @@
 <template>
-  <div id="selectors">
+  <div 
+    id="selectors" 
+    class="no-print">
     <div
       v-for="(selector, key) in selectors"
       :id="`${key}-selector`"
@@ -64,6 +66,15 @@ export default {
       this.$parent.style = style;
       this.$parent.scrollSpyOffset = this.scrollSpyOffset[style];
     }
+  },
+  mounted: function() {
+    window.onbeforeprint = () => {
+      const beforePrintStyle = this.selectors.style.value;
+      window.onafterprint = () => {
+        this.selectors.style.value = beforePrintStyle;
+      };
+      this.selectors.style.value = "no_style";
+    };
   }
 };
 </script>

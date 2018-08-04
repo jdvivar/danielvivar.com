@@ -1,1 +1,5 @@
 @import "default";
+@media print {
+  @import "~gutenberg-css/dist/gutenberg.min";
+  @import "print";
+}

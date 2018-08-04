@@ -1,7 +1,8 @@
 <template>
   <section
-    id="tools">
-    <h1>which technologies or tools I use</h1>
+    id="tools" 
+    class="no-print">
+    <h1>which technologies and tools I use</h1>
 
     <span>javascript</span>
     <Modal

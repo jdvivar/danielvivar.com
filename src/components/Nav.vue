@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="no-print">
     <ul
       v-scroll-spy-active
       v-scroll-spy-link>

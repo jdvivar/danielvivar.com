@@ -27,7 +27,9 @@
         </div>
         <div class="description">
           <p>
-            In <a href="https://www.zavamed.com/uk" target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow, re-brand (from DrEd to Zava), move office and many other big events, as well as being part and even leading in some of the things we do.
+            In <a 
+              href="https://www.zavamed.com/uk" 
+              target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow, re-brand (from DrEd to Zava), move office and many other big events, as well as being part and even leading in some of the things we do.
           </p>
           <p>
             Some of the technologies/tasks/skills that I've learnt or developed further while at Zava:
@@ -94,7 +96,9 @@
         </div>
         <div class="description">
           <p>
-            Typeless had this idea of being a contacts aggregator (<a href="https://www.producthunt.com/posts/typeless" target="_blank">Typeless at Product Hunt <font-awesome-icon :icon="['fal', 'external-link']"/></a>). The founders were based in London and a team of developers worked remotely from India.
+            Typeless had this idea of being a contacts aggregator (<a 
+              href="https://www.producthunt.com/posts/typeless" 
+              target="_blank">Typeless at Product Hunt <font-awesome-icon :icon="['fal', 'external-link']"/></a>). The founders were based in London and a team of developers worked remotely from India.
           </p>
           <p>
             I helped both filling the gap between the 2 teams and getting a complex idea and a set of features into a simple and intuitive user experience.

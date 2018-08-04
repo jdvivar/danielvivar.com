@@ -1,5 +1,7 @@
 <template>
-  <section id="about">
+  <section 
+    id="about" 
+    class="no-print">
     <h1>about this site</h1>
     <p>
       This site is a PWA made with Vue CLI 3 (so VueJS + Webpack), hosted in Bitbucket/GitHub and deployed with Netlify.

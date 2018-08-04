@@ -13,6 +13,7 @@
     "src": "lambda/src"
   },
   "dependencies": {
+    "gutenberg-css": "^0.4.4",
     "npm": "^6.2.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16"
