@@ -1,4 +1,4 @@
-#experience {
+#education {
 
   font-size: 16px;
 
@@ -8,17 +8,18 @@
     list-style: none;
   }
 
-  .experience-item {
+  .education-item {
     position: relative;
     margin-left: $logo-size + $grid-gap;
-    margin-top: $grid-gap;
+    margin-top: $grid-gap * 2;
+    // margin-bottom: $grid-gap;
 
     &:not(:first-child) {
       margin-top: $grid-gap * 2;
     }
   }
 
-  .company {
+  .institution {
     padding-top: 5px;
     font-size: 24px;
     font-weight: 700;
@@ -27,20 +28,22 @@
   .title {
     font-size: 20px;
     font-weight: 300;
+    margin-right: 100px;
+    margin-top: $grid-gap/2;
   }
 
   .location {
     position: absolute;
     right: 0;
-    top: 45px;
+    top: 65px;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .from,
   .until {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: $muted;
     text-transform: uppercase;
@@ -48,8 +51,8 @@
   }
 
   .until {
-    top: 105px;
-    left: -$logo-size - $grid-gap;
+    top: -$grid-gap/2;
+    left: $grid-gap * 3.5;
 
     &:before {
       content: "";
@@ -58,27 +61,27 @@
       background-color: $muted;
       display: inline-block;
       position: absolute;
-      left: 0;
-      top: $grid-gap / 1.5;
+      left: -20px;
+      top: 4px;
       border-radius: 50px;
 
     }
 
     &:after {
       content: "";
-      width: 2px;
-      height: $grid-gap * 5;
+      width: $grid-gap * 2;
+      height: 2px;
       background-color: $muted;
       display: inline-block;
       position: absolute;
-      left: 4px;
-      top: $grid-gap / 1.5;
+      left: -90px;
+      top: 8px;
     }
   }
 
   .from {
-    top: 350px;
-    left: -$logo-size - $grid-gap;
+    top: -$grid-gap/2;
+    // left: -$logo-size - $grid-gap;
 
     &:after {
       content: "";
@@ -87,29 +90,16 @@
       background-color: $muted;
       display: inline-block;
       position: absolute;
-      left: 0;
-      bottom: $grid-gap / 1.5;
+      left: 40px;
+      top: 4px;
+      // bottom: $grid-gap / 1.5;
       border-radius: 50px;
-    }
-  }
-
-  .tldr {
-    margin: $grid-gap 0;
-    padding: $grid-gap/1.5 $grid-gap/2;
-    background-color: lighten(black, 97%);
-    border-bottom: 5px solid var(--accent);
-    border-radius: 3px;
-
-    &:before {
-      content: "TL;DR";
-      font-weight: 700;
-      display: block;
-      margin-bottom: $grid-gap/2;
     }
   }
 
   .description {
     font-weight: 300;
+    margin-top: $grid-gap;
 
     a {
       color: inherit;
@@ -120,18 +110,9 @@
       }
     }
 
-    ul li {
-      margin-bottom: 10px;
-
-      &:before {
-        content: '-';
-        position: absolute;
-        left: -20px;
-      }
-    }
   }
 
-  .company-logo {
+  .institution-logo {
     position: absolute;
     left: - $logo-size - $grid-gap;
     top: 0;

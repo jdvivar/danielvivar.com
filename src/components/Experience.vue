@@ -29,14 +29,14 @@
           <p>
             In <a
               href="https://www.zavamed.com/uk"
-              target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow, re-brand (from DrEd to Zava), move office and many other big events, as well as being part and even leading in some of the things we do.
+              target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow. From helping rebrand from DrEd to Zava, moving offices from Farrringdon to Angel and many other big events, as well as being part and even leading in some development work.
           </p>
           <p>
             Some of the technologies/tasks/skills that I've learnt or developed further while at Zava:
           </p>
           <ul>
             <li>
-              Developing and maintaining several apps in AngularJS and Vue.js and mastering JavaScript on the way.
+              Developing and maintaining the main healthcare assessment app and others in AngularJS and Vue.js and mastering JavaScript on the way.
             </li>
             <li>
               Developing from scratch a PHP file-based CMS (Kirby) and maintaining older db-based one.
@@ -75,8 +75,8 @@
         <div class="company">
           Typeless
         </div>
-        <div class="company-logo">
-          <img src="/img/zava-logo.png">
+        <div class="company-logo" style="margin: 20px 0">
+          <img src="/img/typeless-logo.png">
         </div>
         <div class="title">
           lead ui/ux designer
@@ -96,9 +96,9 @@
         </div>
         <div class="description">
           <p>
-            Typeless was a contacts aggregator (<a
+            Typeless was a contacts aggregator <a
               href="https://www.producthunt.com/posts/typeless"
-              target="_blank">Typeless at Product Hunt <font-awesome-icon :icon="['fal', 'external-link']"/></a>). The founders were based in London and a team of developers worked remotely from India.
+              target="_blank">(at Product Hunt <font-awesome-icon :icon="['fal', 'external-link']"/>)</a>. The founders were based in London and a team of developers worked remotely from India.
           </p>
           <p>
             I helped both filling the gap between the 2 teams and getting a complex idea and a set of features into a simple and intuitive user experience.
@@ -123,6 +123,9 @@
                 <font-awesome-icon :icon="['fal', 'external-link']"/>
               </a>
             </li>
+            <li>
+              Designing the logo
+            </li>
           </ul>
         </div>
       </li>
@@ -131,7 +134,7 @@
           Atos
         </div>
         <div class="company-logo">
-          <img src="/img/zava-logo.png">
+          <img src="/img/atos-logo.jpg">
         </div>
         <div class="title">
           hybrid apps developer & researcher
@@ -180,7 +183,7 @@
           Grupo Coeco
         </div>
         <div class="company-logo">
-          <img src="/img/zava-logo.png">
+          <img src="/img/coeco-logo.jpg">
         </div>
         <div class="title">
           graphic designer
@@ -200,7 +203,7 @@
         </div>
         <div class="description">
           <p>
-            While studying in college, I worked mostly as a graphic designer for this kitchen design brand firm and factory in Madrid. Creating corporate branding and managing online/offline marketing.
+            While studying in college, I worked as a graphic designer for this kitchen design brand firm and factory in Madrid. Creating corporate branding and managing online/offline marketing.
           </p>
           <p>
             I helped as well in the development and maintenance of several websites owned by the parent company. Also, I did office and business IT tasks and organised training sessions for employees.

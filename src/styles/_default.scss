@@ -11,8 +11,7 @@
   --accent     : red;
 
   // Styles applicable to the whole content
-  font-family           : 'Old Standard TT', sans-serif;
-  font-size             : 22px;
+  font-family           : 'Source Sans Pro', sans-serif;
   cursor                : default;
   line-height           : 1.42;
   display               : grid;
@@ -27,5 +26,6 @@
   @import 'default/tools';
   @import 'default/modals';
   @import 'default/experience';
+  @import 'default/education';
 
 }

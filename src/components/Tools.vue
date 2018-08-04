@@ -1,6 +1,6 @@
 <template>
   <section
-    id="tools" 
+    id="tools"
     class="no-print">
     <h1>which technologies and tools I use</h1>
 
@@ -624,7 +624,7 @@
     </Modal>
 
     <div class="help">
-      <font-awesome-icon :icon="['fal', 'angle-up']"/>
+      <!-- <font-awesome-icon :icon="['fal', 'angle-up']"/> -->
       click on a tag to reveal its definition
     </div>
 

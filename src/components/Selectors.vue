@@ -50,7 +50,8 @@ export default {
             { text: "Green", value: "green" },
             { text: "Gold", value: "gold" },
             { text: "Pink", value: "pink" },
-            { text: "Sky Blue", value: "skyblue" }
+            { text: "Sky Blue", value: "skyblue" },
+            { text: "Black", value: "black" }
           ]
         }
       },
