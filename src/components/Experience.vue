@@ -75,7 +75,9 @@
         <div class="company">
           Typeless
         </div>
-        <div class="company-logo" style="margin: 20px 0">
+        <div 
+          class="company-logo" 
+          style="margin: 20px 0">
           <img src="/img/typeless-logo.png">
         </div>
         <div class="title">

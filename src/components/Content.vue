@@ -3,6 +3,8 @@
     id="wrapper"
     :class="style">
 
+    <Construction />
+
     <Selectors />
 
     <Nav :sections="sections" />
@@ -40,6 +42,7 @@ import Experience from "@/components/Experience.vue";
 import Education from "@/components/Education.vue";
 import Contact from "@/components/Contact.vue";
 import About from "@/components/About.vue";
+import Construction from "@/components/Construction.vue";
 
 export default {
   name: "Content",
@@ -53,7 +56,8 @@ export default {
     Experience,
     Education,
     Contact,
-    About
+    About,
+    Construction
   },
   data() {
     return {
