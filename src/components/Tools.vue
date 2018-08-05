@@ -651,8 +651,7 @@ import Modal from "@/components/Modal.vue";
 export default {
   name: "Tools",
   components: {
-    Modal,
-    FontAwesomeIcon
+    Modal
   },
   data() {
     return {
