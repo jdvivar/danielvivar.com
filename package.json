@@ -22,7 +22,7 @@
     "axios": "^0.18.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.1",
     "@fortawesome/free-solid-svg-icons": "^5.1.1",
-    "@fortawesome/pro-light-svg-icons": "^5.1.1",
+    "@fortawesome/pro-light-svg-icons": "5.1.1",
     "@fortawesome/vue-fontawesome": "^0.1.1",
     "netlify-lambda": "^0.4.0",
     "node-sass": "^4.9.0",
