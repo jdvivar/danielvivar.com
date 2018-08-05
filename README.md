@@ -34,7 +34,7 @@ Specifically, the AWS Lambda configuration is setup to to serve locally proxied 
 This site uses a PRO licence from [FontAwesome](https://fontawesome.com/) for icons, specifically this Vue component: [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome). Because it's a private package, npm needs a token to verify the instalation. A token is served through an environment variable (it's not available in the code).
 
 If you don't have a FontAwesome licence then you'll need to remove the PRO icons and use the FREE ones instead, manually.
-### 1. Remove the PRO icons 
+### 1. Remove the PRO icons
 ```
 $ npm uninstall @fortawesome/pro-light-svg-icons
 ```
@@ -48,7 +48,7 @@ with this other one:
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 ```
 
-Now it all should work. However, the free solid icons looks doesn't match the design.
+Now it all should work. However, the free solid icons doesn't match the design.
 
 ## The buttons for email/phone are not working
 
