@@ -638,7 +638,6 @@
     </Modal>
 
     <div class="help">
-      <!-- <font-awesome-icon :icon="['fal', 'angle-up']"/> -->
       click on a tag to reveal its definition
     </div>
 
@@ -649,12 +648,6 @@
 // Modal component
 import Modal from "@/components/Modal.vue";
 
-// Icons component
-import { library as Icons } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faAngleUp } from "@fortawesome/pro-light-svg-icons";
-
-Icons.add(faAngleUp);
 export default {
   name: "Tools",
   components: {
