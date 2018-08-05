@@ -1,5 +1,10 @@
 # danielvivar.com
 
+<a class="badge-align" href="https://www.codacy.com?utm_source=git@bitbucket.org&amp;utm_medium=referral&amp;utm_content=jdvivar/danielvivar.com&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/82359b0132e64877b0285c561a6b07aa"/></a>
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
+</a>
+
 This site contains a personal resumé/CV as a simple [Vue.js](https://github.com/vuejs/vue) app. It uses the new [Vue CLI 3](https://github.com/vuejs/vue-cli). You can visit it live in https://personal.danielvivar.com. It's still on construction though! 🏗👷
 
 ## How to start
