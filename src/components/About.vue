@@ -4,7 +4,9 @@
     class="no-print">
     <h1>about this site</h1>
     <p>
-      This site is a PWA made with Vue CLI 3 (so Vue.js + Webpack), hosted in Bitbucket/GitHub and deployed with Netlify.
+      This site is a PWA made with Vue CLI 3 (so Vue.js + Webpack), hosted in Bitbucket/<a
+        href="https://github.com/jdvivar/danielvivar.com"
+        target="_blank">GitHub <font-awesome-icon :icon="['fal', 'external-link']"/></a> and deployed with Netlify.
     </p>
     <p>
       It could have just been one HTML5 page plus some vanilla JS and CSS in a normal server, but automating both the development workflow with the webpack based Vue CLI dashboard and the deployment plus lots of other perks from Netlify's free tier is just a breeze and very educational.
@@ -24,7 +26,17 @@
 </template>
 
 <script>
+// Icons component
+import { library as Icons } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faExternalLink } from "@fortawesome/pro-light-svg-icons";
+
+Icons.add(faExternalLink);
+
 export default {
-  name: "About"
+  name: "About",
+  components: {
+    FontAwesomeIcon
+  }
 };
 </script>
