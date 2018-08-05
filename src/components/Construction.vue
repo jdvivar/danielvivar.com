@@ -35,6 +35,9 @@
             <s>Add an intuitive glossary for technical terms with modal windows</s>
           </li>
           <li>
+            <s>Manage both in Github and Bitbucket</s>
+          </li>
+          <li>
             Make the whole site 100% mobile friendly
           </li>
           <li>
@@ -48,6 +51,9 @@
           </li>
           <li>
             Add another theme
+          </li>
+          <li>
+            SEO: meta tags, images, icon
           </li>
         </ul>
       </div>
