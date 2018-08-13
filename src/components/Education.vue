@@ -3,7 +3,7 @@
     <h1>where I've studied</h1>
     <ul>
       <li class="education-item">
-        <div class="institution-logo">
+        <div class="institution-logo no-print">
           <img src="/img/upm-logo.png">
         </div>
         <div class="institution">
@@ -24,7 +24,7 @@
         </div>
       </li>
       <li class="education-item">
-        <div class="institution-logo">
+        <div class="institution-logo no-print">
           <img src="/img/htw-logo.jpg">
         </div>
         <div class="institution">

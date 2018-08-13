@@ -1,5 +1,5 @@
 <template>
-  <div id="construction">
+  <div id="construction" class="no-print">
     <button
       v-if="collapsed"
       class="open"

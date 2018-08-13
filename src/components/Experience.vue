@@ -1,12 +1,12 @@
 <template>
-  <section id="experience">
+  <section id="experience" class="">
     <h1>where I've worked</h1>
     <ul>
       <li class="experience-item">
         <div class="company">
           Zava
         </div>
-        <div class="company-logo">
+        <div class="company-logo no-print">
           <img src="/img/zava-logo.png">
         </div>
         <div class="title">
@@ -25,7 +25,7 @@
         <div class="tldr">
           Almost 3 years as a front-end web engineer in a rapid-growing health company, using the latest technologies
         </div>
-        <div class="description">
+        <div class="description no-print">
           <p>
             In <a
               href="https://www.zavamed.com/uk"
@@ -75,8 +75,8 @@
         <div class="company">
           Typeless
         </div>
-        <div 
-          class="company-logo" 
+        <div
+          class="company-logo no-print"
           style="margin: 20px 0">
           <img src="/img/typeless-logo.png">
         </div>
@@ -96,7 +96,7 @@
         <div class="tldr">
           UX/UI Designer working on everything from scratch: a real London startup environment
         </div>
-        <div class="description">
+        <div class="description no-print">
           <p>
             Typeless was a contacts aggregator <a
               href="https://www.producthunt.com/posts/typeless"
@@ -135,7 +135,7 @@
         <div class="company">
           Atos
         </div>
-        <div class="company-logo">
+        <div class="company-logo no-print">
           <img src="/img/atos-logo.jpg">
         </div>
         <div class="title">
@@ -154,7 +154,7 @@
         <div class="tldr">
           1 year internship in a big consulting firm as a hybrid apps developer/researcher
         </div>
-        <div class="description">
+        <div class="description no-print">
           <p>
             During this 1-year internship in the Smart Mobility working group within the Solutions Delivery and Architecture department at Atos in the central offices in Madrid, I did develop my very first skills as an engineer. Learnt new technologies, researched a lot, took part in several projects, attended courses and, most of all, soaked in a real business environment.
           </p>
@@ -184,7 +184,7 @@
         <div class="company">
           Grupo Coeco
         </div>
-        <div class="company-logo">
+        <div class="company-logo no-print">
           <img src="/img/coeco-logo.jpg">
         </div>
         <div class="title">
@@ -203,7 +203,7 @@
         <div class="tldr">
           Part-time graphic designer during 3 years for a non-technology company
         </div>
-        <div class="description">
+        <div class="description no-print">
           <p>
             While studying in college, I worked as a graphic designer for this kitchen design brand firm and factory in Madrid. Creating corporate branding and managing online/offline marketing.
           </p>
