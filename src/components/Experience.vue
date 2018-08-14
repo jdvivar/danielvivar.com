@@ -19,7 +19,7 @@
           present
         </div>
         <div class="location">
-          <font-awesome-icon :icon="['fal', 'map-marked']"/>
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
           London
         </div>
         <div class="tldr">
@@ -90,7 +90,7 @@
           2015 Sep
         </div>
         <div class="location">
-          <font-awesome-icon :icon="['fal', 'map-marked']"/>
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
           London
         </div>
         <div class="tldr">
@@ -148,7 +148,7 @@
           2014 Aug
         </div>
         <div class="location">
-          <font-awesome-icon :icon="['fal', 'map-marked']"/>
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
           Madrid
         </div>
         <div class="tldr">
@@ -197,7 +197,7 @@
           2013 Mar
         </div>
         <div class="location">
-          <font-awesome-icon :icon="['fal', 'map-marked']"/>
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
           Madrid
         </div>
         <div class="tldr">
@@ -220,9 +220,9 @@
 // Icons component
 import { library as Icons } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faMapMarked, faExternalLink } from "@fortawesome/pro-light-svg-icons";
+import { faGlobeAfrica, faExternalLink } from "@fortawesome/pro-light-svg-icons";
 
-Icons.add(faMapMarked, faExternalLink);
+Icons.add(faGlobeAfrica, faExternalLink);
 
 export default {
   name: "Experience",

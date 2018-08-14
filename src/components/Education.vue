@@ -13,7 +13,7 @@
           Bachelor's Degree in Computers Engineering
         </div>
         <div class="location">
-          <font-awesome-icon :icon="['fal', 'map-marked']"/>
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
           Madrid
         </div>
         <div class="from">
@@ -34,7 +34,7 @@
           Degree's Final Project
         </div>
         <div class="location">
-          <font-awesome-icon :icon="['fal', 'map-marked']"/>
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
           Berlin
         </div>
         <div class="from">
@@ -65,9 +65,9 @@
 // Icons component
 import { library as Icons } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faMapMarked, faExternalLink } from "@fortawesome/pro-light-svg-icons";
+import { faGlobeAfrica, faExternalLink } from "@fortawesome/pro-light-svg-icons";
 
-Icons.add(faMapMarked, faExternalLink);
+Icons.add(faGlobeAfrica, faExternalLink);
 
 export default {
   name: "Education",
