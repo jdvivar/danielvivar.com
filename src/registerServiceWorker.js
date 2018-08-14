@@ -1,6 +1,6 @@
 /* eslint-env worker, serviceworker */
 
-console.log('v0.3');
+console.log('v0.4');
 
 import { register } from "register-service-worker";
 
@@ -19,6 +19,7 @@ if (process.env.NODE_ENV === "production") {
       console.log("Content has been cached for offline use.");
     },
     updatefound (registration) {
+      registration.skipWaiting()
       console.log('New content is downloading.')
     },
     updated(registration) {
