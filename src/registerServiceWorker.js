@@ -1,6 +1,6 @@
 /* eslint-env worker, serviceworker */
 
-console.log('v0.4');
+console.log('v0.5');
 
 import { register } from "register-service-worker";
 
@@ -11,19 +11,19 @@ if (process.env.NODE_ENV === "production") {
           "For more details, visit https://goo.gl/AFskqB");
     },
     registered (registration) {
-      registration.skipWaiting();
+      // registration.skipWaiting();
       console.log('Service worker has been registered.')
     },
     cached(registration) {
-      registration.skipWaiting();
+      // registration.skipWaiting();
       console.log("Content has been cached for offline use.");
     },
     updatefound (registration) {
-      registration.skipWaiting()
+      // registration.skipWaiting()
       console.log('New content is downloading.')
     },
     updated(registration) {
-      registration.skipWaiting()
+      // registration.skipWaiting()
       console.log("New content is available; please refresh.");
     },
     offline() {
