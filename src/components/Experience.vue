@@ -23,7 +23,7 @@
           London
         </div>
         <div class="tldr">
-          Almost 3 years as a front-end web engineer in a rapid-growing health company, using the latest technologies
+          Almost 3 years as a front-end web engineer in a rapid-growing health company, using the latest technologies.
         </div>
         <div class="description no-print">
           <p>
@@ -94,7 +94,7 @@
           London
         </div>
         <div class="tldr">
-          UX/UI Designer working on everything from scratch: a real London startup environment
+          UX/UI Designer working on everything from scratch: a real London startup environment.
         </div>
         <div class="description no-print">
           <p>
@@ -152,7 +152,7 @@
           Madrid
         </div>
         <div class="tldr">
-          1 year internship in a big consulting firm as a hybrid apps developer/researcher
+          1 year internship in a big consulting firm as a hybrid apps developer/researcher.
         </div>
         <div class="description no-print">
           <p>
@@ -201,7 +201,7 @@
           Madrid
         </div>
         <div class="tldr">
-          Part-time graphic designer during 3 years for a non-technology company
+          Part-time graphic designer during 3 years for a non-technology company.
         </div>
         <div class="description no-print">
           <p>
