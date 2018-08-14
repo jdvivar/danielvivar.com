@@ -38,16 +38,16 @@
             <s>Manage both in Github and Bitbucket</s>
           </li>
           <li>
+            <s>Fix PWA service worker</s>
+          </li>
+          <li>
+            <s>Fix the printable version</s>
+          </li>
+          <li>
+            Add desktop menu with selectors, print button, etc.
+          </li>
+          <li>
             Make the whole site 100% mobile friendly
-          </li>
-          <li>
-            Add a color picker for accent color
-          </li>
-          <li>
-            Fix the printable version and add a print button
-          </li>
-          <li>
-            Fix PWA service worker so it skips waiting and updates itself automatically
           </li>
           <li>
             Add another theme
