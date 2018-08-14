@@ -1,12 +1,127 @@
-html, body {
-  font-size: 14px;
+@page {
+  size: a4;
+  margin: 0;
+}
 
-  ul,
-  ol {
-    list-style: none;
-  }
+body, html {
+  margin: 0;
+  font-size: 11px;
+  height:100%;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 16px;
+  border-top: 5px solid black;
+  padding-top: 15px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+p {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#experience,
+#education,
+#tools,
+#who,
+#outstanding,
+#future {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+}
+
+#tools {
+  > span {
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 2;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+}
+
+#experience {
+
+  .company {
+    font-weight: bold;
+  }
+
+  .title {
+    border-bottom: 1px dotted black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  .experience-item {
+    margin-bottom: 15px;
+  }
+
+  .until,
+  .from {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .until:before {
+    content: '\2013';
+    left: -3px;
+    position: relative;
+  }
+
+  .location {
+    float: right;
+  }
+
+  .tldr {
+    margin-top: 5px;
+  }
+}
+
+#education {
+  .institution {
+    font-weight: bold;
+  }
+
+  .title {
+    border-bottom: 1px dotted black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  .education-item {
+    margin-bottom: 15px;
+  }
+
+  .until,
+  .from {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .until:before {
+    content: '\2013';
+    left: -3px;
+    position: relative;
+  }
+
+  .location {
+    float: right;
+  }
+
+  .description {
+    margin-top: 5px;
+  }
 }

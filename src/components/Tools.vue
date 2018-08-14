@@ -1,7 +1,6 @@
 <template>
   <section
-    id="tools"
-    class="no-print">
+    id="tools">
     <h1>which technologies and tools I use</h1>
 
     <span>javascript</span>
@@ -637,7 +636,7 @@
       </div>
     </Modal>
 
-    <div class="help">
+    <div class="help no-print">
       click on a tag to reveal its definition
     </div>
 

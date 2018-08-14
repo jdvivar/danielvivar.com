@@ -12,11 +12,11 @@
         <div class="title">
           front-end web engineer
         </div>
-        <div class="until">
-          present
-        </div>
         <div class="from">
           2015 Oct
+        </div>
+        <div class="until">
+          present
         </div>
         <div class="location">
           <font-awesome-icon :icon="['fal', 'map-marked']"/>
@@ -180,7 +180,7 @@
           </ul>
         </div>
       </li>
-      <li class="experience-item">
+      <li class="experience-item no-print">
         <div class="company">
           Grupo Coeco
         </div>

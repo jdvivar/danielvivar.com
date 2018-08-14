@@ -45,10 +45,10 @@
         </div>
         <div class="description">
           <p>
-            During an Erasmus scholarship I developed Secutrak as my DFP. A native Android app with special tracking features that could be used in a wide range of applications.
+            During a 7-month Erasmus scholarship I developed Secutrak as my DFP. A native Android app with special tracking features that could be used in a wide range of applications.
           </p>
           <p>
-            I also created the <a
+            I also designed its <a
               href="https://www.facebook.com/photo.php?fbid=10151472086361557&set=a.10151471848361557.1073741825.675581556&type=3"
               target="_blank">
               brand
