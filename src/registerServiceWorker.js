@@ -11,10 +11,11 @@ if (process.env.NODE_ENV === "production") {
       );
     },
     cached() {
+      self.skipWaiting();
       console.log("Content has been cached for offline use.");
     },
     updated() {
-      self.skipWaiting();
+      ServiceWorkerGlobalScope.skipWaiting()
       console.log("New content is available; please refresh.");
     },
     offline() {
