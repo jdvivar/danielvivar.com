@@ -1,5 +1,7 @@
 /* eslint-env worker, serviceworker */
 
+console.log('v0.1');
+
 import { register } from "register-service-worker";
 
 if (process.env.NODE_ENV === "production") {
