@@ -1,6 +1,6 @@
 <template>
-  <section 
-    id="experience" 
+  <section
+    id="experience"
     class="">
     <h1>where I've worked</h1>
     <ul>
@@ -25,7 +25,7 @@
           London
         </div>
         <div class="tldr">
-          Almost 3 years as a front-end web engineer in a rapid-growing health company, using the latest technologies.
+          Acquiring mid-seniority after 3 years as a front-end web engineer in a fast-growing health company, using the latest technologies and practices.
         </div>
         <div class="description no-print">
           <p>

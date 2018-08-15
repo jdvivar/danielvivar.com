@@ -7,7 +7,7 @@ module.exports = {
       }
     }
   },
-  lintOnSave: undefined,
+  lintOnSave: 'error',
   pwa: {
     workboxOptions: {
       skipWaiting: true,
