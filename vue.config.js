@@ -1,3 +1,5 @@
+var WebpackAutoInject = require('webpack-auto-inject-version');
+
 module.exports = {
   devServer: {
     proxy: {
@@ -13,5 +15,10 @@ module.exports = {
       skipWaiting: true,
       clientsClaim: true
     }
+  },
+  configureWepack: {
+    plugins: [
+      new WebpackAutoInject({})
+    ]
   }
 };
