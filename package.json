@@ -1,44 +1,44 @@
 {
-  "name": "danielvivar.com",
-  "version": "2.2.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --modern && npm run build:lambda",
-    "lint": "vue-cli-service lint",
-    "build:lambda": "netlify-lambda build $npm_package_lambda_src",
-    "serve:lambda": "netlify-lambda serve $npm_package_lambda_src"
-  },
-  "lambda": {
-    "src": "lambda/src"
-  },
-  "dependencies": {
-    "gutenberg-css": "0.4.4",
-    "npm": "6.2.0",
-    "register-service-worker": "1.0.0",
-    "vue": "2.5.16"
-  },
-  "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.1",
-    "@fortawesome/free-solid-svg-icons": "5.1.1",
-    "@fortawesome/pro-light-svg-icons": "5.1.1",
-    "@fortawesome/vue-fontawesome": "0.1.1",
-    "@vue/cli-plugin-babel": "3.0.0-rc.4",
-    "@vue/cli-plugin-eslint": "3.0.0-rc.4",
-    "@vue/cli-plugin-pwa": "3.0.0-rc.4",
-    "@vue/cli-service": "3.0.0-rc.4",
-    "@vue/eslint-config-prettier": "3.0.0-rc.4",
-    "axios": "0.18.0",
-    "netlify-lambda": "0.4.0",
-    "node-sass": "4.9.0",
-    "sass-loader": "7.0.1",
-    "vue-template-compiler": "2.5.16",
-    "vue2-scrollspy": "2.3.1",
-    "webpack-auto-inject-version": "^1.1.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie < 11"
-  ]
+    "name": "danielvivar.com",
+    "version": "2.2.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build --modern --env.patch && npm run build:lambda",
+        "lint": "vue-cli-service lint",
+        "build:lambda": "netlify-lambda build $npm_package_lambda_src",
+        "serve:lambda": "netlify-lambda serve $npm_package_lambda_src"
+    },
+    "lambda": {
+        "src": "lambda/src"
+    },
+    "dependencies": {
+        "gutenberg-css": "0.4.4",
+        "npm": "6.2.0",
+        "register-service-worker": "1.0.0",
+        "vue": "2.5.16"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-svg-core": "1.2.1",
+        "@fortawesome/free-solid-svg-icons": "5.1.1",
+        "@fortawesome/pro-light-svg-icons": "5.1.1",
+        "@fortawesome/vue-fontawesome": "0.1.1",
+        "@vue/cli-plugin-babel": "3.0.0-rc.4",
+        "@vue/cli-plugin-eslint": "3.0.0-rc.4",
+        "@vue/cli-plugin-pwa": "3.0.0-rc.4",
+        "@vue/cli-service": "3.0.0-rc.4",
+        "@vue/eslint-config-prettier": "3.0.0-rc.4",
+        "axios": "0.18.0",
+        "netlify-lambda": "0.4.0",
+        "node-sass": "4.9.0",
+        "sass-loader": "7.0.1",
+        "vue-template-compiler": "2.5.16",
+        "vue2-scrollspy": "2.3.1",
+        "webpack-auto-inject-version": "1.1.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie < 11"
+    ]
 }

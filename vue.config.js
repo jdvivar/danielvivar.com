@@ -16,9 +16,15 @@ module.exports = {
       clientsClaim: true
     }
   },
-  configureWepack: {
+  configureWebpack: {
     plugins: [
-      new WebpackAutoInject({})
+      new WebpackAutoInject({
+        componentsOptions: {
+          AutoIncreaseVersion: {
+            runInWatchMode: false // it will increase version with every single build!
+          }
+        }
+      })
     ]
   }
 };
