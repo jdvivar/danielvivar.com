@@ -1,5 +1,7 @@
 <template>
-  <section id="experience" class="">
+  <section 
+    id="experience" 
+    class="">
     <h1>where I've worked</h1>
     <ul>
       <li class="experience-item">
@@ -220,7 +222,10 @@
 // Icons component
 import { library as Icons } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faGlobeAfrica, faExternalLink } from "@fortawesome/pro-light-svg-icons";
+import {
+  faGlobeAfrica,
+  faExternalLink
+} from "@fortawesome/pro-light-svg-icons";
 
 Icons.add(faGlobeAfrica, faExternalLink);
 

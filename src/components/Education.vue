@@ -65,7 +65,10 @@
 // Icons component
 import { library as Icons } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faGlobeAfrica, faExternalLink } from "@fortawesome/pro-light-svg-icons";
+import {
+  faGlobeAfrica,
+  faExternalLink
+} from "@fortawesome/pro-light-svg-icons";
 
 Icons.add(faGlobeAfrica, faExternalLink);
 

@@ -7,6 +7,11 @@ module.exports = {
       }
     }
   },
-
-  lintOnSave: undefined
+  lintOnSave: undefined,
+  pwa: {
+    workboxOptions: {
+      skipWaiting: true,
+      clientsClaim: true
+    }
+  }
 };

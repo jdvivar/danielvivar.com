@@ -1,5 +1,7 @@
 <template>
-  <section id="contact" class="no-print">
+  <section 
+    id="contact" 
+    class="no-print">
     <h1>how you can get in touch</h1>
     <ul>
       <li>
