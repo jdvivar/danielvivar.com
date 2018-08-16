@@ -3,7 +3,7 @@
     <h1>what I'm good at</h1>
     <div class="section-description">
       <p>
-        I'm good at <b>abstract thinking</b>: explaining and designing how things work and talking to non-technical people too: from senior architects to product managers, ux researchers or a CTO, and have meaningful conversations with each one of them.
+        I'm good at <b>abstract thinking</b>: understanding business problems, explaining how things work to others and be a great communicator to both technical and non-technical colleagues. Being able to have meaningful conversations with people from every team, experience and level.
       </p>
       <p>
         A good synthesis capacity also helps when <b>designing the architecture</b> of apps and systems and when solving difficult problems.
