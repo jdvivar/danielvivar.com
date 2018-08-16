@@ -1,10 +1,12 @@
 {
     "name": "danielvivar.com",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build --modern --env.patch && npm run build:lambda",
+        "build": "vue-cli-service build --modern && npm run build:lambda",
+        "aiv:patch": "npm run build --env.patch",
+        "aiv:minor": "npm run build --env.minor",
         "lint": "vue-cli-service lint",
         "build:lambda": "netlify-lambda build $npm_package_lambda_src",
         "serve:lambda": "netlify-lambda serve $npm_package_lambda_src"
@@ -12,27 +14,24 @@
     "lambda": {
         "src": "lambda/src"
     },
-    "dependencies": {
-        "gutenberg-css": "0.4.4",
-        "npm": "6.2.0",
-        "register-service-worker": "1.0.0",
-        "vue": "2.5.16"
-    },
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "1.2.1",
         "@fortawesome/free-solid-svg-icons": "5.1.1",
         "@fortawesome/pro-light-svg-icons": "5.1.1",
         "@fortawesome/vue-fontawesome": "0.1.1",
-        "@vue/cli-plugin-babel": "3.0.0-rc.4",
-        "@vue/cli-plugin-eslint": "3.0.0-rc.4",
-        "@vue/cli-plugin-pwa": "3.0.0-rc.4",
-        "@vue/cli-service": "3.0.0-rc.4",
-        "@vue/eslint-config-prettier": "3.0.0-rc.4",
+        "@vue/cli-plugin-babel": "3.0.1",
+        "@vue/cli-plugin-eslint": "3.0.1",
+        "@vue/cli-plugin-pwa": "3.0.1",
+        "@vue/cli-service": "3.0.1",
+        "@vue/eslint-config-prettier": "3.0.1",
         "axios": "0.18.0",
+        "gutenberg-css": "0.4.4",
         "netlify-lambda": "0.4.0",
         "node-sass": "4.9.0",
+        "register-service-worker": "1.0.0",
         "sass-loader": "7.0.1",
-        "vue-template-compiler": "2.5.16",
+        "vue": "2.5.17",
+        "vue-template-compiler": "2.5.17",
         "vue2-scrollspy": "2.3.1",
         "webpack-auto-inject-version": "1.1.0"
     },
