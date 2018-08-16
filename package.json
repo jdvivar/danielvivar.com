@@ -1,12 +1,10 @@
 {
     "name": "danielvivar.com",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build --modern && npm run build:lambda",
-        "aiv:patch": "npm run build --env.patch",
-        "aiv:minor": "npm run build --env.minor",
         "lint": "vue-cli-service lint",
         "build:lambda": "netlify-lambda build $npm_package_lambda_src",
         "serve:lambda": "netlify-lambda serve $npm_package_lambda_src"

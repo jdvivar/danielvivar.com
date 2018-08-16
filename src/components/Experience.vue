@@ -9,7 +9,7 @@
           Zava
         </div>
         <div class="company-logo no-print">
-          <img src="/img/zava-logo.png">
+          <img src="/img/zava-logo.webp">
         </div>
         <div class="title">
           front-end web engineer
@@ -80,7 +80,7 @@
         <div
           class="company-logo no-print"
           style="margin: 20px 0">
-          <img src="/img/typeless-logo.png">
+          <img src="/img/typeless-logo.webp">
         </div>
         <div class="title">
           lead ui/ux designer
@@ -138,7 +138,7 @@
           Atos
         </div>
         <div class="company-logo no-print">
-          <img src="/img/atos-logo.jpg">
+          <img src="/img/atos-logo.webp">
         </div>
         <div class="title">
           hybrid apps developer & researcher
@@ -187,7 +187,7 @@
           Grupo Coeco
         </div>
         <div class="company-logo no-print">
-          <img src="/img/coeco-logo.jpg">
+          <img src="/img/coeco-logo.webp">
         </div>
         <div class="title">
           graphic designer

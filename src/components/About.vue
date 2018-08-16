@@ -4,7 +4,7 @@
     class="no-print">
     <h1>about this site</h1>
     <p>
-      This site is a PWA made with Vue CLI 3 (so Vue.js + Webpack), hosted in Bitbucket/<a
+      This site is a PWA made with Vue CLI 3 (so Vue.js + Webpack), hosted in Bitbucket and <a
         href="https://github.com/jdvivar/danielvivar.com"
         target="_blank">GitHub <font-awesome-icon :icon="['fal', 'external-link']"/></a> and deployed with Netlify.
     </p>

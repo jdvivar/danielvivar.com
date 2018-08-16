@@ -4,7 +4,7 @@
     <ul>
       <li class="education-item">
         <div class="institution-logo no-print">
-          <img src="/img/upm-logo.png">
+          <img src="/img/upm-logo.webp">
         </div>
         <div class="institution">
           Universidad Politécnica de Madrid
@@ -25,7 +25,7 @@
       </li>
       <li class="education-item">
         <div class="institution-logo no-print">
-          <img src="/img/htw-logo.jpg">
+          <img src="/img/htw-logo.webp">
         </div>
         <div class="institution">
           HTW Berlin
