@@ -27,16 +27,16 @@
 
 <script>
 // Icons component
-import { library as Icons } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faExternalLink } from "@fortawesome/pro-light-svg-icons";
+import { library as Icons } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faExternalLink } from '@fortawesome/pro-light-svg-icons'
 
-Icons.add(faExternalLink);
+Icons.add(faExternalLink)
 
 export default {
-  name: "About",
+  name: 'About',
   components: {
     FontAwesomeIcon
   }
-};
+}
 </script>

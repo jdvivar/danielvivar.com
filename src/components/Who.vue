@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  name: "Who"
-};
+  name: 'Who'
+}
 </script>

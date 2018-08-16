@@ -1,6 +1,6 @@
 <template>
-  <section 
-    id="contact" 
+  <section
+    id="contact"
     class="no-print">
     <h1>how you can get in touch</h1>
     <ul>
@@ -45,35 +45,35 @@
 </template>
 
 <script>
-import LambdaFunctions from "@/services/LambdaFunctions";
+import LambdaFunctions from '@/services/LambdaFunctions'
 
 // Icons component
-import { library as Icons } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faMapMarked, faExternalLink } from "@fortawesome/pro-light-svg-icons";
+import { library as Icons } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faMapMarked, faExternalLink } from '@fortawesome/pro-light-svg-icons'
 
-Icons.add(faMapMarked, faExternalLink);
+Icons.add(faMapMarked, faExternalLink)
 
 export default {
-  name: "Contact",
+  name: 'Contact',
   components: {
     FontAwesomeIcon
   },
-  data() {
+  data () {
     return {
-      email: "",
-      phoneNumber: ""
-    };
+      email: '',
+      phoneNumber: ''
+    }
   },
   methods: {
-    async getEmail() {
-      const response = await LambdaFunctions.getEmail();
-      this.email = response.data;
+    async getEmail () {
+      const response = await LambdaFunctions.getEmail()
+      this.email = response.data
     },
-    async getPhoneNumber() {
-      const response = await LambdaFunctions.getPhoneNumber();
-      this.phoneNumber = response.data;
+    async getPhoneNumber () {
+      const response = await LambdaFunctions.getPhoneNumber()
+      this.phoneNumber = response.data
     }
   }
-};
+}
 </script>

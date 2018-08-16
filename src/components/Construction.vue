@@ -1,6 +1,6 @@
 <template>
-  <div 
-    id="construction" 
+  <div
+    id="construction"
     class="no-print">
     <button
       v-if="collapsed"
@@ -64,13 +64,13 @@
 </template>
 <script>
 export default {
-  name: "Construction",
-  data() {
+  name: 'Construction',
+  data () {
     return {
       collapsed: false
-    };
+    }
   }
-};
+}
 </script>
 <style lang="scss" scoped>
 .open {

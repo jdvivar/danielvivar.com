@@ -9,7 +9,9 @@
           Zava
         </div>
         <div class="company-logo no-print">
-          <img src="/img/zava-logo.webp">
+          <img
+            src="/img/zava-logo.webp"
+            alt="zava logo">
         </div>
         <div class="title">
           front-end web engineer
@@ -80,7 +82,9 @@
         <div
           class="company-logo no-print"
           style="margin: 20px 0">
-          <img src="/img/typeless-logo.webp">
+          <img
+            src="/img/typeless-logo.webp"
+            alt="typeless logo">
         </div>
         <div class="title">
           lead ui/ux designer
@@ -138,7 +142,9 @@
           Atos
         </div>
         <div class="company-logo no-print">
-          <img src="/img/atos-logo.webp">
+          <img
+            src="/img/atos-logo.webp"
+            alt="atos-logo">
         </div>
         <div class="title">
           hybrid apps developer & researcher
@@ -187,7 +193,9 @@
           Grupo Coeco
         </div>
         <div class="company-logo no-print">
-          <img src="/img/coeco-logo.webp">
+          <img
+            src="/img/coeco-logo.webp"
+            alt="coeco logo">
         </div>
         <div class="title">
           graphic designer
@@ -220,19 +228,19 @@
 
 <script>
 // Icons component
-import { library as Icons } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library as Icons } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faGlobeAfrica,
   faExternalLink
-} from "@fortawesome/pro-light-svg-icons";
+} from '@fortawesome/pro-light-svg-icons'
 
-Icons.add(faGlobeAfrica, faExternalLink);
+Icons.add(faGlobeAfrica, faExternalLink)
 
 export default {
-  name: "Experience",
+  name: 'Experience',
   components: {
     FontAwesomeIcon
   }
-};
+}
 </script>

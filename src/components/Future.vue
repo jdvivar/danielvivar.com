@@ -17,6 +17,6 @@
 
 <script>
 export default {
-  name: "Future"
-};
+  name: 'Future'
+}
 </script>

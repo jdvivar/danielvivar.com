@@ -27,60 +27,60 @@
 </template>
 
 <script>
-import Vue from "vue";
+import Vue from 'vue'
 
 export default {
-  name: "Selectors",
-  data() {
+  name: 'Selectors',
+  data () {
     return {
       selectors: {
         style: {
-          value: "default",
-          default: { text: "Default", value: "default" },
+          value: 'default',
+          default: { text: 'Default', value: 'default' },
           options: [
             {
-              text: "No style",
-              value: "no_style"
+              text: 'No style',
+              value: 'no_style'
             }
           ]
         },
         accent: {
-          value: "red",
-          default: { text: "Red", value: "red" },
+          value: 'red',
+          default: { text: 'Red', value: 'red' },
           options: [
-            { text: "Blue", value: "blue" },
-            { text: "Green", value: "green" },
-            { text: "Gold", value: "gold" },
-            { text: "Pink", value: "pink" },
-            { text: "Sky Blue", value: "skyblue" },
-            { text: "Black", value: "black" }
+            { text: 'Blue', value: 'blue' },
+            { text: 'Green', value: 'green' },
+            { text: 'Gold', value: 'gold' },
+            { text: 'Pink', value: 'pink' },
+            { text: 'Sky Blue', value: 'skyblue' },
+            { text: 'Black', value: 'black' }
           ]
         }
       },
       scrollSpyOffset: {
         default: 300
       }
-    };
-  },
-  watch: {
-    "selectors.accent.value": accent => {
-      const wrapper = document.getElementById("wrapper");
-      wrapper.style.setProperty("--accent", accent);
-    },
-    // Can't apply ES6 because we need to bind the Vue instance
-    "selectors.style.value": function(style) {
-      this.$parent.style = style;
-      Vue.prototype.$scrollSpyOffset = this.scrollSpyOffset[style];
     }
   },
-  mounted: function() {
+  watch: {
+    'selectors.accent.value': accent => {
+      const wrapper = document.getElementById('wrapper')
+      wrapper.style.setProperty('--accent', accent)
+    },
+    // Can't apply ES6 because we need to bind the Vue instance
+    'selectors.style.value': function (style) {
+      this.$parent.style = style
+      Vue.prototype.$scrollSpyOffset = this.scrollSpyOffset[style]
+    }
+  },
+  mounted: function () {
     window.onbeforeprint = () => {
-      const beforePrintStyle = this.selectors.style.value;
+      const beforePrintStyle = this.selectors.style.value
       window.onafterprint = () => {
-        this.selectors.style.value = beforePrintStyle;
-      };
-      this.selectors.style.value = "no_style";
-    };
+        this.selectors.style.value = beforePrintStyle
+      }
+      this.selectors.style.value = 'no_style'
+    }
   }
-};
+}
 </script>

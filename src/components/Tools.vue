@@ -645,28 +645,28 @@
 
 <script>
 // Modal component
-import Modal from "@/components/Modal.vue";
+import Modal from '@/components/Modal.vue'
 
 export default {
-  name: "Tools",
+  name: 'Tools',
   components: {
     Modal
   },
-  data() {
+  data () {
     return {
       showModal: false
-    };
+    }
   },
-  mounted() {
-    const tools = document.querySelectorAll("#tools > span");
+  mounted () {
+    const tools = document.querySelectorAll('#tools > span')
     tools.forEach(tool => {
-      tool.addEventListener("click", this.clickTerm);
-    });
+      tool.addEventListener('click', this.clickTerm)
+    })
   },
   methods: {
-    clickTerm(event) {
-      this.showModal = event.target.innerHTML;
+    clickTerm (event) {
+      this.showModal = event.target.innerHTML
     }
   }
-};
+}
 </script>

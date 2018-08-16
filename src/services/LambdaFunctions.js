@@ -1,10 +1,10 @@
-import Lambda from "@/services/Lambda";
+import Lambda from '@/services/Lambda'
 
 export default {
-  getEmail() {
-    return Lambda().get("getEmail");
+  getEmail () {
+    return Lambda().get('getEmail')
   },
-  getPhoneNumber() {
-    return Lambda().get("getPhoneNumber");
+  getPhoneNumber () {
+    return Lambda().get('getPhoneNumber')
   }
-};
+}

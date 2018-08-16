@@ -4,7 +4,9 @@
     <ul>
       <li class="education-item">
         <div class="institution-logo no-print">
-          <img src="/img/upm-logo.webp">
+          <img
+            src="/img/upm-logo.webp"
+            alt="upm logo">
         </div>
         <div class="institution">
           Universidad Politécnica de Madrid
@@ -25,7 +27,9 @@
       </li>
       <li class="education-item">
         <div class="institution-logo no-print">
-          <img src="/img/htw-logo.webp">
+          <img
+            src="/img/htw-logo.webp"
+            alt="htw logo">
         </div>
         <div class="institution">
           HTW Berlin
@@ -63,19 +67,19 @@
 
 <script>
 // Icons component
-import { library as Icons } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library as Icons } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faGlobeAfrica,
   faExternalLink
-} from "@fortawesome/pro-light-svg-icons";
+} from '@fortawesome/pro-light-svg-icons'
 
-Icons.add(faGlobeAfrica, faExternalLink);
+Icons.add(faGlobeAfrica, faExternalLink)
 
 export default {
-  name: "Education",
+  name: 'Education',
   components: {
     FontAwesomeIcon
   }
-};
+}
 </script>

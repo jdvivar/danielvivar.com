@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import Content from "@/components/Content.vue";
+import Content from '@/components/Content.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Content
   }
-};
+}
 </script>
 <style>
 body {

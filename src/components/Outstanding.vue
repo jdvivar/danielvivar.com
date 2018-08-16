@@ -17,6 +17,6 @@
 
 <script>
 export default {
-  name: "Outstanding"
-};
+  name: 'Outstanding'
+}
 </script>

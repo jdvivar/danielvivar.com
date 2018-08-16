@@ -5,11 +5,12 @@ module.exports = {
   },
   'extends': [
     'plugin:vue/recommended',
-    '@vue/prettier'
+    'plugin:vue/essential',
+    '@vue/standard'
   ],
   rules: {
-    'no-console': 'off',
-    'no-debugger': 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/html-quotes': [
       'error',
       'double'

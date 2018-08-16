@@ -16,7 +16,7 @@
           <div class="modal-body">
             <slot name="definition"/>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -25,18 +25,18 @@
 
 <script>
 // Icons
-import { library as Icons } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faTimes } from "@fortawesome/pro-light-svg-icons";
+import { library as Icons } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faTimes } from '@fortawesome/pro-light-svg-icons'
 
-Icons.add(faTimes);
+Icons.add(faTimes)
 
 export default {
-  name: "Modal",
+  name: 'Modal',
   components: {
     FontAwesomeIcon
   }
-};
+}
 </script>
 
 <style lang="scss">

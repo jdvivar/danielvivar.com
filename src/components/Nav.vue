@@ -14,22 +14,22 @@
 
 <script>
 // Scrollspy
-import Scrollspy, { Easing } from "vue2-scrollspy";
-import Vue from "vue";
+import Scrollspy, { Easing } from 'vue2-scrollspy'
+import Vue from 'vue'
 
 // Initialise scrollspy
 Vue.use(Scrollspy, {
   easing: Easing.Cubic.InOut,
   offset: Vue.prototype.$scrollSpyOffset
-});
+})
 
 export default {
-  name: "Nav",
+  name: 'Nav',
   props: {
     sections: {
       type: Array,
       default: () => []
     }
   }
-};
+}
 </script>
