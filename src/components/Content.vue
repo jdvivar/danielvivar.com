@@ -9,14 +9,7 @@
 
     <Nav :sections="sections" />
 
-    <!--
-
-      We need to add v-scroll-spy attribute at a later time
-      in order to scrollSpyOffset to take effect
-
-    -->
-    <!-- <main v-scroll-spy="`{ offset: ${scrollSpyOffset} }`"> -->
-    <main v-scroll-spy="{ offset: 160 }">
+    <main v-scroll-spy>
 
       <Who />
       <Future />
@@ -32,6 +25,7 @@
 </template>
 
 <script>
+// Components
 import Selectors from "@/components/Selectors.vue";
 import Nav from "@/components/Nav.vue";
 import Who from "@/components/Who.vue";
@@ -62,12 +56,12 @@ export default {
   data() {
     return {
       sections: [],
-      scrollSpyOffset: 160,
       style: "default"
     };
   },
   mounted: function() {
     this.$nextTick(function() {
+      // to populate navbar with sections out of the h1's found
       document.querySelectorAll("section").forEach(section => {
         const id = section.id;
         const heading = section.querySelector("h1").innerText;
