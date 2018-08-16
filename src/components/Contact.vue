@@ -33,11 +33,13 @@
       <li>
         <a
           href="https://www.linkedin.com/in/jdvivar"
+          rel="noreferrer"
           target="_blank">Visit my Linkedin profile <font-awesome-icon :icon="['fal', 'external-link']"/></a>
       </li>
       <li>
         <a
           href="https://www.facebook.com/danielvivar"
+          rel="noreferrer"
           target="_blank">Visit my Facebook profile <font-awesome-icon :icon="['fal', 'external-link']"/></a>
       </li>
     </ul>

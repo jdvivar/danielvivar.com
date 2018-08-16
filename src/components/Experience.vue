@@ -33,6 +33,7 @@
           <p>
             In <a
               href="https://www.zavamed.com/uk"
+              rel="noreferrer"
               target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow. From helping rebrand from DrEd to Zava, moving offices from Farrringdon to Angel and many other big events, as well as being part and even leading in some development work.
           </p>
           <p>
@@ -106,6 +107,7 @@
           <p>
             Typeless was a contacts aggregator <a
               href="https://www.producthunt.com/posts/typeless"
+              rel="noreferrer"
               target="_blank">(at Product Hunt <font-awesome-icon :icon="['fal', 'external-link']"/>)</a>. The founders were based in London and a team of developers worked remotely from India.
           </p>
           <p>
@@ -118,6 +120,7 @@
             <li>
               <a
                 href="http://www.danielvivar.com/typeless/topbar.html"
+                rel="noreferrer"
                 target="_blank">
                 A completely responsive layout for the web app
                 <font-awesome-icon :icon="['fal', 'external-link']"/>
@@ -126,6 +129,7 @@
             <li>
               <a
                 href="http://invis.io/G62N9KKQ3"
+                rel="noreferrer"
                 target="_blank">
                 A design from scratch of an iOS app for iPhone
                 <font-awesome-icon :icon="['fal', 'external-link']"/>

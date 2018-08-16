@@ -6,6 +6,7 @@
     <p>
       This site is a PWA made with Vue CLI 3 (so Vue.js + Webpack), hosted in Bitbucket and <a
         href="https://github.com/jdvivar/danielvivar.com"
+        rel="noreferrer"
         target="_blank">GitHub <font-awesome-icon :icon="['fal', 'external-link']"/></a> and deployed with Netlify.
     </p>
     <p>
@@ -18,9 +19,10 @@
       I'm also trying to demonstrate that content <em>&mdash;what&mdash;</em> and style <em>&mdash;how&mdash;</em> are two logically detached layers of web design.
     </p>
     <p>
-      <a
+      Here is <a
         href="https://www.danielvivar.com/2015"
-        target="_blank">Here</a> you can find my previous personal site, done in 2015, with other goals, interests and definitely simpler.
+        rel="noreferrer"
+        target="_blank">my previous personal site <font-awesome-icon :icon="['fal', 'external-link']"/></a>, done in 2015, with other goals, interests and definitely simpler.
     </p>
   </section>
 </template>
