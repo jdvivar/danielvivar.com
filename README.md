@@ -44,22 +44,22 @@ If you don't have a FontAwesome licence then you'll need to remove the PRO icons
 $ npm uninstall @fortawesome/pro-light-svg-icons
 ```
 ### 2. Use the correct file when adding icons to components
-Substitute this lines in Vue components code:
+Substitute lines like this in Vue components code:
 ```js
 import { faAngleUp } from "@fortawesome/pro-light-svg-icons";
 ```
-with this other one:
+with this, note only the source package name changes:
 ```js
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 ```
 
-Now it all should work. However, the free solid icons doesn't match the design.
+Now it all should work OK. However, free solid icons doesn't look as good in this site.
 
-## The buttons for email/phone are not working
+## E-mail/phone buttons are not working
 
-Lambda functions are serving sensitive data. We need to run a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that:
+Lambda functions are used to serve sensitive data, like the phone or e-mail in this case. We need to run a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that:
 ```
 npm run lambda:serve
 ```
-Why I didn't add this as part as the `serve` command?
-Because then Vue UI doesn't capture any of the data from the `vue-cli-service serve` command.
+Why didn't I add this in the `serve` command?
+You can and it will work exactly as it works in Netlify, but then Vue UI doesn't capture any of the data from the `vue-cli-service serve` command when it executes the build, so the dashboard just produces terminal lines and then the UI will lose much of its appeal :)
