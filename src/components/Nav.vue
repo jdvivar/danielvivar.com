@@ -18,7 +18,7 @@ import Scrollspy, { Easing } from 'vue2-scrollspy'
 import Vue from 'vue'
 
 // a selector can change this value too
-Vue.prototype.$scrollSpyOffset = 300
+Vue.prototype.$scrollSpyOffset = 280
 
 // Initialise scrollspy
 Vue.use(Scrollspy, {

@@ -9,9 +9,17 @@
           Zava
         </div>
         <div class="company-logo no-print">
-          <img
-            src="/img/zava-logo.webp"
-            alt="zava logo">
+          <picture>
+            <source
+              srcset="/img/zava-logo.webp"
+              type="image/webp">
+            <source
+              srcset="/img/zava-logo.png"
+              type="image/png">
+            <img
+              src="/img/zava-logo.png"
+              alt="zava logo">
+          </picture>
         </div>
         <div class="title">
           front-end web engineer
@@ -83,9 +91,17 @@
         <div
           class="company-logo no-print"
           style="margin: 20px 0">
-          <img
-            src="/img/typeless-logo.webp"
-            alt="typeless logo">
+          <picture>
+            <source
+              srcset="/img/typeless-logo.webp"
+              type="image/webp">
+            <source
+              srcset="/img/typeless-logo.png"
+              type="image/png">
+            <img
+              src="/img/zava-logo.png"
+              alt="typeless logo">
+          </picture>
         </div>
         <div class="title">
           lead ui/ux designer
@@ -146,9 +162,17 @@
           Atos
         </div>
         <div class="company-logo no-print">
-          <img
-            src="/img/atos-logo.webp"
-            alt="atos-logo">
+          <picture>
+            <source
+              srcset="/img/atos-logo.webp"
+              type="image/webp">
+            <source
+              srcset="/img/atos-logo.jpg"
+              type="image/jpg">
+            <img
+              src="/img/atos-logo.jpg"
+              alt="atos logo">
+          </picture>
         </div>
         <div class="title">
           hybrid apps developer & researcher
@@ -197,9 +221,17 @@
           Grupo Coeco
         </div>
         <div class="company-logo no-print">
-          <img
-            src="/img/coeco-logo.webp"
-            alt="coeco logo">
+          <picture>
+            <source
+              srcset="/img/coeco-logo.webp"
+              type="image/webp">
+            <source
+              srcset="/img/coeco-logo.jpg"
+              type="image/jpg">
+            <img
+              src="/img/coeco-logo.jpg"
+              alt="coeco logo">
+          </picture>
         </div>
         <div class="title">
           graphic designer
