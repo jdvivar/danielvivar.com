@@ -57,7 +57,7 @@ Now it all should work OK. However, free solid icons doesn't look as good in thi
 
 ## E-mail/phone buttons are not working
 
-Lambda functions are used to serve sensitive data, like the phone or e-mail in this case. We need to run a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that:
+Lambda functions are used to serve sensitive data, like the phone or e-mail in this case. We need to run a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that. Click on the task in the Vue UI or execute the script:
 ```
 npm run lambda:serve
 ```
