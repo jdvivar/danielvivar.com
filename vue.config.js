@@ -14,7 +14,8 @@ module.exports = {
     workboxOptions: {
       skipWaiting: true,
       clientsClaim: true
-    }
+    },
+    themeColor: '#FFBFCB'
   },
   configureWebpack: {
     plugins: [
