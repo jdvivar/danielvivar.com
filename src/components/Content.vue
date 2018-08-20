@@ -65,7 +65,7 @@ export default {
       document.querySelectorAll('section').forEach(section => {
         const id = section.id
         const heading = section.querySelector('h1').innerText
-        this.sections.push({ id: id, heading: heading })
+        this.sections.push({ id, heading })
       })
     })
   }
