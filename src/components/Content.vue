@@ -3,11 +3,13 @@
     id="wrapper"
     :class="style">
 
+    <Topnav />
+
     <Construction />
 
-    <Selectors />
+    <!-- <Selectors /> -->
 
-    <Nav :sections="sections" />
+    <Navigation :sections="sections" />
 
     <main v-scroll-spy>
 
@@ -27,7 +29,7 @@
 <script>
 // Components
 import Selectors from '@/components/Selectors.vue'
-import Nav from '@/components/Nav.vue'
+import Navigation from '@/components/Navigation.vue'
 import Who from '@/components/Who.vue'
 import Future from '@/components/Future.vue'
 import Outstanding from '@/components/Outstanding.vue'
@@ -37,12 +39,13 @@ import Education from '@/components/Education.vue'
 import Contact from '@/components/Contact.vue'
 import About from '@/components/About.vue'
 import Construction from '@/components/Construction.vue'
+import Topnav from '@/components/Topnav.vue'
 
 export default {
   name: 'Content',
   components: {
     Selectors,
-    Nav,
+    Navigation,
     Who,
     Future,
     Outstanding,
@@ -51,12 +54,17 @@ export default {
     Education,
     Contact,
     About,
-    Construction
+    Construction,
+    Topnav
   },
   data () {
     return {
-      sections: [],
-      style: 'default'
+      sections: []
+    }
+  },
+  computed: {
+    style () {
+      return this.$store.state.style
     }
   },
   mounted: function () {

@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 
 export default {
   name: 'Selectors',
@@ -58,7 +57,7 @@ export default {
         }
       },
       scrollSpyOffset: {
-        default: 300
+        default: 800
       }
     }
   },
@@ -69,8 +68,8 @@ export default {
     },
     // Can't apply ES6 because we need to bind the Vue instance
     'selectors.style.value': function (style) {
-      this.$parent.style = style
-      Vue.prototype.$scrollSpyOffset = this.scrollSpyOffset[style]
+      this.$store.commit('changeTo', { key: 'style', newValue: style })
+      this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: this.scrollSpyOffset[style] })
     }
   },
   mounted: function () {

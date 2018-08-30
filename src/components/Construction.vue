@@ -74,6 +74,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .open {
+  left: 0;
   position: fixed;
   margin: 20px;
   padding: 3px;
@@ -86,6 +87,7 @@ export default {
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 300;
+  left: 0;
   line-height: 1.6;
   margin: 20px;
   max-width: 300px;

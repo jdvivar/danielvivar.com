@@ -1,5 +1,5 @@
 <template>
-  <nav class="no-print">
+  <nav class="navigation no-print">
     <ul
       v-scroll-spy-active
       v-scroll-spy-link>
@@ -10,24 +10,22 @@
       </li>
     </ul>
   </nav>
+
 </template>
 
 <script>
 // Scrollspy
 import Scrollspy, { Easing } from 'vue2-scrollspy'
 import Vue from 'vue'
+import store from '../store'
 
-// a selector can change this value too
-Vue.prototype.$scrollSpyOffset = 280
-
-// Initialise scrollspy
 Vue.use(Scrollspy, {
   easing: Easing.Cubic.InOut,
-  offset: Vue.prototype.$scrollSpyOffset
+  offset: store.state.scrollSpyOffset
 })
 
 export default {
-  name: 'Nav',
+  name: 'Navigation',
   props: {
     sections: {
       type: Array,
