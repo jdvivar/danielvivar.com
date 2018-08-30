@@ -3,11 +3,11 @@
     id="wrapper"
     :class="style">
 
-    <Topnav />
+    <!-- <Topnav /> -->
 
     <Construction />
 
-    <!-- <Selectors /> -->
+    <Selectors />
 
     <Navigation :sections="sections" />
 
