@@ -12,6 +12,15 @@
     <p>
       It could have just been one HTML5 page plus some vanilla JS and CSS in a normal server, but automating both the development workflow with the webpack based Vue CLI dashboard and the deployment plus lots of other perks from Netlify's free tier is just a breeze and very educational.
     </p>
+    <a
+      href="https://github.com/jdvivar/danielvivar.com"
+      rel="noreferrer"
+      target="_blank">
+      <img
+        src="https://i.imgur.com/16QWIBe.png"
+        alt="Vue CLI dashboard"
+        style="max-width: 100%;height: auto">
+    </a>
     <p>
       Netlify has snippet injection, so Google Analytics is added during deployment that way, and my e-mail address and phone number are behind AWS Lambda cloud functions, also served by Netlify. It all costs zero, nada, gratis! The only unnecessary luxury is the domain, for which I pay around £8 per year.
     </p>
