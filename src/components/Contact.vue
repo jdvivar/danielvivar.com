@@ -11,6 +11,7 @@
           Send me a message at {{ email }}
           <font-awesome-icon :icon="['fal', 'external-link']"/>
         </a>
+
         <button
           v-else
           @click="getEmail()">

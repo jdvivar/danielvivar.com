@@ -3,11 +3,15 @@
   font-size: 16px;
 
   $logo-size: 80px;
+  $logo-size-mobile: 50px;
 
   .experience-item {
     position: relative;
-    margin-left: $logo-size + $grid-gap;
-    margin-top: $grid-gap;
+
+    @media (min-width: $breakpoint) {
+      margin-left: $logo-size + $grid-gap;
+      margin-top: $grid-gap;
+    }
 
     &:not(:first-child) {
       margin-top: $grid-gap * 2;
@@ -26,17 +30,22 @@
   }
 
   .location {
-    position: absolute;
-    right: 0;
-    top: 45px;
-    font-weight: 300;
-    text-transform: uppercase;
     font-size: 14px;
+    font-weight: 300;
+    margin-left: -5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+    @media (min-width: $breakpoint) {
+      position: absolute;
+      right: 0;
+      top: 45px;
+    }
   }
 
   .from,
   .until {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: $muted;
     text-transform: uppercase;
@@ -44,8 +53,8 @@
   }
 
   .until {
-    top: 105px;
-    left: -$logo-size - $grid-gap;
+    top: -$grid-gap/2;
+    left: $grid-gap * 4.5;
 
     &:before {
       content: "";
@@ -54,27 +63,26 @@
       background-color: $muted;
       display: inline-block;
       position: absolute;
-      left: 0;
-      top: $grid-gap / 1.5;
+      left: -25px;
+      top: 4px;
       border-radius: 50px;
 
     }
 
     &:after {
       content: "";
-      width: 2px;
-      height: $grid-gap * 5;
+      width: $grid-gap * 2;
+      height: 2px;
       background-color: $muted;
       display: inline-block;
       position: absolute;
-      left: 4px;
-      top: $grid-gap / 1.5;
+      left: -100px;
+      top: 8px;
     }
   }
 
   .from {
-    top: 350px;
-    left: -$logo-size - $grid-gap;
+    top: -$grid-gap/2;
 
     &:after {
       content: "";
@@ -83,8 +91,8 @@
       background-color: $muted;
       display: inline-block;
       position: absolute;
-      left: 0;
-      bottom: $grid-gap / 1.5;
+      left: 75px;
+      top: 4px;
       border-radius: 50px;
     }
   }
@@ -130,12 +138,19 @@
   }
 
   .company-logo {
-    position: absolute;
-    left: - $logo-size - $grid-gap;
-    top: 0;
-
+    float: right;
     img {
-      width: $logo-size;
+      width: $logo-size-mobile;
+    }
+
+    @media (min-width: $breakpoint) {
+      position: absolute;
+      left: - $logo-size - $grid-gap;
+      top: 0;
+
+      img {
+        width: $logo-size;
+      }
     }
   }
 }

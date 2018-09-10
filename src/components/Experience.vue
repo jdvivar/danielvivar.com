@@ -5,9 +5,6 @@
     <h1>where I've worked</h1>
     <ul>
       <li class="experience-item">
-        <div class="company">
-          Zava
-        </div>
         <div class="company-logo no-print">
           <picture>
             <source
@@ -20,6 +17,9 @@
               src="/img/zava-logo.png"
               alt="zava logo">
           </picture>
+        </div>
+        <div class="company">
+          Zava
         </div>
         <div class="title">
           front-end web engineer
@@ -85,9 +85,6 @@
         </div>
       </li>
       <li class="experience-item">
-        <div class="company">
-          Typeless
-        </div>
         <div
           class="company-logo no-print"
           style="margin: 20px 0">
@@ -102,6 +99,9 @@
               src="/img/zava-logo.png"
               alt="typeless logo">
           </picture>
+        </div>
+        <div class="company">
+          Typeless
         </div>
         <div class="title">
           lead ui/ux designer
@@ -158,9 +158,6 @@
         </div>
       </li>
       <li class="experience-item">
-        <div class="company">
-          Atos
-        </div>
         <div class="company-logo no-print">
           <picture>
             <source
@@ -173,6 +170,9 @@
               src="/img/atos-logo.jpg"
               alt="atos logo">
           </picture>
+        </div>
+        <div class="company">
+          Atos
         </div>
         <div class="title">
           hybrid apps developer & researcher
@@ -217,9 +217,6 @@
         </div>
       </li>
       <li class="experience-item no-print">
-        <div class="company">
-          Grupo Coeco
-        </div>
         <div class="company-logo no-print">
           <picture>
             <source
@@ -232,6 +229,9 @@
               src="/img/coeco-logo.jpg"
               alt="coeco logo">
           </picture>
+        </div>
+        <div class="company">
+          Grupo Coeco
         </div>
         <div class="title">
           graphic designer
