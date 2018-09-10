@@ -46,6 +46,9 @@
             <s>Fix the printable version</s>
           </li>
           <li>
+            <s>SEO: meta tags, images, icon</s>
+          </li>
+          <li>
             Add desktop menu with selectors, print button, etc.
           </li>
           <li>
@@ -53,9 +56,6 @@
           </li>
           <li>
             Add another theme
-          </li>
-          <li>
-            SEO: meta tags, images, icon
           </li>
         </ul>
       </div>
