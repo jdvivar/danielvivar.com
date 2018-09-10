@@ -16,8 +16,7 @@
 }
 
 .modal-container {
-  width: 450px;
-  margin: 0px auto;
+  margin: 0 10px;
   padding: $grid-gap;
   background-color: #fff;
   border-radius: 4px;
@@ -25,8 +24,15 @@
   border-bottom-width: 10px;
   border-bottom-style: solid;
   box-shadow: 0 8px 16px rgba(black, .33);
+  max-height: calc(100% - 20px);
+  overflow-y: scroll;
   transition: all $transition ease;
 
+  @media (min-width: $breakpoint) {
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+  }
 
   .modal-close {
     padding: 9px 13px;
