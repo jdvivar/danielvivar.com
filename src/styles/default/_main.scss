@@ -1,5 +1,10 @@
 main {
 
+  margin                : 0 auto;
+  padding-left          : $grid-gap;
+  padding-right         : $grid-gap;
+  max-width             : $grid-column * 2;
+
   @media (min-width: $breakpoint) {
     grid-area : 2 / 3 / auto / 5;
   }

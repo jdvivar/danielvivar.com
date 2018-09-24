@@ -1,19 +1,45 @@
 
   .navigation {
-    text-align : right;
-    grid-area  : 2 / 2 / auto / 3;
+    background: white;
     font-family: "Roboto Slab", sans-serif;
     font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    @media (min-width: $breakpoint) {
+      background: transparent;
+      grid-area  : 2 / 2 / auto / 3;
+      text-align : right;
+    }
 
     ul {
-      position   : sticky;
-      top        : $grid-column + $grid-gap;
-      margin: 0;
+      position: sticky;
+      top: 0;
+      overflow-y: hidden;
+      padding: 15px;
+      white-space: nowrap;
+
+      @media (min-width: $breakpoint) {
+        overflow: auto;
+        padding: 0;
+        min-height: none;
+        top: $grid-column + $grid-gap;
+        white-space: normal;
+      }
     }
+
 
     li {
       cursor: pointer;
+      display: inline-block;
       letter-spacing: .5px;
+      padding-right: 15px;
+
+      @media (min-width: $breakpoint) {
+        display: block;
+        padding-right: 0;
+      }
 
       &.active,
       &:hover {
@@ -24,7 +50,11 @@
     }
 
     li + li {
-      margin-top : $grid-gap / 2;
+      margin-top: 0;
+
+      @media (min-width: $breakpoint) {
+        margin-top : $grid-gap / 2;
+      }
     }
 
     a {

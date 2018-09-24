@@ -15,14 +15,10 @@
   font-family           : 'Source Sans Pro', sans-serif;
   cursor                : default;
   line-height           : 1.42;
-  max-width             : $grid-column * 2;
-  margin                : 0 auto;
-  padding-left          : $grid-gap;
-  padding-right         : $grid-gap;
 
   @media (min-width: $breakpoint) {
     padding-left          : 0;
-    padding-right         : 0;      
+    padding-right         : 0;
     max-width             : none;
     display               : grid;
     grid-gap              : $grid-gap;

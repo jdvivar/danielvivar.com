@@ -57,7 +57,7 @@ export default {
         }
       },
       scrollSpyOffset: {
-        default: 800
+        default: 280
       }
     }
   },

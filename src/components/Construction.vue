@@ -76,8 +76,9 @@ export default {
 .open {
   left: 0;
   position: fixed;
-  margin: 20px;
+  margin: 100px 20px;
   padding: 3px;
+  z-index: 10;
 }
 
 .notice {
@@ -89,7 +90,7 @@ export default {
   font-weight: 300;
   left: 0;
   line-height: 1.6;
-  margin: 20px;
+  margin: 100px 20px;
   max-width: 300px;
   opacity: 0.8;
   padding: 20px;

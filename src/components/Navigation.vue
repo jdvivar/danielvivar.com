@@ -6,7 +6,9 @@
       <li
         v-for="section in sections"
         :key="section.id">
-        <a :href="`#${section.id}`">{{ section.heading }}</a>
+        <a
+          :href="`#${section.id}`"
+          @click="scrollLinkIntoView">{{ section.heading }}</a>
       </li>
     </ul>
   </nav>
@@ -17,11 +19,9 @@
 // Scrollspy
 import Scrollspy, { Easing } from 'vue2-scrollspy'
 import Vue from 'vue'
-import store from '../store'
 
 Vue.use(Scrollspy, {
-  easing: Easing.Cubic.InOut,
-  offset: store.state.scrollSpyOffset
+  easing: Easing.Cubic.InOut
 })
 
 export default {
@@ -31,6 +31,19 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+  methods: {
+    scrollLinkIntoView (event) {
+      function previousSiblingsWidth (element) {
+        let width = 0
+        if (element.previousSibling) {
+          width = element.previousSibling.scrollWidth + previousSiblingsWidth(element.previousSibling)
+        }
+        return width
+      }
+      event.srcElement.parentElement.parentElement.scrollLeft = previousSiblingsWidth(event.srcElement.parentElement)
+    }
   }
+
 }
 </script>

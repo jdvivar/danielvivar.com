@@ -11,7 +11,7 @@
 
     <Navigation :sections="sections" />
 
-    <main v-scroll-spy>
+    <main v-scroll-spy="{ offset: offset}">
 
       <Who />
       <Future />
@@ -65,6 +65,9 @@ export default {
   computed: {
     style () {
       return this.$store.state.style
+    },
+    offset () {
+      return this.$store.state.scrollSpyOffset
     }
   },
   mounted: function () {
