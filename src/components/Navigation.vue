@@ -36,11 +36,12 @@ export default {
     this.$nextTick(function () {
       const wrapper = document.getElementById('wrapper')
       const breakpoint = getComputedStyle(wrapper).getPropertyValue('--breakpoint')
+      const mobileOffset = getComputedStyle(wrapper).getPropertyValue('--mobileOffset')
 
       const responsiveScrollspyOffset = () => {
         if (!window.matchMedia(`(min-width: ${breakpoint})`).matches) {
           // below breakpoint
-          this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: 100 })
+          this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: mobileOffset })
         }
       }
 

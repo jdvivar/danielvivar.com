@@ -11,6 +11,7 @@
   --accent     : red;
   $breakpoint  : 3 * $grid-column + 4 * $grid-gap;
   --breakpoint : #{$breakpoint};
+  --mobileOffset : 65;
 
   // Styles applicable to the whole content
   font-family           : 'Source Sans Pro', sans-serif;
