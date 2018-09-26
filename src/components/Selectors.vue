@@ -41,13 +41,11 @@
 
 <script>
 import { headroom as Headroom } from 'vue-headroom'
-import { Select } from 'element-ui'
 
 export default {
   name: 'Selectors',
   components: {
-    Headroom,
-    Select
+    Headroom
   },
   data () {
     return {
