@@ -1,5 +1,5 @@
 <template>
-  <headroom footroom="true">
+  <headroom :footroom="true">
     <div
       id="selectors"
       class="no-print">
@@ -24,17 +24,6 @@
           </option>
         </select>
       </div>
-
-      <h2>Theme</h2>
-      <el-select
-        v-model="selectors.style.value"
-        placeholder="Select theme...">
-        <el-option
-          v-for="item in selectors.style.options"
-          :key="item.value"
-          :label="item.text"
-          :value="item.value"/>
-      </el-select>
     </div>
   </headroom>
 </template>
@@ -83,7 +72,7 @@ export default {
       const wrapper = document.getElementById('wrapper')
       wrapper.style.setProperty('--accent', accent)
     },
-    'selectors.style.value': style => {
+    'selectors.style.value': function (style) {
       this.$store.commit('changeTo', { key: 'style', newValue: style })
       this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: this.scrollSpyOffset[style] })
     }
