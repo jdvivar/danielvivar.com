@@ -1,9 +1,12 @@
 #footer {
 
+  background: var(--accent);
+  color: white;
+  font-weight: bold;
   font-size: 16px;
   // position: fixed;
-  margin: $grid-gap;
-  bottom: 0;
+  padding: $grid-gap / 2;
+  // bottom: 0;
 
   select {
     width: 80px;

@@ -7,7 +7,7 @@
         v-for="(selector, key) in selectors"
         :id="`${key}-selector`"
         :key="key">
-        <label :for="`${key}-select`">{{ key }}</label>
+        <label :for="`${key}-select`">{{ selector.label }}</label>
         <select
           v-model="selector.value"
           :id="`${key}-select`">
@@ -41,6 +41,7 @@ export default {
       selectors: {
         style: {
           value: 'default',
+          label: 'theme',
           default: { text: 'Default', value: 'default' },
           options: [
             {
@@ -51,6 +52,7 @@ export default {
         },
         accent: {
           value: 'red',
+          label: 'color',
           default: { text: 'Red', value: 'red' },
           options: [
             { text: 'Blue', value: 'blue' },
