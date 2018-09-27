@@ -19,31 +19,16 @@
         </div>
         <ul>
           <li>
-            <s>Add this TODOS component</s>
-          </li>
-          <li>
             <s>Use a CSS grid</s>
           </li>
           <li>
             <s>Add theme and accent color selector</s>
           </li>
           <li>
-            <s>Add logos of all companies and colleges</s>
-          </li>
-          <li>
             <s>Use AWS Lambda cloud functions to serve sensitive data</s>
           </li>
           <li>
-            <s>Add an intuitive glossary for technical terms with modal windows</s>
-          </li>
-          <li>
             <s>Manage both in Github and Bitbucket</s>
-          </li>
-          <li>
-            <s>Fix PWA service worker</s>
-          </li>
-          <li>
-            <s>Fix the printable version</s>
           </li>
           <li>
             <s>SEO: meta tags, images, icon</s>
@@ -52,7 +37,7 @@
             Add desktop menu with selectors, print button, etc.
           </li>
           <li>
-            Make the whole site 100% mobile friendly
+            <s>Make the whole site 100% mobile friendly</s>
           </li>
           <li>
             Add another theme
