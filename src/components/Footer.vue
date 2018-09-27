@@ -25,7 +25,7 @@
           </option>
         </select>
       </div>
-      <button @click="print">Print</button>
+      <button @click="print">Save PDF</button>
     </div>
   </headroom>
 </template>
@@ -86,11 +86,13 @@ export default {
   },
   methods: {
     print: function () {
-      // const beforePrintStyle = this.selectors.style.value
+      console.log('print')
+      const beforePrintStyle = this.selectors.style.value
       this.selectors.style.value = 'no_style'
-      window.setTimeout(window.print(), 3000)
-      // window.print()
-      // this.selectors.style.value = beforePrintStyle
+      window.setTimeout(() => {
+        window.print()
+        this.selectors.style.value = beforePrintStyle
+      }, 0)
     },
     prePrint: function () {
       // Remove style before printing and restore afterwards
