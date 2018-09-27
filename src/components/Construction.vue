@@ -74,7 +74,7 @@ export default {
   line-height: 1.6;
   margin: 100px 20px;
   max-width: 300px;
-  opacity: 0.8;
+  // opacity: 0.8;
   padding: 20px;
   position: fixed;
   z-index: 1;
