@@ -3,29 +3,33 @@
     <div
       id="footer"
       class="no-print">
-      <div
-        v-for="(selector, key) in selectors"
-        :id="`${key}-selector`"
-        :key="key"
-        class="selector">
-        <label :for="`${key}-select`">{{ selector.label }}</label>
-        <select
-          v-model="selector.value"
-          :id="`${key}-select`">
-          <option
-            :value="selector.default.value"
-            selected>
-            {{ selector.default.text }}
-          </option>
-          <option
-            v-for="option in selector.options"
-            :value="option.value"
-            :key="option.value">
-            {{ option.text }}
-          </option>
-        </select>
+      <div class="footer-wrapper">
+        <div
+          v-for="(selector, key) in selectors"
+          :id="`${key}-selector`"
+          :key="key"
+          class="selector">
+          <label :for="`${key}-select`">{{ selector.label }}</label>
+          <select
+            v-model="selector.value"
+            :id="`${key}-select`">
+            <option
+              :value="selector.default.value"
+              selected>
+              {{ selector.default.text }}
+            </option>
+            <option
+              v-for="option in selector.options"
+              :value="option.value"
+              :key="option.value">
+              {{ option.text }}
+            </option>
+          </select>
+        </div>
+        <button
+          class="footer-print-button"
+          @click="print">Save PDF</button>
       </div>
-      <button @click="print">Save PDF</button>
     </div>
   </headroom>
 </template>

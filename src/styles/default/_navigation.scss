@@ -15,10 +15,10 @@
     }
 
     ul {
+      overflow-y: hidden;
+      padding: 30px 40px;
       position: sticky;
       top: 0;
-      overflow-y: hidden;
-      padding: 15px;
       white-space: nowrap;
 
       @media (min-width: $breakpoint) {
@@ -34,12 +34,18 @@
     li {
       cursor: pointer;
       display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
       letter-spacing: .5px;
-      padding-right: 15px;
+      padding-right: 40px;
+      text-transform: uppercase;
 
       @media (min-width: $breakpoint) {
         display: block;
+        font-size: inherit;
         padding-right: 0;
+        font-weight: inherit;
+        text-transform: unset;
       }
 
       &.active,

@@ -8,12 +8,16 @@
   padding: $grid-gap / 2;
   // bottom: 0;
   // filter: opacity(90%);
-  // max-width: $grid-column * 3 + $grid-gap * 2;
-  // margin: 0 auto;
 
   .selector {
     display: inline-block;
     margin-right: $grid-gap;
+  }
+
+  .footer-wrapper {
+    max-width: $grid-column * 3 + $grid-gap * 2;
+    margin: 0 auto;
+
   }
 
   select {
@@ -28,14 +32,23 @@
     width: 40px;
   }
 
-  button {
-    background-color: white;
+  .footer-print-button {
+    background-color: transparent;
     border-radius: 3px;
-    border: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    float: right;
     font-size: 14px;
     padding: 15px 20px;
-    position: absolute;
-    right: $grid-gap / 2;
-    bottom: $grid-gap / 2;
+    transition: all .3s;
+
+    &:hover {
+      background-color: white;
+      box-shadow:
+        0 0 0 3px var(--accent),
+        0 0 0 5px white;
+      color: var(--accent);
+    }
   }
 }
