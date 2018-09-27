@@ -7,14 +7,28 @@
   // position: fixed;
   padding: $grid-gap / 2;
   // bottom: 0;
+  filter: opacity(90%);
+
+  .selector {
+    display: inline-block;
+    margin-right: 20px;
+  }
 
   select {
-    width: 80px;
+    font-size: 14px;
     margin-left: 10px;
+    width: 80px;
   }
 
   label {
     display: inline-block;
-    width: 50px;
+    width: 40px;
+  }
+
+  button {
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 2px 8px;
+    float: right;
   }
 }

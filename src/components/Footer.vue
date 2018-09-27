@@ -6,7 +6,8 @@
       <div
         v-for="(selector, key) in selectors"
         :id="`${key}-selector`"
-        :key="key">
+        :key="key"
+        class="selector">
         <label :for="`${key}-select`">{{ selector.label }}</label>
         <select
           v-model="selector.value"
@@ -24,6 +25,7 @@
           </option>
         </select>
       </div>
+      <button @click="print">Print</button>
     </div>
   </headroom>
 </template>
@@ -87,6 +89,11 @@ export default {
         this.selectors.style.value = beforePrintStyle
       }
       this.selectors.style.value = 'no_style'
+    }
+  },
+  methods: {
+    print: function () {
+      window.print()
     }
   }
 }
