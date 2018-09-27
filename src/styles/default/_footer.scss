@@ -5,7 +5,7 @@
   font-weight: bold;
   font-size: 16px;
   // position: fixed;
-  padding: 15px;
+  padding: $grid-gap / 2;
   // bottom: 0;
   // filter: opacity(90%);
   // max-width: $grid-column * 3 + $grid-gap * 2;
@@ -13,12 +13,13 @@
 
   .selector {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: $grid-gap;
   }
 
   select {
+    display: block;
     font-size: 14px;
-    margin-left: 10px;
+    margin-top: 5px;
     width: 80px;
   }
 
@@ -30,8 +31,11 @@
   button {
     background-color: white;
     border-radius: 3px;
+    border: none;
     font-size: 14px;
-    padding: 2px 8px;
-    float: right;
+    padding: 15px 20px;
+    position: absolute;
+    right: $grid-gap / 2;
+    bottom: $grid-gap / 2;
   }
 }

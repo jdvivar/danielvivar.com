@@ -86,7 +86,6 @@ export default {
   },
   methods: {
     print: function () {
-      // console.log('print')
       const beforePrintStyle = this.selectors.style.value
       this.selectors.style.value = 'no_style'
       window.setTimeout(() => {
@@ -96,7 +95,6 @@ export default {
     },
     prePrint: function () {
       // Remove style before printing and restore afterwards
-      // console.log('preprint!')
       window.onbeforeprint = () => {
         const beforePrintStyle = this.selectors.style.value
         window.onafterprint = () => {
