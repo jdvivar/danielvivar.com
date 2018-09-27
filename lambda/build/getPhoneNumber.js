@@ -60,18 +60,18 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 65);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 65:
+/******/ ([
+/* 0 */,
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.handler = function (event, context, callback) {
+exports.handler = (event, context, callback) => {
   callback(null, {
     statusCode: 200,
     body: '+44 7477 122 762'
@@ -79,5 +79,4 @@ exports.handler = function (event, context, callback) {
 };
 
 /***/ })
-
-/******/ })));
+/******/ ])));
