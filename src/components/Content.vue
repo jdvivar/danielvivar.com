@@ -3,11 +3,9 @@
     id="wrapper"
     :class="style">
 
-    <!-- <Topnav /> -->
-
     <Construction />
 
-    <Selectors />
+    <Footer />
 
     <Navigation :sections="sections" />
 
@@ -28,7 +26,7 @@
 
 <script>
 // Components
-import Selectors from '@/components/Selectors.vue'
+import Footer from '@/components/Footer.vue'
 import Navigation from '@/components/Navigation.vue'
 import Who from '@/components/Who.vue'
 import Future from '@/components/Future.vue'
@@ -39,12 +37,11 @@ import Education from '@/components/Education.vue'
 import Contact from '@/components/Contact.vue'
 import About from '@/components/About.vue'
 import Construction from '@/components/Construction.vue'
-import Topnav from '@/components/Topnav.vue'
 
 export default {
   name: 'Content',
   components: {
-    Selectors,
+    Footer,
     Navigation,
     Who,
     Future,
@@ -54,8 +51,7 @@ export default {
     Education,
     Contact,
     About,
-    Construction,
-    Topnav
+    Construction
   },
   data () {
     return {

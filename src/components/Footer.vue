@@ -1,7 +1,7 @@
 <template>
   <headroom :footroom="true">
     <div
-      id="selectors"
+      id="footer"
       class="no-print">
       <div
         v-for="(selector, key) in selectors"
@@ -32,7 +32,7 @@
 import { headroom as Headroom } from 'vue-headroom'
 
 export default {
-  name: 'Selectors',
+  name: 'Footer',
   components: {
     Headroom
   },
