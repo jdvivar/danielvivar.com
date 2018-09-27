@@ -2,15 +2,9 @@
   <div
     id="wrapper"
     :class="style">
-
     <Construction />
-
-    <Footer />
-
     <Navigation :sections="sections" />
-
     <main v-scroll-spy="{ offset: offset}">
-
       <Who />
       <Future />
       <Outstanding />
@@ -19,8 +13,8 @@
       <Education />
       <Contact />
       <About />
-
     </main>
+    <Footer />
   </div>
 </template>
 

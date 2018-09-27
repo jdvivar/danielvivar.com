@@ -82,18 +82,26 @@ export default {
     }
   },
   mounted: function () {
-    // Remove style before printing and restore afterwards
-    window.onbeforeprint = () => {
-      const beforePrintStyle = this.selectors.style.value
-      window.onafterprint = () => {
-        this.selectors.style.value = beforePrintStyle
-      }
-      this.selectors.style.value = 'no_style'
-    }
+    this.prePrint()
   },
   methods: {
     print: function () {
-      window.print()
+      // const beforePrintStyle = this.selectors.style.value
+      this.selectors.style.value = 'no_style'
+      window.setTimeout(window.print(), 3000)
+      // window.print()
+      // this.selectors.style.value = beforePrintStyle
+    },
+    prePrint: function () {
+      // Remove style before printing and restore afterwards
+      console.log('preprint!')
+      window.onbeforeprint = () => {
+        const beforePrintStyle = this.selectors.style.value
+        window.onafterprint = () => {
+          this.selectors.style.value = beforePrintStyle
+        }
+        this.selectors.style.value = 'no_style'
+      }
     }
   }
 }

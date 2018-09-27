@@ -34,9 +34,6 @@
             <s>SEO: meta tags, images, icon</s>
           </li>
           <li>
-            Add desktop menu with selectors, print button, etc.
-          </li>
-          <li>
             <s>Make the whole site 100% mobile friendly</s>
           </li>
           <li>
