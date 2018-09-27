@@ -5,7 +5,7 @@
   <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
 </a>
 
-This site contains a personal resumé/CV as a simple [Vue.js](https://github.com/vuejs/vue) app. It uses the new [Vue CLI 3](https://github.com/vuejs/vue-cli). You can visit it live in https://www.danielvivar.com. It's still on construction though! 🏗👷
+This site contains a personal resumé/CV as a [Vue.js](https://github.com/vuejs/vue) app. It makes use of [Vue CLI 3](https://github.com/vuejs/vue-cli).
 
 ## How to start
 
@@ -26,40 +26,40 @@ Now from there you can point and click any npm task you wish:
 
 ## Continuous Deployment with Netlify
 
-This site is designed to be deployed with Netlify. Click the badge to start:
+This site was designed to be deployed with Netlify. Click the badge to start:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jdvivar/danielvivar.com)
 
-Specifically, the AWS Lambda configuration is setup to to serve locally proxied endpoints that will mock the same relative paths on the live server.
+Specifically, the AWS Lambda configuration is setup to to serve locally proxied endpoints that will mock the same relative paths that Netlify provides on the live server.
 
 # Troubleshooting
 
 ## npm gives a weird error for a fontawesome package
 
-This site uses a PRO licence from [FontAwesome](https://fontawesome.com/) for icons, specifically this Vue component: [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome). Because it's a private package, npm needs a token to verify the instalation. A token is served through an environment variable (it's not available in the code).
+This site uses a PRO licence from [FontAwesome](https://fontawesome.com/) for icons, via this Vue component: [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome). Because it's a private package, npm needs a token to verify the installation. A token is served through an environment variable (it's not available in the code).
 
-If you don't have a FontAwesome licence then you'll need to remove the PRO icons and use the FREE ones instead, manually.
-### 1. Remove the PRO icons
+But don't worry, if you don't have a FontAwesome licence then you'll need to remove the PRO icons and use the FREE ones instead, manually. Proceed as follows:
+### 1. Remove the PRO icons package
 ```
 $ npm uninstall @fortawesome/pro-light-svg-icons
 ```
-### 2. Use the correct file when adding icons to components
+### 2. Use the correct package when importing icons
 Substitute lines like this in Vue components code:
 ```js
 import { faAngleUp } from "@fortawesome/pro-light-svg-icons";
 ```
-with this, note only the source package name changes:
+with this, note only the source package name changes, from `pro` to `free`:
 ```js
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 ```
 
-Now it all should work OK. However, free solid icons doesn't look as good in this site.
+That's it. Now it all should work OK. However, free solid icons doesn't look as good for this design!
 
 ## E-mail/phone buttons are not working
 
-Lambda functions are used to serve sensitive data, like the phone or e-mail in this case. We need to run a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that. Click on the task in the Vue UI or execute the script:
+I've used ƛ functions to serve this private contact data, so it's not available to spam robots. In Netlify this works semalessly, but when executing the app locally, these cloud functions doesn't exist. We need to spin up a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that. Click on the task in the Vue UI or execute the script:
 ```
 npm run lambda:serve
 ```
-Why didn't I add this in the `serve` command?
-You can and it will work exactly as it works in Netlify, but then Vue UI doesn't capture any of the data from the `vue-cli-service serve` command when it executes the build, so the dashboard just produces terminal lines and then the UI will lose much of its appeal :)
+##### Why didn't I add this in the `serve` command?
+You can add it and it will work exactly as it works in Netlify, but then Vue UI doesn't capture any of the data from the `vue-cli-service serve` build command when it executes, so the dashboard just produces terminal lines and therefore the UI lose most its sex appeal :)
