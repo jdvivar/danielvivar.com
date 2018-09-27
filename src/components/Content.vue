@@ -2,7 +2,7 @@
   <div
     id="wrapper"
     :class="style">
-    <Construction />
+    <!-- <Construction /> -->
     <Navigation :sections="sections" />
     <main v-scroll-spy="{ offset: offset}">
       <Who />
