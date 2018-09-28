@@ -28,11 +28,17 @@
   overflow-y: auto;
   transition: all $transition ease;
 
-  @media (min-width: $breakpoint) {
-    width: 450px;
+  @media (min-width: 2 * $grid-column + 3 * $grid-gap) {
+    max-width: 2 * $grid-column;
     height: auto;
     margin: 0 auto;
   }
+
+  // @media (min-width: $breakpoint) {
+  //   width: 2 * $grid-column;
+  //   height: auto;
+  //   margin: 0 auto;
+  // }
 
   .modal-close {
     padding: 9px 13px;
