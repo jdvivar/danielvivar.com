@@ -8,7 +8,7 @@
         <a
           v-if="email"
           :href="`mailto:${email}`">
-          Send me a message at {{ email }}
+          Message me at <b>{{ email }}</b>
           <font-awesome-icon :icon="['fal', 'external-link']"/>
         </a>
 
@@ -26,7 +26,7 @@
         <a
           v-if="phoneNumber"
           :href="`tel:${phoneNumber}`">
-          Call me at {{ phoneNumber }}
+          Call me at <b>{{ phoneNumber }}</b>
           <font-awesome-icon :icon="['fal', 'external-link']"/>
         </a>
         <button
