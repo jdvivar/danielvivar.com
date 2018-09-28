@@ -41,3 +41,38 @@ a {
     color: var(--accent)
   }
 }
+
+.dv-button {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: all $transition;
+
+  &.--invert {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  &:hover {
+    background-color: white;
+    box-shadow:
+      0 0 0 3px var(--accent),
+      0 0 0 5px white;
+    color: var(--accent);
+
+    &.--invert {
+      background-color: var(--accent);
+      box-shadow:
+        0 0 0 3px white,
+        0 0 0 5px var(--accent);
+      color: white;
+    }
+  }
+}

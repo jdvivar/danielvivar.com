@@ -2,7 +2,24 @@
   <div
     id="wrapper"
     :class="style">
-    <!-- <Construction /> -->
+    <Modal
+      v-if="showRefreshModal"
+      @close="showRefreshModal = false">
+      <div slot="term">
+        New content found
+      </div>
+      <div slot="definition">
+        <p>
+          Please refresh your browser 😉
+        </p>
+        <button
+          type="button"
+          class="dv-button --invert"
+          onClick="window.location.reload()">
+          Reload
+        </button>
+      </div>
+    </Modal>
     <Navigation :sections="sections" />
     <main v-scroll-spy="{ offset: offset}">
       <Who />
@@ -25,12 +42,12 @@ import Navigation from '@/components/Navigation.vue'
 import Who from '@/components/Who.vue'
 import Future from '@/components/Future.vue'
 import Outstanding from '@/components/Outstanding.vue'
+import Modal from '@/components/Modal.vue'
 import Tools from '@/components/Tools.vue'
 import Experience from '@/components/Experience.vue'
 import Education from '@/components/Education.vue'
 import Contact from '@/components/Contact.vue'
 import About from '@/components/About.vue'
-import Construction from '@/components/Construction.vue'
 
 export default {
   name: 'Content',
@@ -40,16 +57,17 @@ export default {
     Who,
     Future,
     Outstanding,
+    Modal,
     Tools,
     Experience,
     Education,
     Contact,
-    About,
-    Construction
+    About
   },
   data () {
     return {
-      sections: []
+      sections: [],
+      showRefreshModal: false
     }
   },
   computed: {
@@ -67,6 +85,10 @@ export default {
         const id = section.id
         const heading = section.querySelector('h1').innerText
         this.sections.push({ id, heading })
+      })
+
+      window.addEventListener('sw-updated', () => {
+        this.showRefreshModal = true
       })
     })
   }

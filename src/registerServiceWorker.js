@@ -22,6 +22,7 @@ if (process.env.NODE_ENV === 'production') {
     },
     updated (registration) {
       console.log('New content is available; please refresh: ', registration)
+      window.dispatchEvent(new Event('sw-updated'))
     },
     offline () {
       console.log(

@@ -29,7 +29,7 @@
           </select>
         </div>
         <button
-          class="footer-print-button"
+          class="footer-print-button dv-button"
           @click="print">Save PDF</button>
       </div>
     </div>
