@@ -22,15 +22,15 @@
         <div class="title">
           Bachelor's Degree in Computers Engineering
         </div>
-        <div class="location">
-          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
-          Madrid
-        </div>
         <div class="from">
           2009
         </div>
         <div class="until">
           2014
+        </div>
+        <div class="location">
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
+          Madrid
         </div>
       </li>
       <li class="education-item">
@@ -53,15 +53,15 @@
         <div class="title">
           Degree's Final Project
         </div>
-        <div class="location">
-          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
-          Berlin
-        </div>
         <div class="from">
           2013
         </div>
         <div class="until">
           2013
+        </div>
+        <div class="location">
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
+          Berlin
         </div>
         <div class="description">
           <p>
