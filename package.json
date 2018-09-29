@@ -27,6 +27,7 @@
         "register-service-worker": "1.0.0",
         "sass-loader": "7.0.1",
         "vue": "2.5.17",
+        "vue-color": "^2.6.0",
         "vue-headroom": "jdvivar/vue-headroom#footroom",
         "vue-template-compiler": "2.5.17",
         "vue2-scrollspy": "2.3.1",

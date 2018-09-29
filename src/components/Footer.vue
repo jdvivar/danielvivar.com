@@ -5,28 +5,46 @@
     <div
       id="footer"
       class="no-print">
+      <div class="color-picker-wrapper">
+        <div
+          class="color-picker-close"
+          @click="closeColorPicker()">
+          <font-awesome-icon
+            :icon="['fal', 'times']"
+            fixed-width />
+        </div>
+        <sketch-picker v-model="accent.value"/>
+      </div>
       <div class="footer-wrapper">
         <div
-          v-for="(selector, key) in selectors"
-          :id="`${key}-selector`"
-          :key="key"
+          id="style-selector"
           class="selector">
-          <label :for="`${key}-select`">{{ selector.label }}</label>
+          <label for="style-select">{{ style.label }}</label>
           <select
-            v-model="selector.value"
-            :id="`${key}-select`">
+            id="style-select"
+            v-model="style.value">
             <option
-              :value="selector.default.value"
+              :value="style.default.value"
               selected>
-              {{ selector.default.text }}
+              {{ style.default.text }}
             </option>
             <option
-              v-for="option in selector.options"
+              v-for="option in style.options"
               :value="option.value"
               :key="option.value">
               {{ option.text }}
             </option>
           </select>
+        </div>
+        <div
+          id="accent-selector"
+          class="selector">
+          <label for="style-select">{{ accent.label }}</label>
+          <button
+            class="accent-value"
+            @click="openColorPicker()">
+            {{ accent.value.hex }}
+          </button>
         </div>
         <button
           class="footer-print-button dv-button"
@@ -38,39 +56,40 @@
 
 <script>
 import { headroom as Headroom } from 'vue-headroom'
+import { Sketch as SketchPicker } from 'vue-color'
+
+// Icons
+import { library as Icons } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faTimes } from '@fortawesome/pro-light-svg-icons'
+
+Icons.add(faTimes)
 
 export default {
   name: 'Footer',
   components: {
-    Headroom
+    Headroom,
+    SketchPicker,
+    FontAwesomeIcon
   },
   data () {
     return {
-      selectors: {
-        style: {
-          value: 'default',
-          label: 'theme',
-          default: { text: 'Default', value: 'default' },
-          options: [
-            {
-              text: 'No style',
-              value: 'no_style'
-            }
-          ]
+      style: {
+        value: 'default',
+        label: 'theme',
+        default: { text: 'Default', value: 'default' },
+        options: [
+          {
+            text: 'No style',
+            value: 'no_style'
+          }
+        ]
+      },
+      accent: {
+        value: {
+          hex: 'red'
         },
-        accent: {
-          value: 'red',
-          label: 'color',
-          default: { text: 'Red', value: 'red' },
-          options: [
-            { text: 'Blue', value: 'blue' },
-            { text: 'Green', value: 'green' },
-            { text: 'Gold', value: 'gold' },
-            { text: 'Pink', value: 'pink' },
-            { text: 'Sky Blue', value: 'skyblue' },
-            { text: 'Black', value: 'black' }
-          ]
-        }
+        label: 'accent'
       },
       scrollSpyOffset: {
         default: 280
@@ -78,36 +97,58 @@ export default {
     }
   },
   watch: {
-    'selectors.accent.value': accent => {
+    'accent.value': ({ hex }) => {
       const wrapper = document.getElementById('wrapper')
-      wrapper.style.setProperty('--accent', accent)
+      wrapper.style.setProperty('--accent', hex)
     },
-    'selectors.style.value': function (style) {
+    'style.value': function (style) {
       this.$store.commit('changeTo', { key: 'style', newValue: style })
       this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: this.scrollSpyOffset[style] })
     }
   },
   mounted: function () {
     this.prePrint()
+
+    // Hide color picker shortly after start
+    window.setTimeout(() => {
+      this.closeColorPicker()
+    }, 3000)
+
+    // Fix Safari horrible bug 🧐
+    if (navigator.userAgent.search('Safari')) {
+      let headroom = document.querySelector('.headroom')
+      window.setTimeout(() => {
+        headroom.parentNode.parentNode.appendChild(headroom)
+      }, 0)
+      window.setTimeout(() => {
+        document.getElementById('wrapper').appendChild(headroom)
+      }, 500)
+    }
   },
   methods: {
     print: function () {
-      const beforePrintStyle = this.selectors.style.value
-      this.selectors.style.value = 'no_style'
+      const beforePrintStyle = this.style.value
+      this.style.value = 'no_style'
       window.setTimeout(() => {
         window.print()
-        this.selectors.style.value = beforePrintStyle
+        this.style.value = beforePrintStyle
       }, 0)
     },
     prePrint: function () {
       // Remove style before printing and restore afterwards
       window.onbeforeprint = () => {
-        const beforePrintStyle = this.selectors.style.value
+        const beforePrintStyle = this.style.value
         window.onafterprint = () => {
-          this.selectors.style.value = beforePrintStyle
+          this.style.value = beforePrintStyle
         }
-        this.selectors.style.value = 'no_style'
+        this.style.value = 'no_style'
       }
+    },
+    openColorPicker: function () {
+      document.querySelector('.color-picker-wrapper').classList.remove('--hidden')
+    },
+    closeColorPicker: function () {
+      document.querySelector('.color-picker-wrapper').classList.add('--hidden')
     }
   }
 }
