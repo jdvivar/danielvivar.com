@@ -22,7 +22,8 @@
           <label for="style-select">{{ style.label }}</label>
           <select
             id="style-select"
-            v-model="style.value">
+            v-model="style.value"
+            disabled >
             <option
               :value="style.default.value"
               selected>
