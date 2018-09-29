@@ -17,13 +17,13 @@
       </div>
       <div class="footer-wrapper">
         <div
+          v-if="false"
           id="style-selector"
           class="selector">
           <label for="style-select">{{ style.label }}</label>
           <select
             id="style-select"
-            v-model="style.value"
-            disabled >
+            v-model="style.value" >
             <option
               :value="style.default.value"
               selected>
