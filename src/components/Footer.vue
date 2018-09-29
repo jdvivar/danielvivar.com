@@ -40,11 +40,17 @@
         <div
           id="accent-selector"
           class="selector">
-          <label for="style-select">{{ accent.label }}</label>
+          <label for="style-select">
+            {{ accent.label }}
+          </label>
           <button
             class="accent-value"
             @click="openColorPicker()">
-            {{ accent.value.hex }}
+            <font-awesome-icon
+              v-if="loadingColor"
+              :icon="['fal', 'spinner-third']"
+              spin />
+            {{ accent.nameIt }}
           </button>
         </div>
         <button
@@ -64,6 +70,14 @@ import { library as Icons } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTimes } from '@fortawesome/pro-light-svg-icons'
 
+import { debounce } from 'lodash'
+
+// Colors
+import namedColors from 'color-name-list'
+import nearestColor from 'nearest-color'
+const colors = namedColors.reduce((o, { name, hex }) => Object.assign(o, { [name]: hex }), {})
+const nearest = nearestColor.from(colors)
+
 Icons.add(faTimes)
 
 export default {
@@ -75,6 +89,7 @@ export default {
   },
   data () {
     return {
+      loadingColor: false,
       style: {
         value: 'default',
         label: 'theme',
@@ -90,6 +105,7 @@ export default {
         value: {
           hex: 'red'
         },
+        nameIt: 'Red',
         label: 'accent'
       },
       scrollSpyOffset: {
@@ -98,9 +114,11 @@ export default {
     }
   },
   watch: {
-    'accent.value': ({ hex }) => {
+    'accent.value': function ({ hex }) {
       const wrapper = document.getElementById('wrapper')
       wrapper.style.setProperty('--accent', hex)
+      this.loadingColor = true
+      this.updateColorNameIt()
     },
     'style.value': function (style) {
       this.$store.commit('changeTo', { key: 'style', newValue: style })
@@ -150,7 +168,12 @@ export default {
     },
     closeColorPicker: function () {
       document.querySelector('.color-picker-wrapper').classList.add('--hidden')
-    }
+    },
+    updateColorNameIt: debounce(function () {
+      this.accent.nameIt = nearest(this.accent.value.hex).name
+      this.loadingColor = false
+    }, 300)
+
   }
 }
 </script>
