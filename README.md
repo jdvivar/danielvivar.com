@@ -57,7 +57,7 @@ That's it. Now it all should work OK. However, free solid icons doesn't look as 
 
 ## E-mail/phone buttons are not working
 
-I've used ƛ functions to serve this private contact data, so it's not available to spam robots. In Netlify this works semalessly, but when executing the app locally, these cloud functions doesn't exist. We need to spin up a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that. Click on the task in the Vue UI or execute the script:
+I've used ƛ functions to provide contact data, so it's not available to spam robots. In Netlify this works seamlessly, but when executing the app locally, these cloud are just not available. We need to spin up a separate server specifically for them. [netlify-lambda](https://github.com/netlify/netlify-lambda) will help us with that. Click on the task in the Vue UI or execute the script:
 ```
 npm run lambda:serve
 ```
