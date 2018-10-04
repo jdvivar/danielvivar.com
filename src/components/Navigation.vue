@@ -34,6 +34,7 @@ export default {
   },
   mounted: function () {
     this.$nextTick(function () {
+      // Responsive scrollspy
       const wrapper = document.getElementById('wrapper')
       const breakpoint = getComputedStyle(wrapper).getPropertyValue('--breakpoint')
       const mobileOffset = getComputedStyle(wrapper).getPropertyValue('--mobileOffset')
@@ -44,7 +45,6 @@ export default {
           this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: mobileOffset })
         }
       }
-
       responsiveScrollspyOffset()
     })
   },
@@ -60,6 +60,5 @@ export default {
       event.srcElement.parentElement.parentElement.scrollLeft = previousSiblingsWidth(event.srcElement.parentElement)
     }
   }
-
 }
 </script>
