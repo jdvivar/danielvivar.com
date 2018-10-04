@@ -61,13 +61,12 @@
   .color-picker-close {
     background-color: white;
     border: 1px solid #ccc;
-    // box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 8px 16px rgba(0, 0, 0, .15);
     cursor: pointer;
     border-radius: 50px;
     display: inline-block;
     height: 30px;
     left: 204px;
-    padding: 6px 3px 0px 3px;
+    padding: 8px 4px 0px 4px;
     position: relative;
     top: 14px;
     transition: all $transition ease-in-out;
@@ -75,7 +74,29 @@
     z-index: 1;
 
     &:hover {
-      background-color: #efefef;
+      border-color: var(--accent)
     }
+
+    &:after {
+      background-color: white;
+      content: '';
+      height: 10px;
+      position: absolute;
+      width: 10px;
+      left: 5px;
+      top: 30px;
+    }
+
+    &:before {
+      background-color: white;
+      content: '';
+      height: 10px;
+      left: 0;
+      position: absolute;
+      top: 25px;
+      width: 10px;
+    }
+
+
   }
 }
