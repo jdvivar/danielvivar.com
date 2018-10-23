@@ -8,6 +8,9 @@
       <p>
         Starting as a graphic designer while graduating in Computers Engineering, I then steered my career towards <b>front-end web engineering</b>.
       </p>
+      <p>
+        I can work on anything related to web apps, considering myself both a UI/UX designer, a full-stack web engineer and a QA automation engineer, but if I had to choose I'd rather focus on front-end technologies.
+      </p>
     </div>
   </section>
 </template>
