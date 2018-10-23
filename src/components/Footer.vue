@@ -133,7 +133,7 @@ export default {
       this.closeColorPicker()
     }, 3000)
 
-    // Fix Safari horrible bug 🧐
+    // Fix Safari horrible bug that broke the footer 🧐
     if (navigator.userAgent.search('Safari')) {
       let headroom = document.querySelector('.headroom')
       window.setTimeout(() => {
