@@ -68,6 +68,15 @@
           Visit my Facebook profile
         </button>
       </li>
+      <li>
+        <button
+          @click="href('https://www.github.com/jdvivar')">
+          <font-awesome-icon
+            :icon="['fab', 'github']"
+            class="invert-spacing"/>
+          Visit my Github profile
+        </button>
+      </li>
     </ul>
   </section>
 </template>
@@ -86,9 +95,9 @@ import {
   faPhone
 } from '@fortawesome/pro-light-svg-icons'
 
-import { faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faFacebookSquare, faGithub } from '@fortawesome/free-brands-svg-icons'
 
-Icons.add(faMapMarked, faExternalLink, faSpinnerThird, faEnvelope, faPhone, faLinkedin, faFacebookSquare)
+Icons.add(faMapMarked, faExternalLink, faSpinnerThird, faEnvelope, faPhone, faLinkedin, faFacebookSquare, faGithub)
 
 export default {
   name: 'Contact',
