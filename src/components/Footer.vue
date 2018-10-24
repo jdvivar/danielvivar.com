@@ -55,7 +55,7 @@
         </div>
         <button
           class="footer-print-button dv-button"
-          @click="print">Save PDF</button>
+          @click="onClickSavePDF">Save PDF</button>
       </div>
     </div>
   </headroom>
@@ -110,7 +110,9 @@ export default {
       },
       scrollSpyOffset: {
         default: 280
-      }
+      },
+      isSafari: navigator.userAgent.indexOf('Safari') !== -1 &&
+        navigator.userAgent.indexOf('Chrome') === -1
     }
   },
   watch: {
@@ -134,7 +136,7 @@ export default {
     }, 3000)
 
     // Fix Safari horrible bug that broke the footer 🧐
-    if (navigator.userAgent.search('Safari')) {
+    if (this.isSafari) {
       let headroom = document.querySelector('.headroom')
       window.setTimeout(() => {
         headroom.parentNode.parentNode.appendChild(headroom)
@@ -145,6 +147,13 @@ export default {
     }
   },
   methods: {
+    onClickSavePDF: function () {
+      if (this.isSafari) {
+        window.open('Daniel Vivar - CV.pdf')
+      } else {
+        this.print()
+      }
+    },
     print: function () {
       const beforePrintStyle = this.style.value
       this.style.value = 'no_style'
