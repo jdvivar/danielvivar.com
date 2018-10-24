@@ -35,6 +35,7 @@
 
     &.--hidden {
       opacity: 0;
+      z-index: -1;
     }
 
     .arrow-colour {
