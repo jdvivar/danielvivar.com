@@ -5,7 +5,7 @@
     <div
       id="footer"
       class="no-print">
-      <div class="color-picker-wrapper">
+      <div class="color-picker-wrapper --hidden">
         <div
           class="color-picker-close"
           @click="closeColorPicker()">
@@ -129,11 +129,6 @@ export default {
   },
   mounted: function () {
     this.prePrint()
-
-    // Hide color picker shortly after start
-    window.setTimeout(() => {
-      this.closeColorPicker()
-    }, 3000)
 
     // Fix Safari horrible bug that broke the footer 🧐
     if (this.isSafari) {
