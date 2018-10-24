@@ -32,6 +32,7 @@
         "vue": "2.5.17",
         "vue-color": "2.6.0",
         "vue-headroom": "jdvivar/vue-headroom#footroom",
+        "vue-svg-loader": "^0.11.0",
         "vue-template-compiler": "2.5.17",
         "vue2-scrollspy": "2.3.1",
         "vuex": "3.0.1",

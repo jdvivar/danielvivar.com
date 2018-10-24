@@ -8,7 +8,7 @@
       <div class="color-picker-wrapper --hidden">
         <div
           class="color-picker-close"
-          @click="closeColorPicker()">
+          @click="toggleColorPicker">
           <font-awesome-icon
             :icon="['fal', 'times']"
             fixed-width />
@@ -40,12 +40,19 @@
         <div
           id="accent-selector"
           class="selector">
+          <div class="selector-help">
+            Choose a colour here!
+            <Arrow
+              class="arrow-colour"
+              alt="Arrow - Attribution: https://medialoot.com/item/hand-drawn-vector-arrows/" />
+          </div>
           <label for="style-select">
             {{ accent.label }}
           </label>
           <button
             class="accent-value"
-            @click="openColorPicker()">
+            @click="toggleColorPicker"
+            @click.once="hideHelp">
             <font-awesome-icon
               v-if="loadingColor"
               :icon="['fal', 'spinner-third']"
@@ -71,6 +78,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTimes } from '@fortawesome/pro-light-svg-icons'
 
 import { debounce } from 'lodash'
+import Arrow from '../../public/img/arrow-33.svg'
 
 // Colors
 import namedColors from 'color-name-list'
@@ -85,7 +93,8 @@ export default {
   components: {
     Headroom,
     SketchPicker,
-    FontAwesomeIcon
+    FontAwesomeIcon,
+    Arrow
   },
   data () {
     return {
@@ -167,17 +176,16 @@ export default {
         this.style.value = 'no_style'
       }
     },
-    openColorPicker: function () {
-      document.querySelector('.color-picker-wrapper').classList.remove('--hidden')
-    },
-    closeColorPicker: function () {
-      document.querySelector('.color-picker-wrapper').classList.add('--hidden')
+    toggleColorPicker: function () {
+      document.querySelector('.color-picker-wrapper').classList.toggle('--hidden')
     },
     updateColorNameIt: debounce(function () {
       this.accent.nameIt = nearest(this.accent.value.hex).name
       this.loadingColor = false
-    }, 300)
-
+    }, 300),
+    hideHelp: function () {
+      document.querySelector('.selector-help').classList.add('--hidden')
+    }
   }
 }
 </script>

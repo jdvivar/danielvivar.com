@@ -8,6 +8,7 @@
   .selector {
     display: inline-block;
     margin-right: 15px;
+    position: relative;
 
     .accent-value {
       background-color: rgba(white, .8);
@@ -20,6 +21,27 @@
       min-width: 75px;
       padding: 2px 8px;
       text-align: left;
+    }
+  }
+
+  .selector .selector-help {
+    bottom: 120px;
+    color: var(--accent);
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    text-shadow: 0 0 20px white;
+    transition: opacity $transition;
+
+    &.--hidden {
+      opacity: 0;
+    }
+
+    .arrow-colour {
+      fill: var(--accent);
+      position: absolute;
+      transform: scaleX(-1);
+      width: 40px;
     }
   }
 
@@ -45,7 +67,6 @@
   .footer-print-button {
     float: right;
   }
-
 }
 
 .color-picker-wrapper {
@@ -96,7 +117,5 @@
       top: 25px;
       width: 10px;
     }
-
-
   }
 }
