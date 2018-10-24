@@ -13,7 +13,9 @@
             :icon="['fal', 'times']"
             fixed-width />
         </div>
-        <sketch-picker v-model="accent.value"/>
+        <sketch-picker
+          v-model="accent.value"
+          :disable-alpha="true" />
       </div>
       <div class="footer-wrapper">
         <div
