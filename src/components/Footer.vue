@@ -15,7 +15,9 @@
         </div>
         <sketch-picker
           v-model="accent.value"
-          :disable-alpha="true" />
+          :disable-alpha="true"
+          :disable-fields="true"
+          :preset-colors="presetColors" />
       </div>
       <div class="footer-wrapper">
         <div
@@ -123,7 +125,11 @@ export default {
         default: 280
       },
       isSafari: navigator.userAgent.indexOf('Safari') !== -1 &&
-        navigator.userAgent.indexOf('Chrome') === -1
+        navigator.userAgent.indexOf('Chrome') === -1,
+      presetColors: [
+        'hotpink', 'blue', '#666', 'goldenrod', 'darkcyan', 'turquoise', 'coral', 'gold',
+        'MediumOrchid', 'darkgrey', 'green', 'pink', 'royalblue', 'chocolate', 'lightseagreen', 'salmon'
+      ]
     }
   },
   watch: {
