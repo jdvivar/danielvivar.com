@@ -30,7 +30,13 @@
     font-family: 'Permanent Marker', sans-serif;
     font-size: 16px;
     position: absolute;
-    text-shadow: 0 0 20px white;
+    text-shadow:
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white;
     transition: opacity $transition;
 
     &.--hidden {
