@@ -5,16 +5,21 @@
     <h1>how you can get in touch</h1>
     <ul>
       <li>
-        <a
+        <button
           v-if="email"
-          :href="`mailto:${email}`">
+          @click="href(`mailto:${email}`, '_blank')">
+          <font-awesome-icon
+            :icon="['fal', 'envelope']"
+            class="invert-spacing" />
           Message me at <b>{{ email }}</b>
-          <font-awesome-icon :icon="['fal', 'external-link']"/>
-        </a>
+        </button>
 
         <button
           v-else
           @click="getEmail()">
+          <font-awesome-icon
+            :icon="['fal', 'envelope']"
+            class="invert-spacing" />
           Reveal my e-mail address
           <font-awesome-icon
             v-if="loadingEmail"
@@ -23,15 +28,21 @@
         </button>
       </li>
       <li>
-        <a
+        <button
           v-if="phoneNumber"
-          :href="`tel:${phoneNumber}`">
+          @click="href(`tel:${phoneNumber}`, '_blank')">
+          <font-awesome-icon
+            :icon="['fal', 'phone']"
+            class="invert-spacing" />
           Call me at <b>{{ phoneNumber }}</b>
-          <font-awesome-icon :icon="['fal', 'external-link']"/>
-        </a>
+        </button>
+
         <button
           v-else
           @click="getPhoneNumber()">
+          <font-awesome-icon
+            :icon="['fal', 'phone']"
+            class="invert-spacing" />
           Reveal my phone number
           <font-awesome-icon
             v-if="loadingPhoneNumber"
@@ -40,16 +51,22 @@
         </button>
       </li>
       <li>
-        <a
-          href="https://www.linkedin.com/in/jdvivar"
-          rel="noreferrer"
-          target="_blank">Visit my Linkedin profile <font-awesome-icon :icon="['fal', 'external-link']"/></a>
+        <button
+          @click="href('https://www.linkedin.com/in/jdvivar')">
+          <font-awesome-icon
+            :icon="['fab', 'linkedin']"
+            class="invert-spacing"/>
+          Visit my Linkedin profile
+        </button>
       </li>
       <li>
-        <a
-          href="https://www.facebook.com/danielvivar"
-          rel="noreferrer"
-          target="_blank">Visit my Facebook profile <font-awesome-icon :icon="['fal', 'external-link']"/></a>
+        <button
+          @click="href('https://www.facebook.com/danielvivar')">
+          <font-awesome-icon
+            :icon="['fab', 'facebook-square']"
+            class="invert-spacing"/>
+          Visit my Facebook profile
+        </button>
       </li>
     </ul>
   </section>
@@ -61,9 +78,17 @@ import LambdaFunctions from '@/services/LambdaFunctions'
 // Icons component
 import { library as Icons } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faMapMarked, faExternalLink, faSpinnerThird } from '@fortawesome/pro-light-svg-icons'
+import {
+  faMapMarked,
+  faExternalLink,
+  faSpinnerThird,
+  faEnvelope,
+  faPhone
+} from '@fortawesome/pro-light-svg-icons'
 
-Icons.add(faMapMarked, faExternalLink, faSpinnerThird)
+import { faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+
+Icons.add(faMapMarked, faExternalLink, faSpinnerThird, faEnvelope, faPhone, faLinkedin, faFacebookSquare)
 
 export default {
   name: 'Contact',
@@ -88,6 +113,10 @@ export default {
       this.loadingPhoneNumber = true
       const response = await LambdaFunctions.getPhoneNumber()
       this.phoneNumber = response.data
+    },
+    href (ref) {
+      // window.location.href = ref
+      window.open(ref, '_blank')
     }
   }
 }
