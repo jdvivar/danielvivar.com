@@ -32,6 +32,7 @@
         "sass-loader": "7.1.0",
         "vue": "2.5.17",
         "vue-color": "2.7.0",
+        "vue-cookie": "^1.1.4",
         "vue-headroom": "github:jdvivar/vue-headroom#footroom",
         "vue-svg-loader": "0.11.0",
         "vue-template-compiler": "2.5.17",

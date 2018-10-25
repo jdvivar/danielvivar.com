@@ -92,6 +92,20 @@ const nearest = nearestColor.from(colors)
 
 Icons.add(faTimes)
 
+const colorToHex = color => {
+  if (color.substr(0, 1) === '#') {
+    return color
+  }
+  const digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color)
+
+  const red = parseInt(digits[2])
+  const green = parseInt(digits[3])
+  const blue = parseInt(digits[4])
+
+  const rgb = blue | (green << 8) | (red << 16)
+  return digits[1] + '#' + rgb.toString(16).padStart(6, '0')
+}
+
 export default {
   name: 'Footer',
   components: {
@@ -128,7 +142,7 @@ export default {
         navigator.userAgent.indexOf('Chrome') === -1,
       presetColors: [
         'hotpink', 'blue', '#666', 'goldenrod', 'darkcyan', 'turquoise', 'coral', 'gold',
-        'MediumOrchid', 'red', 'green', 'pink', 'royalblue', 'chocolate', 'lightseagreen', 'salmon'
+        'MediumOrchid', 'red', 'green', 'palevioletred', 'royalblue', 'chocolate', 'lightseagreen', 'salmon'
       ]
     }
   },
@@ -157,6 +171,13 @@ export default {
       window.setTimeout(() => {
         document.getElementById('wrapper').appendChild(headroom)
       }, 500)
+    }
+
+    // Set cookie
+    if (this.$cookie.get('dv:visited')) {
+      this.setRandomColor()
+    } else {
+      this.$cookie.set('dv:visited', true, 30)
     }
   },
   methods: {
@@ -198,6 +219,15 @@ export default {
     }, 300),
     hideHelp: function () {
       document.querySelector('.selector-help').classList.add('--hidden')
+    },
+    setRandomColor: function () {
+      const randomOf16 = Math.floor(Math.random() * 16)
+      const temporalElement = document.createElement('div')
+      temporalElement.style.color = this.presetColors[randomOf16]
+      document.body.appendChild(temporalElement)
+      const rgbColor = window.getComputedStyle(temporalElement).color
+      this.accent.value = { 'hex': colorToHex(rgbColor) }
+      document.body.removeChild(temporalElement)
     }
   }
 }

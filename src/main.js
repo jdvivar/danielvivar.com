@@ -8,6 +8,10 @@ import './registerServiceWorker'
 // Vuex store
 import store from './store'
 
+// Cookies
+import VueCookie from 'vue-cookie'
+
+Vue.use(VueCookie)
 Vue.config.productionTip = false
 
 new Vue({
