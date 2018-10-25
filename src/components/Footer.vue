@@ -137,6 +137,7 @@ export default {
       const wrapper = document.getElementById('wrapper')
       wrapper.style.setProperty('--accent', hex)
       this.loadingColor = true
+      this.updateThemeColor(hex)
       this.updateColorNameIt()
     },
     'style.value': function (style) {
@@ -190,6 +191,10 @@ export default {
     updateColorNameIt: debounce(function () {
       this.accent.nameIt = nearest(this.accent.value.hex).name
       this.loadingColor = false
+    }, 300),
+    updateThemeColor: debounce(function (hex) {
+      const metaThemeColor = document.head.querySelector('[name=theme-color]')
+      metaThemeColor.content = hex
     }, 300),
     hideHelp: function () {
       document.querySelector('.selector-help').classList.add('--hidden')
