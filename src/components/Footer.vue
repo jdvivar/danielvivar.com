@@ -128,7 +128,7 @@ export default {
         navigator.userAgent.indexOf('Chrome') === -1,
       presetColors: [
         'hotpink', 'blue', '#666', 'goldenrod', 'darkcyan', 'turquoise', 'coral', 'gold',
-        'MediumOrchid', 'darkgrey', 'green', 'pink', 'royalblue', 'chocolate', 'lightseagreen', 'salmon'
+        'MediumOrchid', 'red', 'green', 'pink', 'royalblue', 'chocolate', 'lightseagreen', 'salmon'
       ]
     }
   },
