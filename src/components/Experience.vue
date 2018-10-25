@@ -152,7 +152,7 @@
               </a>
             </li>
             <li>
-              Designing the logo
+              Designing their <a @click="$parent.$emit('show:logo')">logo</a>
             </li>
           </ul>
         </div>

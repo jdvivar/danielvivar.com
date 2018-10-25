@@ -20,6 +20,21 @@
         </button>
       </div>
     </Modal>
+    <Modal
+      v-if="showLogoModal"
+      @close="showLogoModal = false">
+      <div slot="term">
+        Typeless Logo
+      </div>
+      <div
+        slot="definition"
+        style="text-align:center">
+        <img
+          src="/img/typeless-logo.png"
+          alt="Typeless logo"
+          class="img-typeless-logo">
+      </div>
+    </Modal>
     <Navigation :sections="sections" />
     <main v-scroll-spy="{ offset: offset}">
       <Who />
@@ -67,7 +82,8 @@ export default {
   data () {
     return {
       sections: [],
-      showRefreshModal: false
+      showRefreshModal: false,
+      showLogoModal: false
     }
   },
   computed: {
@@ -79,6 +95,10 @@ export default {
     }
   },
   mounted: function () {
+    this.$on('show:logo', function () {
+      this.showLogoModal = true
+    })
+
     this.$nextTick(function () {
       // to populate navbar with sections out of the h1's found
       document.querySelectorAll('section').forEach(section => {
