@@ -1,0 +1,42 @@
+
+@import 'pomegranate/fonts';
+
+.pomegranate {
+
+  // variables
+  $grid-gap    : 40px;
+  $grid-column : 240px;
+  $muted       : #ccc;
+  $transition  : .5s;
+  --accent     : red;
+  $breakpoint  : 3 * $grid-column + 4 * $grid-gap;
+  --breakpoint : #{$breakpoint};
+  --mobileOffset : 75;
+
+  // Styles applicable to the whole content
+  font-family           : 'Source Sans Pro', sans-serif;
+  cursor                : default;
+  line-height           : 1.42;
+
+  @media (min-width: $breakpoint) {
+    padding-left          : 0;
+    padding-right         : 0;
+    max-width             : none;
+    display               : grid;
+    grid-gap              : $grid-gap;
+    grid-template-rows    : $grid-column;
+    grid-template-columns : auto repeat(3, $grid-column) auto;
+  }
+
+  @import 'pomegranate/generic';
+  @import 'pomegranate/footer';
+  @import 'pomegranate/navigation';
+  @import 'pomegranate/main';
+  @import 'pomegranate/tools';
+  @import 'pomegranate/modals';
+  @import 'pomegranate/experience';
+  @import 'pomegranate/education';
+  @import 'pomegranate/contact';
+  @import 'pomegranate/about';
+
+}

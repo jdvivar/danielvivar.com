@@ -1,0 +1,31 @@
+#contact {
+  font-size: 18px;
+
+  button {
+    padding: 15px;
+    border-radius: 4px;
+    background-color: lighten($muted, 18%);
+    cursor: pointer;
+    border: 1px solid $muted;
+    box-shadow: 0px 1px 1px 0px lighten(black, 90%);
+    outline: none;
+    transition: all $transition/2;
+    text-transform: uppercase;
+
+    &:hover {
+      box-shadow:
+        0px 1px 1px 0px lighten(black, 90%),
+        0px 0px 0px 4px white,
+        0px 0px 0px 5px var(--accent);
+    }
+
+    &:active {
+      background-color: $muted;
+    }
+  }
+
+  ul li {
+    margin-bottom: $grid-gap/2;
+    font-weight: 300;
+  }
+}

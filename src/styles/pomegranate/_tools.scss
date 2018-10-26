@@ -1,0 +1,59 @@
+#tools {
+
+  line-height: 1.5;
+
+  & + section {
+    clear: both;
+  }
+
+  @media (min-width: $breakpoint) {
+    &:hover .help {
+      animation: fadeInDown .5s linear 0s forwards;
+    }
+  }
+
+  span {
+    font-weight: 200;
+    font-size: 18px;
+    background-color: rgba(black, 0.05);
+    padding: 10px 20px;
+    margin: -3px;
+    border-radius: 50px;
+    float: left;
+    transition: all $transition;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--accent);
+      color: white;
+      box-shadow: 0px 0px 0px 5px rgba(black, 0.1);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -25%, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .help {
+    @media (min-width: $breakpoint) {
+      opacity: 0;
+    }
+
+    clear:both;
+    color: var(--accent);
+    font-family: 'Sorce Sans Pro', sans-serif;
+    font-weight: 700;
+    padding-top: $grid-gap;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+  }
+}

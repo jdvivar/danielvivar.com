@@ -1,0 +1,128 @@
+#footer {
+
+  background: var(--accent);
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+
+  .selector {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+
+    .accent-value {
+      background-color: rgba(white, .8);
+      border: 1px solid rgba(black, .1);
+      border-radius: 3px;
+      cursor: pointer;
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      min-width: 75px;
+      padding: 2px 8px;
+      text-align: left;
+    }
+  }
+
+  .selector .selector-help {
+    bottom: 120px;
+    color: var(--accent);
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    text-shadow:
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white,
+      0 0 20px white;
+    transition: opacity $transition;
+
+    &.--hidden {
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .arrow-colour {
+      fill: var(--accent);
+      position: absolute;
+      transform: scaleX(-1);
+      width: 40px;
+    }
+  }
+
+  .footer-wrapper {
+    max-width: $grid-column * 3 + $grid-gap * 2;
+    margin: 0 auto;
+
+  }
+
+  select {
+    display: block;
+    font-size: 14px;
+    width: 80px;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 40px;
+  }
+
+  .footer-print-button {
+    float: right;
+  }
+}
+
+.color-picker-wrapper {
+  position: absolute;
+  bottom: 98px;
+  left: 20px;
+  transition: transform $transition ease-in-out;
+
+  &.--hidden {
+    transform: translate3d(-150%, 0, 0);
+  }
+
+  .color-picker-close {
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 50px;
+    display: inline-block;
+    height: 30px;
+    left: 204px;
+    padding: 8px 4px 0px 4px;
+    position: relative;
+    top: 14px;
+    transition: all $transition ease-in-out;
+    width: 30px;
+    z-index: 1;
+
+    &:hover {
+      border-color: var(--accent)
+    }
+
+    &:after {
+      background-color: white;
+      content: '';
+      height: 10px;
+      position: absolute;
+      width: 10px;
+      left: 5px;
+      top: 30px;
+    }
+
+    &:before {
+      background-color: white;
+      content: '';
+      height: 10px;
+      left: 0;
+      position: absolute;
+      top: 25px;
+      width: 10px;
+    }
+  }
+}

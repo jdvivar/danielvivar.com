@@ -1,0 +1,123 @@
+#education {
+
+  font-size: 16px;
+
+  $logo-size: 80px;
+  $logo-size-mobile: 50px;
+
+  .education-item {
+    position: relative;
+    @media (min-width: $breakpoint) {
+      margin-left: $logo-size + $grid-gap;
+      margin-top: $grid-gap * 2;
+    }
+
+    &:not(:first-child) {
+      margin-top: $grid-gap * 2;
+    }
+  }
+
+  .institution {
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 100px;
+    margin-top: $grid-gap/2;
+  }
+
+  .location {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: -5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+    @media (min-width: $breakpoint) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: -20px;
+    }
+  }
+
+  .from,
+  .until {
+    font-size: 14px;
+    font-weight: 600;
+    color: $muted;
+    text-transform: uppercase;
+    position: absolute;
+  }
+
+  .until {
+    top: -$grid-gap/2;
+    left: $grid-gap * 3.5;
+
+    &:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: $muted;
+      display: inline-block;
+      position: absolute;
+      left: -20px;
+      top: 4px;
+      border-radius: 50px;
+
+    }
+
+    &:after {
+      content: "";
+      width: $grid-gap * 2;
+      height: 2px;
+      background-color: $muted;
+      display: inline-block;
+      position: absolute;
+      left: -90px;
+      top: 8px;
+    }
+  }
+
+  .from {
+    top: -$grid-gap/2;
+
+    &:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: $muted;
+      display: inline-block;
+      position: absolute;
+      left: 40px;
+      top: 4px;
+      border-radius: 50px;
+    }
+  }
+
+  .description {
+    font-weight: 300;
+    margin-top: $grid-gap;
+  }
+
+  .institution-logo {
+    float: right;
+    img {
+      width: $logo-size-mobile;
+    }
+
+    @media (min-width: $breakpoint) {
+      position: absolute;
+      left: - $logo-size - $grid-gap;
+      top: 0;
+
+      img {
+        width: $logo-size;
+      }
+    }
+  }
+}

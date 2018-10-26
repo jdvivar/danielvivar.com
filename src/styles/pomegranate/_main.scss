@@ -1,0 +1,31 @@
+main {
+
+  height                : 100%;
+  margin                : 0 auto;
+  padding-left          : $grid-gap;
+  padding-right         : $grid-gap;
+  max-width             : $grid-column * 2;
+
+  @media (min-width: $breakpoint) {
+    grid-area : 2 / 3 / auto / 5;
+  }
+
+  section h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--accent);
+    margin: 0 0 $grid-gap;
+  }
+
+  section + section {
+    margin-top : $grid-column / 2;
+    margin-bottom: $grid-gap * 2;
+  }
+
+  .section-description {
+    font-size: 20px;
+    font-weight: 300;
+    color: #666;
+  }
+}
