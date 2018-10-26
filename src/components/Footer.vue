@@ -122,8 +122,8 @@ export default {
         default: { text: 'Default', value: 'default' },
         options: [
           {
-            text: 'No style',
-            value: 'no_style'
+            text: 'Pomegranate',
+            value: 'pomegranate'
           }
         ]
       },
