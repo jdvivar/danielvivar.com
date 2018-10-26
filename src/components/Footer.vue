@@ -135,7 +135,8 @@ export default {
         label: 'accent'
       },
       scrollSpyOffset: {
-        default: 280
+        default: 280,
+        pomegranate: 40
       },
       isSafari: navigator.userAgent.indexOf('Safari') !== -1 &&
         navigator.userAgent.indexOf('Chrome') === -1,
@@ -155,7 +156,8 @@ export default {
     },
     'style.value': function (style) {
       this.$store.commit('changeTo', { key: 'style', newValue: style })
-      this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: this.scrollSpyOffset[style] })
+      this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: this.scrollSpyOffset[style] || 0 })
+      this.$cookie.set('dv:theme', this.style.value, 30)
     }
   },
   mounted: function () {
@@ -172,11 +174,18 @@ export default {
       }, 500)
     }
 
-    // Set cookie
+    // Set cookie for past visit
     if (this.$cookie.get('dv:visited')) {
       this.setRandomColor()
     } else {
       this.$cookie.set('dv:visited', true, 30)
+    }
+
+    // Set cookie for past theme
+    if (this.$cookie.get('dv:theme')) {
+      this.style.value = this.$cookie.get('dv:theme')
+    } else {
+      this.$cookie.set('dv:theme', this.style.value, 30)
     }
   },
   methods: {
