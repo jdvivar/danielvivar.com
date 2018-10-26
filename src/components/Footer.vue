@@ -21,27 +21,6 @@
       </div>
       <div class="footer-wrapper">
         <div
-          v-if="false"
-          id="style-selector"
-          class="selector">
-          <label for="style-select">{{ style.label }}</label>
-          <select
-            id="style-select"
-            v-model="style.value" >
-            <option
-              :value="style.default.value"
-              selected>
-              {{ style.default.text }}
-            </option>
-            <option
-              v-for="option in style.options"
-              :value="option.value"
-              :key="option.value">
-              {{ option.text }}
-            </option>
-          </select>
-        </div>
-        <div
           id="accent-selector"
           class="selector">
           <div class="selector-help">
@@ -63,6 +42,26 @@
               spin />
             {{ accent.nameIt }}
           </button>
+        </div>
+        <div
+          id="style-selector"
+          class="selector">
+          <label for="style-select">{{ style.label }}</label>
+          <select
+            id="style-select"
+            v-model="style.value" >
+            <option
+              :value="style.default.value"
+              selected>
+              {{ style.default.text }}
+            </option>
+            <option
+              v-for="option in style.options"
+              :value="option.value"
+              :key="option.value">
+              {{ option.text }}
+            </option>
+          </select>
         </div>
         <button
           class="footer-print-button dv-button"
