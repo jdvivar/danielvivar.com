@@ -6,8 +6,10 @@
     clear: both;
   }
 
-  &:hover .help {
-    animation: fadeInDown .5s linear 0s forwards;
+  @media (min-width: $breakpoint) {
+    &:hover .help {
+      animation: fadeInDown .5s linear 0s forwards;
+    }
   }
 
   span {
@@ -41,6 +43,10 @@
   }
 
   .help {
+    @media (min-width: $breakpoint) {
+      opacity: 0;
+    }
+
     clear:both;
     color: var(--accent);
     font-family: 'Sorce Sans Pro', sans-serif;
@@ -49,6 +55,5 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
-    opacity: 0;
   }
 }
