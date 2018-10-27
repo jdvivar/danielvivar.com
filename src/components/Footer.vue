@@ -122,7 +122,7 @@ export default {
         default: { text: 'Default', value: 'default' },
         options: [
           {
-            text: 'Pomegranate',
+            text: '🏗 - Pomegranate',
             value: 'pomegranate'
           }
         ]
