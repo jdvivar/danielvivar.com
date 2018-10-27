@@ -63,24 +63,11 @@ button {
   text-transform: uppercase;
   transition: all $transition;
 
-  &.--invert {
-    color: var(--accent);
-    border-color: var(--accent);
-  }
-
   &:hover {
     background-color: white;
     box-shadow:
       0 0 0 3px var(--accent),
       0 0 0 5px white;
     color: var(--accent);
-
-    &.--invert {
-      background-color: var(--accent);
-      box-shadow:
-        0 0 0 3px white,
-        0 0 0 5px var(--accent);
-      color: white;
-    }
   }
 }
