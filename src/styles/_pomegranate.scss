@@ -13,21 +13,19 @@
   --breakpoint : #{$breakpoint};
   --mobileOffset : 75;
 
-  // Styles applicable to the whole content
+
   background-color      : var(--accent);
   font-family           : 'Pomegranate', sans-serif;
   cursor                : default;
   line-height           : 1.42;
 
-  @media (min-width: $breakpoint) {
-    padding-left          : 0;
-    padding-right         : 0;
-    max-width             : none;
-    display               : grid;
-    grid-gap              : $grid-gap;
-    grid-template-rows    : $grid-column;
-    grid-template-columns : auto repeat(3, $grid-column) auto;
-  }
+  padding-left          : 0;
+  padding-right         : 0;
+  max-width             : none;
+  display               : grid;
+  grid-gap              : $grid-gap;
+  grid-template-rows    : $grid-column;
+  grid-template-columns : auto repeat(2, $grid-column) auto;
 
   @import 'pomegranate/generic';
   @import 'pomegranate/footer';
