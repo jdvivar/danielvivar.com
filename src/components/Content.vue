@@ -3,7 +3,7 @@
     id="wrapper"
     :class="style">
     <Modal
-      v-if="true"
+      v-if="showRefreshModal"
       @close="showRefreshModal = false">
       <div slot="term">
         New content found
