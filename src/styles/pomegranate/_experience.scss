@@ -103,9 +103,8 @@
   .tldr {
     margin: $grid-gap 0;
     padding: $grid-gap/1.5 $grid-gap/2;
-    background-color: lighten(black, 97%);
-    border-bottom: 5px solid var(--accent);
-    border-radius: 3px;
+    border: 4px dotted var(--accent);
+    font-size: 18px;
 
     &:before {
       content: "TL;DR";
