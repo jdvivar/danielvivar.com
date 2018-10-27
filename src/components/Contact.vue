@@ -20,7 +20,7 @@
           <font-awesome-icon
             :icon="['fal', 'envelope']"
             class="invert-spacing" />
-          Reveal my e-mail address
+          Reveal my <b>e-mail address</b>
           <font-awesome-icon
             v-if="loadingEmail"
             :icon="['fal', 'spinner-third']"
@@ -43,7 +43,7 @@
           <font-awesome-icon
             :icon="['fal', 'phone']"
             class="invert-spacing" />
-          Reveal my phone number
+          Reveal my <b>phone number</b>
           <font-awesome-icon
             v-if="loadingPhoneNumber"
             :icon="['fal', 'spinner-third']"
@@ -56,7 +56,7 @@
           <font-awesome-icon
             :icon="['fab', 'linkedin']"
             class="invert-spacing"/>
-          Visit my Linkedin profile
+          Visit my <b>Linkedin</b> profile
         </button>
       </li>
       <li>
@@ -65,7 +65,7 @@
           <font-awesome-icon
             :icon="['fab', 'facebook-square']"
             class="invert-spacing"/>
-          Visit my Facebook profile
+          Visit my <b>Facebook</b> profile
         </button>
       </li>
       <li>
@@ -74,7 +74,7 @@
           <font-awesome-icon
             :icon="['fab', 'github']"
             class="invert-spacing"/>
-          Visit my Github profile
+          Visit my <b>Github</b> profile
         </button>
       </li>
     </ul>

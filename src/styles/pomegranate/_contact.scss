@@ -1,27 +1,38 @@
 #contact {
 
+  b {
+    font-weight: 700;
+  }
+
+  .svg-inline--fa {
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    margin-right: 18px;
+    position: relative;
+    bottom: 2px;
+  }
+
   button {
-    padding: 15px 15px 11px 15px;
+    padding: 20px 15px 10px 15px;
     border-radius: 4px;
     background-color: white;
     border: 1px solid white;
-    color: var(--accent);
     cursor: pointer;
     font-family: 'Pomegranate', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     transition: all $transition/2;
     text-transform: uppercase;
+    text-align: left;
     width: 100%;
 
     @media (min-width: $breakpoint) {
       width: 280px;
     }
 
-    &:hover,
-    &:active {
+    &:hover {
       background-color: transparent;
-      color: white;
     }
 
   }

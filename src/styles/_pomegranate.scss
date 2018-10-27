@@ -7,8 +7,8 @@
   $grid-gap    : 40px;
   $grid-column : 240px;
   $muted       : #ccc;
+  $off-black   : #555;
   $transition  : .5s;
-  // --accent     : white;
   $breakpoint  : 2 * $grid-column + 3 * $grid-gap;
   --breakpoint : #{$breakpoint};
   --mobileOffset : 75;
