@@ -8,14 +8,16 @@
   $grid-column : 240px;
   $muted       : #ccc;
   $transition  : .5s;
-  --accent     : pink;
+  // --accent     : white;
   $breakpoint  : 2 * $grid-column + 3 * $grid-gap;
   --breakpoint : #{$breakpoint};
   --mobileOffset : 75;
 
 
   background-color      : var(--accent);
+  background-image      : url('../styles/pomegranate/assets/otis-redding-50pc.png');
   font-family           : 'Pomegranate', sans-serif;
+  font-size             : 18px;
   cursor                : default;
   line-height           : 1.42;
 

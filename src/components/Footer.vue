@@ -132,7 +132,9 @@ export default {
           hex: 'red'
         },
         nameIt: 'Red',
-        label: 'accent'
+        label: 'accent',
+        pink: '#FFDEE1',
+        previous: ''
       },
       scrollSpyOffset: {
         default: 280,
@@ -159,10 +161,10 @@ export default {
       this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: this.scrollSpyOffset[style] || 0 })
       this.$cookie.set('dv:theme', style, 30)
       if (style === 'pomegranate') {
-        // TODO this is improvable
-        const wrapper = document.getElementById('wrapper')
-        wrapper.style.setProperty('--accent', 'pink')
-        this.accent.value.hex = 'pink'
+        this.accent.previous = this.accent.value
+        this.accent.value = { hex: this.accent.pink }
+      } else {
+        this.accent.value = this.accent.previous
       }
     }
   },
