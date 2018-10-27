@@ -85,9 +85,7 @@
         </div>
       </li>
       <li class="experience-item">
-        <div
-          class="company-logo no-print"
-          style="margin: 20px 0">
+        <div class="company-logo no-print">
           <picture>
             <source
               srcset="/img/typeless-logo.webp"
