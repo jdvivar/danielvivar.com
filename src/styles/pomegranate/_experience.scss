@@ -38,6 +38,7 @@
   .title {
     font-size: 20px;
     margin-top: $grid-gap/2;
+    text-transform: capitalize;
   }
 
   .location {
@@ -51,6 +52,7 @@
   .until {
     font-size: 14px;
     font-weight: 600;
+    color: $off-black;
     text-transform: uppercase;
     position: absolute;
   }
@@ -63,7 +65,7 @@
       content: "";
       width: 10px;
       height: 10px;
-      background-color: black;
+      background-color: $off-black;
       display: inline-block;
       position: absolute;
       left: -18px;
@@ -76,7 +78,7 @@
       content: "";
       width: 60px;
       height: 2px;
-      background-color: black;
+      background-color: $off-black;
       display: inline-block;
       position: absolute;
       left: -70px;
@@ -91,7 +93,7 @@
       content: "";
       width: 10px;
       height: 10px;
-      background-color: black;
+      background-color: $off-black;
       display: inline-block;
       position: absolute;
       left: 65px;
