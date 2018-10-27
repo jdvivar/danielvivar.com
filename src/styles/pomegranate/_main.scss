@@ -1,7 +1,11 @@
 main {
 
   height: 100%;
-  grid-area : 2 / 2 / auto / 4;
+  grid-area: 2 / 2 / auto / 3;
+
+  @media (min-width: $breakpoint) {
+    grid-area : 2 / 2 / auto / 4;
+  }
 
   section h1 {
     font-size: 45px;

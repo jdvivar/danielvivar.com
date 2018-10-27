@@ -9,7 +9,7 @@
   $muted       : #ccc;
   $transition  : .5s;
   --accent     : pink;
-  $breakpoint  : 3 * $grid-column + 4 * $grid-gap;
+  $breakpoint  : 2 * $grid-column + 3 * $grid-gap;
   --breakpoint : #{$breakpoint};
   --mobileOffset : 75;
 
@@ -19,13 +19,20 @@
   cursor                : default;
   line-height           : 1.42;
 
-  padding-left          : 0;
-  padding-right         : 0;
-  max-width             : none;
   display               : grid;
   grid-gap              : $grid-gap;
   grid-template-rows    : $grid-column;
-  grid-template-columns : auto repeat(2, $grid-column) auto;
+  grid-template-columns : 0 auto 0;
+
+  @media (min-width: $breakpoint) {
+    padding-left          : 0;
+    padding-right         : 0;
+    max-width             : none;
+    display               : grid;
+    grid-gap              : $grid-gap;
+    grid-template-rows    : $grid-column;
+    grid-template-columns : auto repeat(2, $grid-column) auto;
+  }
 
   @import 'pomegranate/generic';
   @import 'pomegranate/footer';
