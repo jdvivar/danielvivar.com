@@ -8,7 +8,7 @@ p {
 }
 
 b {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .svg-inline--fa {
@@ -23,9 +23,9 @@ b {
 
 u {
   text-decoration: none;
-  border-bottom-width: 1px solid var(--accent);
+  border-bottom-width: 1px solid white;
   border-bottom-style: solid;
-  border-bottom-color: var(--accent);
+  border-bottom-color: white;
   line-height: 0.85;
   display: inline-block;
   text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
