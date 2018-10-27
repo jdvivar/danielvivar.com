@@ -48,7 +48,7 @@
   .until {
     font-size: 14px;
     font-weight: 600;
-    color: $muted;
+    color: white;
     text-transform: uppercase;
     position: absolute;
   }
@@ -61,7 +61,7 @@
       content: "";
       width: 10px;
       height: 10px;
-      background-color: $muted;
+      background-color: white;
       display: inline-block;
       position: absolute;
       left: -25px;
@@ -74,7 +74,7 @@
       content: "";
       width: $grid-gap * 2;
       height: 2px;
-      background-color: $muted;
+      background-color: white;
       display: inline-block;
       position: absolute;
       left: -100px;
@@ -89,7 +89,7 @@
       content: "";
       width: 10px;
       height: 10px;
-      background-color: $muted;
+      background-color: white;
       display: inline-block;
       position: absolute;
       left: 75px;
