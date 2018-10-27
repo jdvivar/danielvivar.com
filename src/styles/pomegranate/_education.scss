@@ -5,64 +5,65 @@
   $logo-size: 80px;
   $logo-size-mobile: 50px;
 
+  a {
+    border-color: var(--accent);
+    border-width: 2px;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
   .education-item {
     position: relative;
-    @media (min-width: $breakpoint) {
-      margin-left: $logo-size + $grid-gap;
-      margin-top: $grid-gap * 2;
-    }
+    background-color: white;
+    padding: 40px;
+    margin-top: $grid-gap * 2;
 
-    &:not(:first-child) {
-      margin-top: $grid-gap * 2;
+    margin-left: -$grid-gap;
+    margin-right: -$grid-gap;
+
+    @media (min-width: $breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .institution {
-    padding-top: 5px;
+    margin-top: 40px;
     font-size: 24px;
     font-weight: 700;
   }
 
   .title {
     font-size: 20px;
-    font-weight: 300;
-    margin-right: 100px;
     margin-top: $grid-gap/2;
   }
 
   .location {
     font-size: 14px;
-    font-weight: 300;
     margin-left: -5px;
     margin-top: 10px;
     text-transform: uppercase;
-
-    @media (min-width: $breakpoint) {
-      position: absolute;
-      right: 0;
-      top: 0;
-      margin-top: -20px;
-    }
   }
 
   .from,
   .until {
     font-size: 14px;
     font-weight: 600;
-    color: white;
     text-transform: uppercase;
     position: absolute;
   }
 
   .until {
-    top: -$grid-gap/2;
+    top: 40px;
     left: $grid-gap * 3.5;
 
     &:before {
       content: "";
       width: 10px;
       height: 10px;
-      background-color: white;
+      background-color: black;
       display: inline-block;
       position: absolute;
       left: -20px;
@@ -73,24 +74,24 @@
 
     &:after {
       content: "";
-      width: $grid-gap * 2;
+      width: $grid-gap;
       height: 2px;
-      background-color: white;
+      background-color: black;
       display: inline-block;
       position: absolute;
-      left: -90px;
+      left: -50px;
       top: 8px;
     }
   }
 
   .from {
-    top: -$grid-gap/2;
+    top: 40px;
 
     &:after {
       content: "";
       width: 10px;
       height: 10px;
-      background-color: white;
+      background-color: black;
       display: inline-block;
       position: absolute;
       left: 40px;
@@ -100,22 +101,16 @@
   }
 
   .description {
-    font-weight: 300;
     margin-top: $grid-gap;
   }
 
   .institution-logo {
     float: right;
+
     img {
       width: $logo-size-mobile;
-    }
 
-    @media (min-width: $breakpoint) {
-      position: absolute;
-      left: - $logo-size - $grid-gap;
-      top: 0;
-
-      img {
+      @media (min-width: $breakpoint) {
         width: $logo-size;
       }
     }
