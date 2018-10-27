@@ -3,10 +3,10 @@
   button {
     padding: 15px 15px 11px 15px;
     border-radius: 4px;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
+    background-color: white;
     border: 1px solid white;
+    color: var(--accent);
+    cursor: pointer;
     font-family: 'Pomegranate', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -20,8 +20,8 @@
 
     &:hover,
     &:active {
-      background-color: white;
-      color: var(--accent);
+      background-color: transparent;
+      color: white;
     }
 
   }
