@@ -1,27 +1,30 @@
 #contact {
-  font-size: 18px;
 
   button {
-    padding: 15px;
+    padding: 15px 15px 11px 15px;
     border-radius: 4px;
-    background-color: lighten($muted, 18%);
+    background-color: transparent;
+    color: white;
     cursor: pointer;
-    border: 1px solid $muted;
-    box-shadow: 0px 1px 1px 0px lighten(black, 90%);
+    border: 1px solid white;
+    font-family: 'Pomegranate', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     outline: none;
     transition: all $transition/2;
     text-transform: uppercase;
+    width: 100%;
 
-    &:hover {
-      box-shadow:
-        0px 1px 1px 0px lighten(black, 90%),
-        0px 0px 0px 4px white,
-        0px 0px 0px 5px var(--accent);
+    @media (min-width: $breakpoint) {
+      width: 280px;
     }
 
+    &:hover,
     &:active {
-      background-color: $muted;
+      background-color: white;
+      color: var(--accent);
     }
+
   }
 
   ul li {

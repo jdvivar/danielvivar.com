@@ -8,13 +8,14 @@
   $grid-column : 240px;
   $muted       : #ccc;
   $transition  : .5s;
-  --accent     : red;
+  --accent     : pink;
   $breakpoint  : 3 * $grid-column + 4 * $grid-gap;
   --breakpoint : #{$breakpoint};
   --mobileOffset : 75;
 
   // Styles applicable to the whole content
-  font-family           : 'Pomegranate', serif;
+  background-color      : var(--accent);
+  font-family           : 'Pomegranate', sans-serif;
   cursor                : default;
   line-height           : 1.42;
 

@@ -157,7 +157,13 @@ export default {
     'style.value': function (style) {
       this.$store.commit('changeTo', { key: 'style', newValue: style })
       this.$store.commit('changeTo', { key: 'scrollSpyOffset', newValue: this.scrollSpyOffset[style] || 0 })
-      this.$cookie.set('dv:theme', this.style.value, 30)
+      this.$cookie.set('dv:theme', style, 30)
+      if (style === 'pomegranate') {
+        // TODO this is improvable
+        const wrapper = document.getElementById('wrapper')
+        wrapper.style.setProperty('--accent', 'pink')
+        this.accent.value.hex = 'pink'
+      }
     }
   },
   mounted: function () {
@@ -175,18 +181,16 @@ export default {
     }
 
     // Set cookie for past visit
-    if (this.$cookie.get('dv:visited')) {
+    if (this.$cookie.get('dv:visited') && this.$cookie.get('dv:theme') === 'default') {
       this.setRandomColor()
-    } else {
-      this.$cookie.set('dv:visited', true, 30)
     }
+    this.$cookie.set('dv:visited', true, 30)
 
     // Set cookie for past theme
     if (this.$cookie.get('dv:theme')) {
       this.style.value = this.$cookie.get('dv:theme')
-    } else {
-      this.$cookie.set('dv:theme', this.style.value, 30)
     }
+    this.$cookie.set('dv:theme', this.style.value, 30)
   },
   methods: {
     onClickSavePDF: function () {
