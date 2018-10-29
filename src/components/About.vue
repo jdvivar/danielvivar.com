@@ -17,7 +17,7 @@
       rel="noreferrer"
       target="_blank">
       <img
-        src="https://i.imgur.com/16QWIBe.png"
+        src="/img/vue-cli-dashboard.png"
         alt="Vue CLI dashboard"
         style="max-width: 100%;height: auto">
     </a>
