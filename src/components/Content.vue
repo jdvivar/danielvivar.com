@@ -114,7 +114,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@import "@/styles/all.scss";
-</style>

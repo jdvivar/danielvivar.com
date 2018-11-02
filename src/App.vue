@@ -14,7 +14,10 @@ export default {
   }
 }
 </script>
-<style>
+
+<style lang="scss">
+@import "@/styles/all.scss";
+
 body {
   margin: 0;
 }
