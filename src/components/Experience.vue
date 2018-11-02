@@ -55,7 +55,7 @@
               Developing from scratch a PHP file-based CMS (Kirby) and maintaining older db-based one.
             </li>
             <li>
-              Mastering styling with SASS/SCSS
+              Mastering styling with SASS/SCSS.
             </li>
             <li>
               Managing CRO which requires several teams working together (Data, UX, Marketing and Engineering). Manage data with Looker and all events with Segment. Creating experiments for A/B testing and more advanced customisation with Optimizely.
@@ -73,13 +73,16 @@
               Agile methodologies: Scrum, Kanban.
             </li>
             <li>
-              Prototyping with InVision to create high detailed and visually attractive user experiences
+              Prototyping with InVision to create high detailed and visually attractive user experiences. For instance, this app I designed from scratch in InVision Studio for a new <a
+                href="https://projects.invisionapp.com/prototype/Zava-Order-tracker-cjhc8zt7g00050n01oylz2j65/play/61575a43"
+                rel="noreferrer"
+                target="_blank">order tracker <font-awesome-icon :icon="['fal', 'external-link']"/></a>.
             </li>
             <li>
               Went from task runner Gulp and package manager Bower to only Yarn to then everything done with npm scripts and even bash scripts again.
             </li>
             <li>
-              Serverless architectures and cloud functions with AWS Lambda
+              Serverless architectures and cloud functions with AWS Lambda.
             </li>
           </ul>
         </div>
