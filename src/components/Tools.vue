@@ -3,6 +3,10 @@
     id="tools">
     <h1>which technologies and tools I use</h1>
 
+    <div class="help no-print">
+      click on a tag to reveal its definition
+    </div>
+
     <span>javascript</span>
     <Modal
       v-if="showModal === 'javascript'"
@@ -636,9 +640,7 @@
       </div>
     </Modal>
 
-    <div class="help no-print">
-      click on a tag to reveal its definition
-    </div>
+    <div class="clearfix" />
 
   </section>
 </template>

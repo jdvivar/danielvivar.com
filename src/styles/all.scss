@@ -5,3 +5,9 @@
   @import "~gutenberg-css/dist/gutenberg.min";
   @import "print";
 }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
