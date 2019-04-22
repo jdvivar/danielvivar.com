@@ -1,7 +1,7 @@
 <template>
   <headroom
     :footroom="true"
-    :up-tolerance="20">
+    :up-tolerance="1">
     <div
       id="footer"
       class="no-print">
@@ -24,7 +24,7 @@
           id="accent-selector"
           class="selector">
           <div class="selector-help">
-            Choose a colour here!
+            Scroll up &amp; choose a colour!
             <Arrow
               class="arrow-colour"
               alt="Arrow - Attribution: https://medialoot.com/item/hand-drawn-vector-arrows/" />
