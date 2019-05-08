@@ -1,6 +1,6 @@
 {
     "name": "danielvivar.com",
-    "version": "2.8.5",
+    "version": "2.8.7",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -33,7 +33,7 @@
         "vue": "2.5.17",
         "vue-color": "2.7.0",
         "vue-cookie": "1.1.4",
-        "vue-headroom": "0.10.1",
+        "vue-headroom": "github:jdvivar/vue-headroom#footroom",
         "vue-svg-loader": "0.11.0",
         "vue-template-compiler": "2.5.17",
         "vue2-scrollspy": "2.3.1",
