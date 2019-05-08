@@ -7,6 +7,9 @@
 
 This site contains a personal resumé/CV as a [Vue.js](https://github.com/vuejs/vue) app. It makes use of [Vue CLI 3](https://github.com/vuejs/vue-cli).
 
+## Pre-requisites
+Specifify a FontAwesome token, see [.env.example](.env.example) for instructions
+
 ## How to start
 
 Clone the repo locally and install its node dependencies
