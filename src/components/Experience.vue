@@ -8,6 +8,65 @@
         <div class="company-logo no-print">
           <picture>
             <source
+              srcset="/img/ing-logo.webp"
+              type="image/webp">
+            <source
+              srcset="/img/ing-logo.png"
+              type="image/png">
+            <img
+              src="/img/ing-logo.png"
+              alt="zava logo">
+          </picture>
+        </div>
+        <div class="company">
+          ING Bank
+        </div>
+        <div class="title">
+          front-end web engineer
+        </div>
+        <div class="from">
+          2015 Oct
+        </div>
+        <div class="until">
+          present
+        </div>
+        <div class="location">
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
+          London
+        </div>
+        <div class="tldr">
+          Acquiring mid-seniority after 3 years as a front-end web engineer in a fast-growing health company, using the latest technologies and practices.
+        </div>
+        <div class="description no-print">
+          <p>
+            In <a
+              href="https://www.zavamed.com/uk"
+              rel="noreferrer"
+              target="_blank">Zava <font-awesome-icon :icon="['fal', 'external-link']"/></a> I was mentored by the head of development from the beginning and had the fantastic opportunity to see a thrilling company grow. From helping rebrand from DrEd to Zava, moving offices from Farrringdon to Angel and many other big events, as well as being part and even leading in some development work.
+          </p>
+          <p>
+            Some of the technologies/tasks/skills that I've learnt or developed further while at Zava:
+          </p>
+          <ul>
+            <li>
+              Developing and maintaining the main healthcare assessment app and others in AngularJS and Vue.js and mastering JavaScript on the way.
+            </li>
+            <li>
+              Developing from scratch a PHP file-based CMS (Kirby) and maintaining older db-based one.
+            </li>
+            <li>
+              Mastering styling with SASS/SCSS.
+            </li>
+            <li>
+              Managing CRO which requires several teams working together (Data, UX, Marketing and Engineering). Manage data with Looker and all events with Segment. Creating experiments for A/B testing and more advanced customisation with Optimizely.
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="experience-item">
+        <div class="company-logo no-print">
+          <picture>
+            <source
               srcset="/img/zava-logo.webp"
               type="image/webp">
             <source
