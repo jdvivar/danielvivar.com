@@ -1,7 +1,8 @@
 <template>
   <headroom
-    :footroom="true"
-    :up-tolerance="1">
+    :footroom="false"
+    :up-tolerance="1"
+    class="headroom">
     <div
       id="footer"
       class="no-print">

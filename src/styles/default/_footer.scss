@@ -1,3 +1,7 @@
+.headroom {
+  grid-column: span 5;
+}
+
 #footer {
 
   background: var(--accent);
@@ -25,7 +29,7 @@
   }
 
   .selector .selector-help {
-    bottom: 120px;
+    top: 120px;
     color: var(--accent);
     font-family: 'Permanent Marker', sans-serif;
     font-size: 16px;
@@ -47,7 +51,9 @@
     .arrow-colour {
       fill: var(--accent);
       position: absolute;
-      transform: scaleX(-1);
+      left: 60px;
+      top: -40px;
+      transform: rotate(-160deg);
       width: 40px;
     }
   }
