@@ -8,6 +8,42 @@
         <div class="company-logo no-print">
           <picture>
             <source
+              srcset="/img/ing-logo.webp"
+              type="image/webp">
+            <source
+              srcset="/img/ing-logo.png"
+              type="image/png">
+            <img
+              src="/img/ing-logo.png"
+              alt="zava logo">
+          </picture>
+        </div>
+        <div class="company">
+          ING Bank
+        </div>
+        <div class="title">
+          front-end web engineer
+        </div>
+        <div class="from">
+          2019 Mar
+        </div>
+        <div class="until">
+          present
+        </div>
+        <div class="location">
+          <font-awesome-icon :icon="['fal', 'globe-africa']"/>
+          Madrid
+        </div>
+        <div class="description no-print">
+          <p>
+            [I'll update this experience in the future]
+          </p>
+        </div>
+      </li>
+      <li class="experience-item">
+        <div class="company-logo no-print">
+          <picture>
+            <source
               srcset="/img/zava-logo.webp"
               type="image/webp">
             <source
@@ -28,7 +64,7 @@
           2015 Oct
         </div>
         <div class="until">
-          present
+          2019 Feb
         </div>
         <div class="location">
           <font-awesome-icon :icon="['fal', 'globe-africa']"/>
