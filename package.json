@@ -1,6 +1,6 @@
 {
     "name": "danielvivar.com",
-    "version": "2.8.7",
+    "version": "2.8.9",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -33,6 +33,7 @@
         "vue": "2.5.17",
         "vue-color": "2.7.0",
         "vue-cookie": "1.1.4",
+        "vue-headroom": "^0.10.1",
         "vue-svg-loader": "0.11.0",
         "vue-template-compiler": "2.5.17",
         "vue2-scrollspy": "2.3.1",
@@ -49,8 +50,5 @@
     ],
     "lambda": {
         "src": "lambda/src"
-    },
-    "dependencies": {
-        "@babel/core": "^7.7.2"
     }
 }
