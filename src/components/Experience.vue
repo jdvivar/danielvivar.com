@@ -4,7 +4,7 @@
     class="">
     <h1>where I've worked</h1>
     <ul>
-      <li class="experience-item">
+      <li class="experience-item no-print">
         <div class="company-logo no-print">
           <picture>
             <source

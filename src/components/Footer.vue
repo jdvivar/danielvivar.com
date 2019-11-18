@@ -2,7 +2,7 @@
   <headroom
     :footroom="false"
     :up-tolerance="1"
-    class="headroom">
+    class="headroom no-print">
     <div
       id="footer"
       class="no-print">
