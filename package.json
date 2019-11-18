@@ -24,7 +24,7 @@
         "babel-runtime": "6.26.0",
         "color-name-list": "3.52.1",
         "gutenberg-css": "0.4.4",
-        "lodash": "4.17.11",
+        "lodash": "^4.17.15",
         "nearest-color": "0.4.2",
         "netlify-lambda": "1.0.2",
         "node-sass": "4.9.4",
@@ -33,7 +33,6 @@
         "vue": "2.5.17",
         "vue-color": "2.7.0",
         "vue-cookie": "1.1.4",
-        "vue-headroom": "github:jdvivar/vue-headroom#footroom",
         "vue-svg-loader": "0.11.0",
         "vue-template-compiler": "2.5.17",
         "vue2-scrollspy": "2.3.1",
@@ -50,5 +49,8 @@
     ],
     "lambda": {
         "src": "lambda/src"
+    },
+    "dependencies": {
+        "@babel/core": "^7.7.2"
     }
 }
