@@ -151,11 +151,13 @@ export default {
   },
   watch: {
     'accent.value': function ({ hex }) {
-      const wrapper = document.getElementById('wrapper')
-      wrapper.style.setProperty('--accent', hex)
-      this.loadingColor = true
-      this.updateThemeColor(hex)
-      this.updateColorNameIt()
+      if (hex) {
+        const wrapper = document.getElementById('wrapper')
+        wrapper.style.setProperty('--accent', hex)
+        this.loadingColor = true
+        this.updateThemeColor(hex)
+        this.updateColorNameIt()
+      }
     },
     'style.value': function (style) {
       this.$store.commit('changeTo', { key: 'style', newValue: style })
