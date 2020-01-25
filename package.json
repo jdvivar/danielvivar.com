@@ -1,6 +1,6 @@
 {
     "name": "danielvivar.com",
-    "version": "2.8.9",
+    "version": "2.8.11",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -27,9 +27,9 @@
         "lodash": "^4.17.15",
         "nearest-color": "0.4.2",
         "netlify-lambda": "1.0.2",
-        "node-sass": "4.9.4",
+        "node-sass": "4.12.0",
         "register-service-worker": "1.5.2",
-        "sass-loader": "7.1.0",
+        "sass-loader": "8.0.2",
         "vue": "2.5.17",
         "vue-color": "2.7.0",
         "vue-cookie": "1.1.4",
