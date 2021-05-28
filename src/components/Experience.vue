@@ -4,7 +4,7 @@
     class="">
     <h1>where I've worked</h1>
     <ul>
-      <li class="experience-item no-print">
+      <li class="experience-item">
         <div class="company-logo no-print">
           <picture>
             <source
@@ -22,7 +22,7 @@
           ING Bank
         </div>
         <div class="title">
-          front-end web engineer
+          senior front-end software engineer
         </div>
         <div class="from">
           2019 Mar
@@ -33,6 +33,9 @@
         <div class="location">
           <font-awesome-icon :icon="['fal', 'globe-africa']"/>
           Madrid
+        </div>
+        <div class="tldr">
+          Leading front-end projects as senior engineer, such as new solutions for the main CMS or integrating PSD2 into the bank's global platform.
         </div>
         <div class="description no-print">
           <p>

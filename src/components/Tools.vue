@@ -7,6 +7,10 @@
       click on a tag to reveal its definition
     </div>
 
+    <p class="print-only">
+      Definitions for each term are available on my website.
+    </p>
+
     <span>javascript</span>
     <Modal
       v-if="showModal === 'javascript'"
@@ -21,6 +25,29 @@
         <p>
           Together with HTML <em>&mdash;content&mdash;</em> and CSS <em>&mdash;style&mdash;</em>, they represent the 3 pillar technologies in front-end web engineering.
         </p>
+      </div>
+    </Modal>
+
+    <span>web components</span>
+    <Modal
+      v-if="showModal === 'web components'"
+      @close="showModal = false">
+      <div slot="term">
+        Web Components
+      </div>
+      <div slot="definition">
+        <p>
+          Web Components are a set of features that provide a standard component model for the Web allowing for encapsulation and interoperability of individual HTML elements.
+        </p>
+        <p>
+          Primary technologies used to create them include:
+        </p>
+        <ul>
+          <li><b>Custom Elements</b>: APIs to define new HTML elements</li>
+          <li><b>Shadow DOM</b>: encapsulated DOM and styling, with composition</li>
+          <li><b>HTML Templates</b>: HTML fragments that are not rendered, but stored until instantiated via JavaScript</li>
+        </ul>
+        <p>(Wikipedia)</p>
       </div>
     </Modal>
 

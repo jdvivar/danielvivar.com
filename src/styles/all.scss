@@ -11,3 +11,9 @@
   content: "";
   clear: both;
 }
+
+@media not print {
+  .print-only {
+    display: none;
+  }
+}

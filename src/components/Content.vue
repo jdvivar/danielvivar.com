@@ -37,6 +37,10 @@
     </Modal>
     <Navigation :sections="sections" />
     <main v-scroll-spy="{ offset: offset}">
+      <div class="print-only address-bar">
+        <span>danielvivar.com</span>
+        <span>&#9733;</span>
+      </div>
       <Who />
       <Future />
       <Outstanding />
@@ -105,6 +109,7 @@ export default {
         const id = section.id
         const heading = section.querySelector('h1').innerText
         this.sections.push({ id, heading })
+        console.log(section)
       })
 
       window.addEventListener('sw-updated', () => {

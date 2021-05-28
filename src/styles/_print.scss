@@ -1,3 +1,5 @@
+$print-black: #424242;
+
 @page {
   size: a4;
   margin: 0;
@@ -7,6 +9,7 @@ body, html {
   margin: 0;
   font-size: 11px;
   height:100%;
+  color: $print-black !important;
 }
 
 .svg-inline--fa {
@@ -22,8 +25,9 @@ ol {
 
 h1 {
   font-size: 16px;
-  border-top: 5px solid black;
+  border-top: 5px solid $print-black;
   padding-top: 15px;
+  color: $print-black !important;
 }
 
 section {
@@ -33,6 +37,16 @@ section {
 p {
   padding: 0;
   margin-bottom: 10px;
+}
+
+div.address-bar {
+  margin: 20px;
+  margin-top: -60px;
+  padding: 8px 15px;
+  background-color: #eee !important;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #experience,
@@ -49,20 +63,28 @@ p {
 
 #tools > span {
   display: inline-block;
-  margin: 0 15px 10px 0;
+  margin: 0 5px 2px 0;
   text-transform: uppercase;
   font-size: 10px;
 }
 
 #experience {
   .company {
+    border-bottom: 1px dotted $print-black;
     font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+    display: inline-block;
   }
 
   .title {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted $print-black;
     padding-bottom: 5px;
     margin-bottom: 5px;
+    width: 70%;
+    display: inline-block;
+    text-align: right;
 
     &::first-letter {
       text-transform: capitalize;
@@ -104,7 +126,7 @@ p {
   }
 
   .title {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted $print-black;
     padding-bottom: 5px;
     margin-bottom: 5px;
   }

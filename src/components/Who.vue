@@ -3,13 +3,13 @@
     <h1>who I am</h1>
     <div class="section-description">
       <p>
-        Hi, my name is <b>Daniel Vivar</b> and I'm a front-end web engineer and designer based in London since 2014.
+        Hi, my name is <b>Daniel Vivar</b> and I'm a <b>senior front-end web engineer</b> with <b>+{{ new Date().getFullYear() - 2013 }}</b> years of experience in businesses that range from e-health to banking.
       </p>
       <p>
-        Starting as a graphic designer while graduating in Computers Engineering, I then steered my career towards <b>front-end web engineering</b>.
+        At work, I focus on DRY (Don't Repeat Yourself), craftmanship and lean approaches, embracing standards and the open web. I taught front-end development at a tech academy in Madrid and help maintain open source projects whenever I can.
       </p>
-      <p>
-        I can work on anything related to web apps, considering myself both a UI/UX designer, a full-stack web engineer and a QA automation engineer, but if I had to choose I'd rather focus on front-end technologies.
+      <p class="no-print">
+        I spend most of my free time reading about science, politics and technology, taking care of my 2 cats or dining out with my partner in one of the hundreds of amazing restaurants in Madrid.
       </p>
     </div>
   </section>
