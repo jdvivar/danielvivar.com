@@ -109,7 +109,6 @@ export default {
         const id = section.id
         const heading = section.querySelector('h1').innerText
         this.sections.push({ id, heading })
-        console.log(section)
       })
 
       window.addEventListener('sw-updated', () => {
