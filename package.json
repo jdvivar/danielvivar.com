@@ -7,13 +7,15 @@
         "build": "vue-cli-service build --modern --env.patch && npm run build:lambda",
         "lint": "vue-cli-service lint",
         "build:lambda": "netlify-lambda build $npm_package_lambda_src",
-        "serve:lambda": "netlify-lambda serve $npm_package_lambda_src"
+        "serve:lambda": "netlify-lambda serve $npm_package_lambda_src",
+        "preinstall": "unzip -P $UNZIP_PASSWORD fontawesome/fortawesome-pro-light-svg-icons-5.4.1.tgz.zip -d fontawesome",
+        "postinstall": "rm fontawesome/fortawesome-pro-light-svg-icons-5.4.1.tgz"
     },
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "1.2.6",
         "@fortawesome/free-brands-svg-icons": "5.4.1",
         "@fortawesome/free-solid-svg-icons": "5.4.1",
-        "@fortawesome/pro-light-svg-icons": "5.4.1",
+        "@fortawesome/pro-light-svg-icons": "file:fontawesome/fortawesome-pro-light-svg-icons-5.4.1.tgz",
         "@fortawesome/vue-fontawesome": "0.1.1",
         "@vue/cli-plugin-babel": "^3.8.0",
         "@vue/cli-plugin-eslint": "3.0.5",
