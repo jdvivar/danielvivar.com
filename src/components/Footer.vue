@@ -66,7 +66,7 @@
         </div>
         <button
           class="footer-print-button dv-button"
-          @click="onClickSavePDF">See print version</button>
+          @click="onClickSavePDF">See PDF</button>
       </div>
     </div>
   </headroom>
