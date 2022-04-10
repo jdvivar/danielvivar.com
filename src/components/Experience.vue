@@ -306,7 +306,7 @@
         </div>
       </li>
     </ul>
-    <small>(full work experience at website)</small>
+    <small class="print-only">(full work experience at website)</small>
   </section>
 </template>
 
