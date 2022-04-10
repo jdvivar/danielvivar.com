@@ -9,7 +9,8 @@
         "build:lambda": "netlify-lambda build $npm_package_lambda_src",
         "serve:lambda": "netlify-lambda serve $npm_package_lambda_src",
         "preinstall": "unzip -P $UNZIP_PASSWORD fontawesome/fortawesome-pro-light-svg-icons-5.4.1.tgz.zip -d fontawesome",
-        "postinstall": "rm fontawesome/fortawesome-pro-light-svg-icons-5.4.1.tgz"
+        "postinstall": "rm fontawesome/fortawesome-pro-light-svg-icons-5.4.1.tgz",
+        "release": "standard-version"
     },
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "1.2.6",
@@ -32,6 +33,7 @@
         "node-sass": "4.12.0",
         "register-service-worker": "1.5.2",
         "sass-loader": "8.0.2",
+        "standard-version": "^9.3.2",
         "vue": "2.5.17",
         "vue-color": "2.7.0",
         "vue-cookie": "1.1.4",
