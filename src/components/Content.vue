@@ -36,11 +36,11 @@
       </div>
     </Modal>
     <Navigation :sections="sections" />
+    <div class="print-only address-bar">
+      <span>danielvivar.com</span>
+      <span>&#9733;</span>
+    </div>
     <main v-scroll-spy="{ offset: offset}">
-      <div class="print-only address-bar">
-        <span>danielvivar.com</span>
-        <span>&#9733;</span>
-      </div>
       <Who />
       <Future />
       <Outstanding />
