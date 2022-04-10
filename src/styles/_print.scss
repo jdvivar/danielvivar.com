@@ -26,7 +26,7 @@ ol {
 h1 {
   font-size: 16px;
   border-top: 5px solid $print-black;
-  padding-top: 15px;
+  padding: 15px 0 5px;
   color: $print-black !important;
 }
 
@@ -40,8 +40,7 @@ p {
 }
 
 div.address-bar {
-  margin: 20px;
-  margin-top: -60px;
+  margin: -20px 20px 30px 20px;
   padding: 8px 15px;
   background-color: #eee !important;
   border-radius: 50px;

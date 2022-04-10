@@ -24,7 +24,6 @@
         <li>
           A company where technology and their people is at heart
         </li>
-        <br>
         <small>(full redaction at website)</small>
       </ul>
     </div>

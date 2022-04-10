@@ -204,7 +204,7 @@
           </ul>
         </div>
       </li>
-      <li class="experience-item">
+      <li class="experience-item no-print">
         <div class="company-logo no-print">
           <picture>
             <source
@@ -306,6 +306,7 @@
         </div>
       </li>
     </ul>
+    <small>(full work experience at website)</small>
   </section>
 </template>
 

@@ -24,7 +24,6 @@
         <li>
           Focus on businees goals and career growth
         </li>
-        <br>
         <small>(full redaction at website)</small>
       </ul>
     </div>
