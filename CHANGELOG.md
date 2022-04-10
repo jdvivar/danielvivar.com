@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.11.1](https://github.com/jdvivar/danielvivar.com/compare/v2.11.0...v2.11.1) (2022-04-10)
+
+
+### Bug Fixes
+
+* **Experience:** remove small print only copy ([ba8688f](https://github.com/jdvivar/danielvivar.com/commit/ba8688f6037741f86c373ef4312dd3baa5902542))
+
 ## [2.11.0](https://github.com/jdvivar/danielvivar.com/compare/v2.10.0...v2.11.0) (2022-04-10)
 
 
