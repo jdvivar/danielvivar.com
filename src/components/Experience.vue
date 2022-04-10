@@ -35,12 +35,19 @@
           Madrid
         </div>
         <div class="tldr">
-          Leading front-end projects as senior engineer, such as new solutions for the main CMS or integrating PSD2 into the bank's global platform.
+          Participating in projects as senior software engineer, leading in front-end tech.
         </div>
         <div class="description no-print">
-          <p>
-            [I'll update this experience in the future]
-          </p>
+          <ul>
+            <li>Designed and built a whole solution for our public-facing CMS based on a semantic Web Components library written in TypeScript and browser extensions to customise Bloomreach Experience Manager (a CMS) for our marketing and copy editors.
+            </li>
+            <li>Designed and built the Spanish market PSD2-compliant platform for 3rd parties that allows customers to initiate payments through a PIS flow (Payment Initiation Services) and aggregate products from 3rd parties for a later use of AIS (Account Information Services, AIS), following ING global standards and integrating ING global components and APIs.
+            </li>
+            <li>Helped in the design and development of Money Up! as part of the new retail Spanish digital platform, based on a micro-frontend architecture.
+            </li>
+            <li>Part of the core front-end chapter team at ING Bank.</li>
+            <li>At the moment, designing and working on a new cross-product consistent onboarding experience for prospects, the very first thing new customers will experience, coming soon!</li>
+          </ul>
         </div>
       </li>
       <li class="experience-item">
