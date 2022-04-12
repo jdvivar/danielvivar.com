@@ -15,14 +15,15 @@
         class="print-only"
         style="list-style: inside '—'"
       >
+        Where...
         <li>
-          Sharing and learning encouraged
+          sharing and learning is encouraged,
         </li>
         <li>
-          Focus on customer experience
+          there's a clear focus on customer experience,
         </li>
         <li>
-          A company where technology and their people is at heart
+          and technology and their people is at heart.
         </li>
         <small>(full redaction at website)</small>
       </ul>
