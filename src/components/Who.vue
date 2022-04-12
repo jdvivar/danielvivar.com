@@ -15,14 +15,15 @@
         class="print-only"
         style="list-style: inside '—'"
       >
+        Focused on...
         <li>
-          Software craftmanship
+          software craftmanship,
         </li>
         <li>
-          Embrace open web standards and re-use software patterns
+          embracing open web standards and re-using software patterns,
         </li>
         <li>
-          Focus on businees goals and career growth
+          and business goals and career growth.
         </li>
         <small>(full redaction at website)</small>
       </ul>

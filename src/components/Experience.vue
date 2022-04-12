@@ -39,7 +39,7 @@
         </div>
         <div class="description no-print">
           <ul>
-            <li>Designed and built a whole solution for our public-facing CMS based on a semantic Web Components library written in TypeScript and browser extensions to customise Bloomreach Experience Manager (a CMS) for our marketing and copy editors.
+            <li>Designed and built a whole solution for our public-facing CMS based on a semantic Web Components library written in TypeScript and browser extensions to customise Bloomreach Experience Manager (a CMS) for our marketing and copy editors. This solution was selected to be showcased in a live demo to our global CIO, Ron van Kemenade, during his 2019 visit.
             </li>
             <li>Designed and built the Spanish market PSD2-compliant platform for 3rd parties that allows customers to initiate payments through a PIS flow (Payment Initiation Services) and aggregate products from 3rd parties for a later use of AIS (Account Information Services, AIS), following ING global standards and integrating ING global components and APIs.
             </li>
@@ -81,7 +81,7 @@
           London
         </div>
         <div class="tldr">
-          Acquiring mid-seniority after 3 years as a front-end web engineer in a fast-growing health company, using the latest technologies and practices.
+          Acquiring mid-seniority after 3 years as a front-end web engineer in a fast-growing e-health company, using the latest technologies and practices.
         </div>
         <div class="description no-print">
           <p>

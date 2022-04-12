@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.12.0](https://github.com/jdvivar/danielvivar.com/compare/v2.11.3...v2.12.0) (2022-04-12)
+
+
+### Features
+
+* add content ([8245d7b](https://github.com/jdvivar/danielvivar.com/commit/8245d7bf9a56878f554806a3310672f5f9a9492d))
+* **Footer:** use always window.open ([2753c48](https://github.com/jdvivar/danielvivar.com/commit/2753c48dfb057faaa59bb0f89a48f74e3eb7bf56))
+* update PDF ([4bc598a](https://github.com/jdvivar/danielvivar.com/commit/4bc598a9f1f8c4e7511a8c702690b3974633af9e))
+
 ### [2.11.3](https://github.com/jdvivar/danielvivar.com/compare/v2.11.2...v2.11.3) (2022-04-10)
 
 
