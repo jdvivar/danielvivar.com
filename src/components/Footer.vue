@@ -199,11 +199,13 @@ export default {
   },
   methods: {
     onClickSavePDF: function () {
-      if (this.isSafari) {
-        window.open('Daniel Vivar - CV.pdf')
-      } else {
-        this.print()
-      }
+      window.open('Daniel Vivar - CV.pdf')
+      // I've checked Chrome on Android and it didn't produced a correct PDF
+      // if (this.isSafari) {
+      //   window.open('Daniel Vivar - CV.pdf')
+      // } else {
+      //   this.print()
+      // }
     },
     print: function () {
       const beforePrintStyle = this.style.value
