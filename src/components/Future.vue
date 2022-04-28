@@ -3,7 +3,7 @@
     <h1>what I'm looking for</h1>
     <div class="section-description">
       <p>
-        A company I can help grow!
+        A team to lead on a company I can help grow!
       </p>
       <p class="no-print">
         My future company should be a place where <b>learning</b> and sharing knowledge is <b>actively encouraged</b>. I feel specially motivated in projects where we can collaborate into creating <b>delightful user experiences</b> for great products.
