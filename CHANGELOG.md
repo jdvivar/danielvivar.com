@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.13.0](https://github.com/jdvivar/danielvivar.com/compare/v2.12.0...v2.13.0) (2022-04-28)
+
+
+### Features
+
+* **Future:** add team leading content ([6868ee3](https://github.com/jdvivar/danielvivar.com/commit/6868ee36bde334fead26931d0349e76562f3c9a0))
+
 ## [2.12.0](https://github.com/jdvivar/danielvivar.com/compare/v2.11.3...v2.12.0) (2022-04-12)
 
 
