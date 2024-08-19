@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.14.0](https://github.com/jdvivar/danielvivar.com/compare/v2.13.0...v2.14.0) (2024-08-19)
+
+
+### Features
+
+* update dotenv documentation ([f4ebb6e](https://github.com/jdvivar/danielvivar.com/commit/f4ebb6e0bcdf2b13055a268615db6001bf012e44))
+
 ## [2.13.0](https://github.com/jdvivar/danielvivar.com/compare/v2.12.0...v2.13.0) (2022-04-28)
 
 

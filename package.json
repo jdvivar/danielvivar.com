@@ -1,9 +1,9 @@
 {
     "name": "danielvivar.com",
-    "version": "2.13.0",
+    "version": "2.14.0",
     "private": true,
     "scripts": {
-        "start": "dotenv -e .env.local npm run serve",
+        "start": "npx dotenv -e .env.local npm run serve",
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build --modern --env.patch && npm run build:lambda",
         "lint": "vue-cli-service lint",
@@ -27,6 +27,7 @@
         "axios": "^0.21.1",
         "babel-runtime": "6.26.0",
         "color-name-list": "3.52.1",
+        "dotenv-cli": "^2.0.1",
         "gutenberg-css": "0.4.4",
         "lodash": "^4.17.15",
         "nearest-color": "0.4.2",
