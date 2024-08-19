@@ -65,4 +65,4 @@ I've used ƛ functions to provide contact data, so it's not available to spam ro
 npm run lambda:serve
 ```
 ##### Why didn't I add this in the `serve` command?
-You can add it and it will work exactly as it works in Netlify, but then Vue UI doesn't capture any of the data from the `vue-cli-service serve` build command when it executes, so the dashboard just produces terminal lines and therefore the UI lose most its sex appeal :)
+You can add it and it will work exactly as it works in Netlify, but then Vue UI doesn't capture any of the data from the `vue-cli-service serve` build command when it executes, so the dashboard just produces terminal lines and therefore the UI lose most of its appeal :)
